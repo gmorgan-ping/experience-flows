@@ -14,10 +14,10 @@
         "pingOneRiskConnector",
         "flowConnector"
       ],
-      "createdDate": 1730202740870,
-      "currentVersion": 184,
+      "createdDate": 1730215065767,
+      "currentVersion": 1,
       "customerId": "",
-      "description": "Cloned on Tue Oct 22 2024 15:07:11 GMT+0000 (Coordinated Universal Time). \nLast Updated: Sept 26th, 2024",
+      "description": "Last Updated: Oct 29th, 2024",
       "flowStatus": "enabled",
       "inputSchemaCompiled": {
         "parameters": {
@@ -40,7 +40,7 @@
       "isInputSchemaSaved": true,
       "isOutputSchemaSaved": false,
       "name": "PingOne Adaptive Authentication & Registration Subflow",
-      "publishedVersion": 184,
+      "publishedVersion": 1,
       "settings": {
         "csp": "worker-src 'self' blob:; script-src 'self' https://cdn.jsdelivr.net https://code.jquery.com https://devsdk.singularkey.com http://cdnjs.cloudflare.com 'unsafe-inline' 'unsafe-eval';",
         "intermediateLoadingScreenCSS": "",
@@ -56,9 +56,9 @@
         ]
       },
       "timeouts": "null",
-      "updatedDate": 1730202743664,
+      "updatedDate": 1730215068445,
       "flowId": "3b5fa0539fe125e24831f45efd17b3a4",
-      "versionId": 184,
+      "versionId": 1,
       "graphData": {
         "elements": {
           "nodes": [
@@ -343,7 +343,7 @@
                     "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"Welcome to \"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"variable.svg\",\n        \"url\": \"companyName\",\n        \"data\": \"{{global.variables.companyName}}\",\n        \"tooltip\": \"{{global.variables.companyName}}\",\n        \"children\": [\n          {\n            \"text\": \"companyName\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
                   },
                   "customHTML": {
-                    "value": "{{#if riskEnabled}}\n<div\n  data-skcomponent=\"skrisk\"\n  data-skenvironmentid=\"{{global.companyId}}\"\n  data-skcollectBehavioralData=\"true\"\n  data-skpropertyname=\"riskfp\"></div>\n{{/if}}\n\n<div class=\"end-user-nano\">\n  <div\n    class=\"bg-light d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 bottom-0 end-0 overflow-auto\">\n    <div class=\"mainDiv\">\n      <div class=\"card shadow mb-5\">\n        <main aria-labelledby=\"title\">\n          <div class=\"card-body p-5 d-flex flex-column\">\n           {{#if displayLogo}}\n            <img class=\"companyLogo align-self-center mb-5\" src=\"{{global.variables.companyLogo}}\" alt=\"{{global.variables.companyName}}\">\n            {{/if}}\n\n            {{#if title}}\n            <h1 id=\"title\" class=\"text-center mb-4\">{{title}}</h1>\n            {{/if}}\n\n            {{#if textOne}}\n            <p class=\"text-muted text-center\">{{textOne}}</p>\n            {{/if}}\n\n            {{#if textTwo}}\n            <p class=\"text-muted text-center\">{{textTwo}}</p>\n            {{/if}}\n\n            {{#if textTwo}}\n            <p class=\"text-muted text-center\">{{textTwo}}</p>\n            {{/if}}\n\n            {{#if errorMessage}}\n            <p class=\"text-danger mdi mdi-alert-circle text-center\">{{errorMessage}}</p>\n            {{/if}}\n\n            <!-- Generic Error Message -->\n            <p class=\"text-danger mdi mdi-alert-circle text-center\" id=\"feedbackError\" data-id=\"feedback\"\n              data-skcomponent=\"skerror\" aria-live=\"assertive\"></p>\n\n            <!-- Field Validation Error Messages -->\n            <p class=\"text-danger mdi mdi-alert-circle text-center\" id=\"usernameError\" data-skerrorid=\"username\"\n              data-skcomponent=\"skerrormessage\" aria-live=\"assertive\"></p>\n            <p class=\"text-danger mdi mdi-alert-circle text-center\" id=\"passwordError\" data-skerrorid=\"password\"\n              data-skcomponent=\"skerrormessage\" aria-live=\"assertive\"></p>\n\n            <form id=\"usernamePasswordForm\" aria-labelledby=\"title\" data-id=\"usernamePasswordForm\">\n              <div class=\"mb-4 form-floating\">\n                <input class=\"form-control\" id=\"username\" name=\"username\" placeholder=\"Username\"\n                   value=\"\" data-id=\"username-input\" aria-required=\"true\"\n                  aria-describedby=\"usernameLabel\" />\n                <label id=\"usernameLabel\" for=\"username\">Username</label>\n              </div>\n              <div id=\"passwordDiv\" class=\"mb-4 form-floating\">\n                <input class=\"form-control\" type=\"password\" id=\"password\" name=\"password\" placeholder=\"Password\"\n                  autocomplete=\"current-password\" value=\"\" data-id=\"password-input\" aria-required=\"true\"\n                  aria-describedby=\"passwordLabel\" />\n                <label id=\"passwordLabel\" for=\"password\">Password</label>\n              </div>\n              <div class=\"d-flex flex-column\">\n                {{#if signonButtonLabel}}\n                <button data-id=\"button\" type=\"submit\" class=\"btn btn-primary mb-3\" data-skcomponent=\"skbutton\"\n                  data-skbuttontype=\"form-submit\" id=\"btnSignIn\" data-skform=\"usernamePasswordForm\"\n                  data-skbuttonvalue=\"SIGNON\">\n                  {{signonButtonLabel}}\n                </button>\n                {{/if}}\n\n                {{#if accountRecoveryEnabled}}\n                <button data-id=\"button\" class=\"btn btn-link\" data-skcomponent=\"skbutton\" data-skbuttontype=\"next-event\"\n                  id=\"btnTrouble\" data-skbuttonvalue=\"TROUBLE\">\n                  {{resetButtonLabel}}\n                </button>\n                {{/if}}\n\n                {{#if registrationEnabled}}\n                <button data-id=\"button\" class=\"btn btn-link\" data-skcomponent=\"skbutton\" data-skbuttontype=\"next-event\"\n                  id=\"btnRegister\" data-skbuttonvalue=\"REGISTER\">\n                  {{registerButtonLabel}}\n                </button>\n                {{/if}}\n              </div>\n\n              {{#if socialEnabled}}\n              <div class=\"d-flex flex-row align-items-center my-3\">\n                <hr class=\"flex-grow-1\" />\n                <span class=\"fs-5 fw-bold px-3\">Or</span>\n                <hr class=\"flex-grow-1\" />\n                \n              </div>\n              <p class=\"text-muted text-center\">Connect with</p>\n              <style>\n                .social-buttons {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /* 2 buttons per row, full width if only 1 */\n  gap: 10px; /* Spacing between buttons */\n}\n</style>\n              <div class=\"social-buttons\">      \n                {{#if socialGoogleEnabled}}    \n                <button type=\"button\" class=\"btn mb-3 small\" id=\"btngoogle\" data-id=\"button\" style=\"font-size:smaller; background-color: rgb(242, 242, 242); color: rgb(31, 31, 31); border: none;\"><svg width=\"21\" height=\"21\" viewBox=\"0 0 21 21\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><g clip-path=\"url(#clip0_1122_1133)\"><path d=\"M20.3052 10.4902C20.3052 9.8104 20.2501 9.12696 20.1325 8.45821H10.7002V12.309H16.1016C15.8775 13.551 15.1573 14.6496 14.1027 15.3478V17.8464H17.3252C19.2176 16.1047 20.3052 13.5326 20.3052 10.4902Z\" fill=\"#4285F4\"></path><path d=\"M10.6999 20.2605C13.397 20.2605 15.6714 19.375 17.3286 17.8464L14.1061 15.3478C13.2096 15.9577 12.0521 16.3031 10.7036 16.3031C8.09474 16.3031 5.88272 14.5431 5.08904 12.1767H1.76367V14.7525C3.46127 18.1293 6.91892 20.2605 10.6999 20.2605Z\" fill=\"#34A853\"></path><path d=\"M5.08564 12.1767C4.66676 10.9348 4.66676 9.58993 5.08564 8.34796V5.77218H1.76395C0.345611 8.59783 0.345611 11.9269 1.76395 14.7525L5.08564 12.1767Z\" fill=\"#FBBC04\"></path><path d=\"M10.6999 4.21788C12.1256 4.19583 13.5035 4.7323 14.536 5.71705L17.3911 2.86201C15.5833 1.16441 13.1838 0.231105 10.6999 0.260501C6.91892 0.260501 3.46126 2.39168 1.76367 5.77217L5.08537 8.34795C5.87537 5.97794 8.09106 4.21788 10.6999 4.21788Z\" fill=\"#EA4335\"></path></g><defs><clipPath id=\"clip0_1122_1133\"><rect width=\"20\" height=\"20\" fill=\"white\" transform=\"translate(0.5 0.259827)\"></rect></clipPath></defs></svg> Sign in with Google</button>\n                {{/if}}\n                \n                {{#if socialFacebookEnabled}}\n                <button type=\"button\" class=\"btn mb-3 small\" id=\"btnfacebook\" data-id=\"button\" style=\"font-size:smaller; background-color: rgb(24, 119, 242); color: rgb(255, 255, 255); border: 1px solid;\"><svg x=\"0px\" y=\"0px\" viewBox=\"0 0 100 100\" width=\"21\" height=\"21\"><rect x=\"35.5\" y=\"10.3\" width=\"52.8\" height=\"89.7\" style=\"fill: rgb(255, 255, 255);\"></rect><path d=\"M94.5,0h-89C2.5,0,0,2.5,0,5.5v89c0,3,2.5,5.5,5.5,5.5h47.9V61.3h-13V46.2h13V35.1c0-12.9,7.9-19.9,19.4-19.9 c5.5,0,10.3,0.4,11.6,0.6v13.5l-8,0c-6.3,0-7.5,3-7.5,7.3v9.6h14.9L82,61.3H69V100h25.5c3,0,5.5-2.5,5.5-5.5v-89 C100,2.5,97.5,0,94.5,0z\" style=\"fill: rgb(24, 119, 242);\"></path></svg> Sign in with Facebook</button>\n                {{/if}}\n\n                {{#if socialMicrosoftEnabled}}\n                <button type=\"button\" class=\"btn mb-3 small\" id=\"btnazure\" data-id=\"button\" style=\"font-size:smaller; background-color: rgb(47, 47, 47); color: rgb(255, 255, 255); border: 1px solid;\"><svg x=\"0px\" y=\"0px\" viewBox=\"0 0 100 100\" width=\"21\" height=\"21\"><rect width=\"47.37\" height=\"47.37\" style=\"fill: rgb(242, 80, 34);\"></rect><rect y=\"52.63\" width=\"47.37\" height=\"47.37\" style=\"fill: rgb(0, 164, 239);\"></rect><rect x=\"52.63\" width=\"47.37\" height=\"47.37\" style=\"fill: rgb(127, 186, 0);\"></rect><rect x=\"52.63\" y=\"52.63\" width=\"47.37\" height=\"47.37\" style=\"fill: rgb(255, 185, 0);\"></rect></svg> Sign in with Microsoft</button>\n                {{/if}}\n\n                {{#if socialGithubEnabled}}\n                <button type=\"button\" class=\"btn mb-3 small\" id=\"btngithub\" data-id=\"button\" style=\"font-size:smaller; background-color: rgb(255, 255, 255); color: rgb(47, 47, 47); border: 1px solid;\"><svg width=\"21\" height=\"21\" viewBox=\"0 0 16 16\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"#000000\"><rect width=\"16\" height=\"16\" fill=\"#FFFFFF\"></rect><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M7.976 0A7.977 7.977 0 0 0 0 7.976c0 3.522 2.3 6.507 5.431 7.584.392.049.538-.196.538-.392v-1.37c-2.201.49-2.69-1.076-2.69-1.076-.343-.93-.881-1.175-.881-1.175-.734-.489.048-.489.048-.489.783.049 1.224.832 1.224.832.734 1.223 1.859.88 2.3.685.048-.538.293-.88.489-1.076-1.762-.196-3.621-.881-3.621-3.964 0-.88.293-1.566.832-2.153-.05-.147-.343-.978.098-2.055 0 0 .685-.196 2.201.832.636-.196 1.322-.245 2.007-.245s1.37.098 2.006.245c1.517-1.027 2.202-.832 2.202-.832.44 1.077.146 1.908.097 2.104a3.16 3.16 0 0 1 .832 2.153c0 3.083-1.86 3.719-3.62 3.915.293.244.538.733.538 1.467v2.202c0 .196.146.44.538.392A7.984 7.984 0 0 0 16 7.976C15.951 3.572 12.38 0 7.976 0z\"></path></svg> Sign in with Github</button>\n                {{/if}}                         \n              </div>\n              {{/if}}\n            </form>\n          </div>\n        </main>\n      </div>\n    </div>\n  </div>\n</div>"
+                    "value": "{{#if riskEnabled}}\n<div\n  data-skcomponent=\"skrisk\"\n  data-skenvironmentid=\"{{global.companyId}}\"\n  data-skcollectBehavioralData=\"true\"\n  data-skpropertyname=\"riskfp\"></div>\n{{/if}}\n\n<div class=\"end-user-nano\">\n  <div\n    class=\"bg-light d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 bottom-0 end-0 overflow-auto\">\n    <div class=\"mainDiv\">\n      <div class=\"card shadow mb-5\">\n        <main aria-labelledby=\"title\">\n          <div class=\"card-body p-5 d-flex flex-column\">\n           {{#if displayLogo}}\n            <img class=\"companyLogo align-self-center mb-5\" src=\"{{global.variables.companyLogo}}\" alt=\"{{global.variables.companyName}}\">\n            {{/if}}\n\n            {{#if title}}\n            <h1 id=\"title\" class=\"text-center mb-4\">{{title}}</h1>\n            {{/if}}\n\n            {{#if textOne}}\n            <p class=\"text-muted text-center\">{{textOne}}</p>\n            {{/if}}\n\n            {{#if textTwo}}\n            <p class=\"text-muted text-center\">{{textTwo}}</p>\n            {{/if}}\n\n            {{#if textTwo}}\n            <p class=\"text-muted text-center\">{{textTwo}}</p>\n            {{/if}}\n\n            {{#if errorMessage}}\n            <p class=\"text-danger mdi mdi-alert-circle text-center\">{{errorMessage}}</p>\n            {{/if}}\n\n            <!-- Generic Error Message -->\n            <p class=\"text-danger mdi mdi-alert-circle text-center\" id=\"feedbackError\" data-id=\"feedback\"\n              data-skcomponent=\"skerror\" aria-live=\"assertive\"></p>\n\n            <!-- Field Validation Error Messages -->\n            <p class=\"text-danger mdi mdi-alert-circle text-center\" id=\"usernameError\" data-skerrorid=\"username\"\n              data-skcomponent=\"skerrormessage\" aria-live=\"assertive\"></p>\n            <p class=\"text-danger mdi mdi-alert-circle text-center\" id=\"passwordError\" data-skerrorid=\"password\"\n              data-skcomponent=\"skerrormessage\" aria-live=\"assertive\"></p>\n\n            <form id=\"usernamePasswordForm\" aria-labelledby=\"title\" data-id=\"usernamePasswordForm\">\n              <div class=\"mb-4 form-floating\">\n                <input class=\"form-control\" id=\"username\" name=\"username\" placeholder=\"Username\"\n                   value=\"\" data-id=\"username-input\" aria-required=\"true\"\n                  aria-describedby=\"usernameLabel\" />\n                <label id=\"usernameLabel\" for=\"username\">Username</label>\n              </div>\n              <div id=\"passwordDiv\" class=\"mb-4 form-floating\">\n                <input class=\"form-control\" type=\"password\" id=\"password\" name=\"password\" placeholder=\"Password\"\n                  autocomplete=\"current-password\" value=\"\" data-id=\"password-input\" aria-required=\"true\"\n                  aria-describedby=\"passwordLabel\" />\n                <label id=\"passwordLabel\" for=\"password\">Password</label>\n              </div>\n              <div class=\"d-flex flex-column\">\n                {{#if signonButtonLabel}}\n                <button data-id=\"button\" type=\"submit\" class=\"btn btn-primary mb-3\" data-skcomponent=\"skbutton\"\n                  data-skbuttontype=\"form-submit\" id=\"btnSignIn\" data-skform=\"usernamePasswordForm\"\n                  data-skbuttonvalue=\"SIGNON\">\n                  {{signonButtonLabel}}\n                </button>\n                {{/if}}\n\n                {{#if accountRecoveryEnabled}}\n                <button data-id=\"button\" class=\"btn btn-link\" data-skcomponent=\"skbutton\" data-skbuttontype=\"next-event\"\n                  id=\"btnTrouble\" data-skbuttonvalue=\"TROUBLE\">\n                  {{resetButtonLabel}}\n                </button>\n                {{/if}}\n\n                {{#if registrationEnabled}}\n                <button data-id=\"button\" class=\"btn btn-link\" data-skcomponent=\"skbutton\" data-skbuttontype=\"next-event\"\n                  id=\"btnRegister\" data-skbuttonvalue=\"REGISTER\">\n                  {{registerButtonLabel}}\n                </button>\n                {{/if}}\n              </div>\n\n              {{#if socialEnabled}}\n              <div class=\"d-flex flex-row align-items-center my-3\">\n                <hr class=\"flex-grow-1\" />\n                <span class=\"fs-5 fw-bold px-3\">Or</span>\n                <hr class=\"flex-grow-1\" />\n                \n              </div>\n              <p class=\"text-muted text-center\">Connect with</p>\n\n<div class=\"social-buttons\">\n  {{#if socialGoogleEnabled}}\n  <button type=\"button\" class=\"btn mb-3 small\" id=\"btngoogle\" data-id=\"button\"\n    data-skcomponent=\"skbutton\" data-skbuttontype=\"next-event\" data-skbuttonvalue=\"GOOGLE\"\n    style=\"font-size:smaller; background-color: rgb(242, 242, 242); color: rgb(31, 31, 31); border: none;\"><svg\n      width=\"21\" height=\"21\" viewBox=\"0 0 21 21\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <g clip-path=\"url(#clip0_1122_1133)\">\n        <path\n          d=\"M20.3052 10.4902C20.3052 9.8104 20.2501 9.12696 20.1325 8.45821H10.7002V12.309H16.1016C15.8775 13.551 15.1573 14.6496 14.1027 15.3478V17.8464H17.3252C19.2176 16.1047 20.3052 13.5326 20.3052 10.4902Z\"\n          fill=\"#4285F4\"></path>\n        <path\n          d=\"M10.6999 20.2605C13.397 20.2605 15.6714 19.375 17.3286 17.8464L14.1061 15.3478C13.2096 15.9577 12.0521 16.3031 10.7036 16.3031C8.09474 16.3031 5.88272 14.5431 5.08904 12.1767H1.76367V14.7525C3.46127 18.1293 6.91892 20.2605 10.6999 20.2605Z\"\n          fill=\"#34A853\"></path>\n        <path\n          d=\"M5.08564 12.1767C4.66676 10.9348 4.66676 9.58993 5.08564 8.34796V5.77218H1.76395C0.345611 8.59783 0.345611 11.9269 1.76395 14.7525L5.08564 12.1767Z\"\n          fill=\"#FBBC04\"></path>\n        <path\n          d=\"M10.6999 4.21788C12.1256 4.19583 13.5035 4.7323 14.536 5.71705L17.3911 2.86201C15.5833 1.16441 13.1838 0.231105 10.6999 0.260501C6.91892 0.260501 3.46126 2.39168 1.76367 5.77217L5.08537 8.34795C5.87537 5.97794 8.09106 4.21788 10.6999 4.21788Z\"\n          fill=\"#EA4335\"></path>\n      </g>\n      <defs>\n        <clipPath id=\"clip0_1122_1133\">\n          <rect width=\"20\" height=\"20\" fill=\"white\" transform=\"translate(0.5 0.259827)\"></rect>\n        </clipPath>\n      </defs>\n    </svg> Sign in with Google</button>\n  {{/if}}\n\n  {{#if socialFacebookEnabled}}\n  <button type=\"button\" class=\"btn mb-3 small\" id=\"btnfacebook\" data-id=\"button\"\n    data-skcomponent=\"skbutton\" data-skbuttontype=\"next-event\" data-skbuttonvalue=\"FACEBOOK\"\n    style=\"font-size:smaller; background-color: rgb(24, 119, 242); color: rgb(255, 255, 255); border: 1px solid;\"><svg\n      x=\"0px\" y=\"0px\" viewBox=\"0 0 100 100\" width=\"21\" height=\"21\">\n      <rect x=\"35.5\" y=\"10.3\" width=\"52.8\" height=\"89.7\" style=\"fill: rgb(255, 255, 255);\"></rect>\n      <path\n        d=\"M94.5,0h-89C2.5,0,0,2.5,0,5.5v89c0,3,2.5,5.5,5.5,5.5h47.9V61.3h-13V46.2h13V35.1c0-12.9,7.9-19.9,19.4-19.9 c5.5,0,10.3,0.4,11.6,0.6v13.5l-8,0c-6.3,0-7.5,3-7.5,7.3v9.6h14.9L82,61.3H69V100h25.5c3,0,5.5-2.5,5.5-5.5v-89 C100,2.5,97.5,0,94.5,0z\"\n        style=\"fill: rgb(24, 119, 242);\"></path>\n    </svg> Sign in with Facebook</button>\n  {{/if}}\n\n  {{#if socialMicrosoftEnabled}}\n  <button type=\"button\" class=\"btn mb-3 small\" id=\"btnazure\" data-id=\"button\"\n    data-skcomponent=\"skbutton\" data-skbuttontype=\"next-event\" data-skbuttonvalue=\"MICROSOFT\"\n    style=\"font-size:smaller; background-color: rgb(47, 47, 47); color: rgb(255, 255, 255); border: 1px solid;\"><svg\n      x=\"0px\" y=\"0px\" viewBox=\"0 0 100 100\" width=\"21\" height=\"21\">\n      <rect width=\"47.37\" height=\"47.37\" style=\"fill: rgb(242, 80, 34);\"></rect>\n      <rect y=\"52.63\" width=\"47.37\" height=\"47.37\" style=\"fill: rgb(0, 164, 239);\"></rect>\n      <rect x=\"52.63\" width=\"47.37\" height=\"47.37\" style=\"fill: rgb(127, 186, 0);\"></rect>\n      <rect x=\"52.63\" y=\"52.63\" width=\"47.37\" height=\"47.37\" style=\"fill: rgb(255, 185, 0);\"></rect>\n    </svg> Sign in with Microsoft</button>\n  {{/if}}\n\n  {{#if socialGithubEnabled}}\n  <button type=\"button\" class=\"btn mb-3 small\" id=\"btngithub\" data-id=\"button\"\n    data-skcomponent=\"skbutton\" data-skbuttontype=\"next-event\" data-skbuttonvalue=\"GITHUB\"\n    style=\"font-size:smaller; background-color: rgb(255, 255, 255); color: rgb(47, 47, 47); border: 1px solid;\"><svg\n      width=\"21\" height=\"21\" viewBox=\"0 0 16 16\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"#000000\">\n      <rect width=\"16\" height=\"16\" fill=\"#FFFFFF\"></rect>\n      <path fill-rule=\"evenodd\" clip-rule=\"evenodd\"\n        d=\"M7.976 0A7.977 7.977 0 0 0 0 7.976c0 3.522 2.3 6.507 5.431 7.584.392.049.538-.196.538-.392v-1.37c-2.201.49-2.69-1.076-2.69-1.076-.343-.93-.881-1.175-.881-1.175-.734-.489.048-.489.048-.489.783.049 1.224.832 1.224.832.734 1.223 1.859.88 2.3.685.048-.538.293-.88.489-1.076-1.762-.196-3.621-.881-3.621-3.964 0-.88.293-1.566.832-2.153-.05-.147-.343-.978.098-2.055 0 0 .685-.196 2.201.832.636-.196 1.322-.245 2.007-.245s1.37.098 2.006.245c1.517-1.027 2.202-.832 2.202-.832.44 1.077.146 1.908.097 2.104a3.16 3.16 0 0 1 .832 2.153c0 3.083-1.86 3.719-3.62 3.915.293.244.538.733.538 1.467v2.202c0 .196.146.44.538.392A7.984 7.984 0 0 0 16 7.976C15.951 3.572 12.38 0 7.976 0z\">\n      </path>\n    </svg> Sign in with Github</button>\n  {{/if}}\n</div>\n              {{/if}}\n            </form>\n          </div>\n        </main>\n      </div>\n    </div>\n  </div>\n</div>"
                   },
                   "formFieldsList": {
                     "value": [
@@ -381,7 +381,7 @@
                     "value": "Sign On Form"
                   },
                   "customCSS": {
-                    "value": ""
+                    "value": ".social-buttons {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /* 2 buttons per row, full width if only 1 */\n  gap: 10px; /* Spacing between buttons */\n}"
                   },
                   "validationRules": {
                     "value": [
@@ -9183,6 +9183,55 @@
               "grabbable": true,
               "pannable": false,
               "classes": ""
+            },
+            {
+              "data": {
+                "id": "hrr9k9vqe3",
+                "nodeType": "EVAL",
+                "label": "Evaluator"
+              },
+              "position": {
+                "x": 1380,
+                "y": 1110
+              },
+              "group": "nodes",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": false,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "88f4mehdz5",
+                "nodeType": "CONNECTION",
+                "connectionId": "53ab83a4a4ab919d9f2cb02d9e111ac8",
+                "connectorId": "errorConnector",
+                "name": "Error Message",
+                "label": "Error Message",
+                "status": "configured",
+                "capabilityName": "customErrorMessage",
+                "type": "action",
+                "properties": {
+                  "errorMessage": {
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"http.svg\",\n        \"url\": \"buttonValue\",\n        \"data\": \"{{local.bjwyrfaaoo.payload.output.buttonValue}}\",\n        \"tooltip\": \"{{local.bjwyrfaaoo.payload.output.buttonValue}}\",\n        \"children\": [\n          {\n            \"text\": \"buttonValue\"\n          }\n        ]\n      },\n      {\n        \"text\": \" not implemented.\"\n      }\n    ]\n  }\n]"
+                  }
+                }
+              },
+              "position": {
+                "x": 1560,
+                "y": 1110
+              },
+              "group": "nodes",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": false,
+              "classes": ""
             }
           ],
           "edges": [
@@ -12691,6 +12740,45 @@
               "grabbable": true,
               "pannable": true,
               "classes": ""
+            },
+            {
+              "data": {
+                "id": "vr694zgyog",
+                "source": "ez6mtai26r",
+                "target": "hrr9k9vqe3",
+                "multiValueSourceId": "-1"
+              },
+              "position": {
+                "x": 64,
+                "y": 172
+              },
+              "group": "edges",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": true,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "yarbytpsko",
+                "source": "hrr9k9vqe3",
+                "target": "88f4mehdz5"
+              },
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "group": "edges",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": true,
+              "classes": ""
             }
           ]
         },
@@ -12722,7 +12810,7 @@
         }
       ],
       "flowColor": "#ff661c",
-      "savedDate": 1730202739175,
+      "savedDate": 1730215064146,
       "variables": [
         {
           "context": "flowInstance",
