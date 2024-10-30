@@ -14,8 +14,8 @@
         "pingOneRiskConnector",
         "flowConnector"
       ],
-      "createdDate": 1730290547255,
-      "currentVersion": 5,
+      "createdDate": 1730292319079,
+      "currentVersion": 8,
       "customerId": "",
       "description": "Last Updated: Oct 29th, 2024",
       "flowStatus": "enabled",
@@ -56,9 +56,8 @@
         ]
       },
       "timeouts": "null",
-      "updatedDate": 1730290548976,
-      "flowId": "96056f0abcd41eae58bc4bee19a9f8d1",
-      "versionId": 5,
+      "flowId": "fbd91ff842522836860ad04fe627ccd3",
+      "versionId": 8,
       "graphData": {
         "elements": {
           "nodes": [
@@ -100,8 +99,8 @@
                 "status": "configured"
               },
               "position": {
-                "x": 214,
-                "y": 424
+                "x": 210,
+                "y": 420
               },
               "group": "nodes",
               "removed": false,
@@ -129,7 +128,7 @@
                     "value": "#000000"
                   },
                   "annotation": {
-                    "value": "Last Updated: October 29th, 2024"
+                    "value": "Last Updated: October 30th, 2024"
                   },
                   "width": {
                     "value": 300
@@ -157,8 +156,8 @@
                 "idUnique": "o2v5xhdcbc"
               },
               "position": {
-                "x": 214,
-                "y": 364
+                "x": 210,
+                "y": 360
               },
               "group": "nodes",
               "removed": false,
@@ -2337,7 +2336,7 @@
                   "subFlowId": {
                     "value": {
                       "label": "MFA Device Authentication Subflow",
-                      "value": "eff710a209a7d73e213435dbfc02e880"
+                      "value": "dbb528f64658c05df38e05064516b681"
                     }
                   },
                   "subFlowVersionId": {
@@ -2633,7 +2632,7 @@
                   "subFlowId": {
                     "value": {
                       "label": "MFA Device Authentication Subflow",
-                      "value": "eff710a209a7d73e213435dbfc02e880"
+                      "value": "dbb528f64658c05df38e05064516b681"
                     }
                   },
                   "subFlowVersionId": {
@@ -3749,7 +3748,7 @@
                 "type": "trigger",
                 "properties": {
                   "customHTML": {
-                    "value": "<div class=\"end-user-nano\">\n    <div\n        class=\"bg-light d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 bottom-0 end-0 overflow-auto\">\n        <div style=\"max-width: 400px; min-width: 400px; width: 100%\">\n            <div class=\"card shadow mb-5\">\n                <div class=\"card-body p-5 d-flex flex-column\">\n                    <img class=\"companyLogo align-self-center mb-5\" src=\"{{global.variables.companyLogo}}\" alt=\"{{global.variables.companyName}}\" />\n\n                    {{#if title}}\n                    <h1 class=\"text-center mb-4\">{{title}}</h1>\n                    {{/if}}\n\n                    <div class=\"mx-auto mt-3 mb-4\">\n                        <svg class=\"checkmark\" xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 52 52\">\n                            <circle class=\"checkmarkCircle\" cx=\"26\" cy=\"26\" r=\"25\" fill=\"none\" />\n                            <path class=\"checkmarkCheck\" fill=\"none\" d=\"M14.1 27.2l7.1 7.2 16.7-16.8\" />\n                        </svg>\n                    </div>\n\n                    {{#if textOne}}\n                    <p class=\"text-muted text-center\">{{textOne}}</p>\n                    {{/if}}\n\n                    {{#if textTwo}}\n                    <p class=\"text-muted text-center\">{{textTwo}}</p>\n                    {{/if}}\n\n                    <p class=\"text-danger mdi mdi-alert-circle icon-padding\" data-id=\"feedback\" data-skcomponent=\"skerror\"></p>\n\n                    <div class=\"d-flex flex-column\">\n                        <button id=\"submitBtn\" data-id=\"submitBtn\" class=\"btn btn-primary mb-3\" data-skcomponent=\"skbutton\"\n                            data-skbuttontype=\"next-event\" data-skbuttonvalue=\"NEXT\" >\n                            Continue  \n                        </button>\n                    </div>\n                    \n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+                    "value": "<div class=\"end-user-nano\">\n    <div\n        class=\"bg-light d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 bottom-0 end-0 overflow-auto\">\n            <div class=\"mainDiv\">\n            <div class=\"card shadow mb-5\">\n                <div class=\"card-body p-5 d-flex flex-column\">\n                    <img class=\"companyLogo align-self-center mb-5\" src=\"{{global.variables.companyLogo}}\" alt=\"{{global.variables.companyName}}\" />\n\n                    {{#if title}}\n                    <h1 class=\"text-center mb-4\">{{title}}</h1>\n                    {{/if}}\n\n                    <div class=\"mx-auto mt-3 mb-4\">\n                        <svg class=\"checkmark\" xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 52 52\">\n                            <circle class=\"checkmarkCircle\" cx=\"26\" cy=\"26\" r=\"25\" fill=\"none\" />\n                            <path class=\"checkmarkCheck\" fill=\"none\" d=\"M14.1 27.2l7.1 7.2 16.7-16.8\" />\n                        </svg>\n                    </div>\n\n                    {{#if textOne}}\n                    <p class=\"text-muted text-center\">{{textOne}}</p>\n                    {{/if}}\n\n                    {{#if textTwo}}\n                    <p class=\"text-muted text-center\">{{textTwo}}</p>\n                    {{/if}}\n\n                    <p class=\"text-danger mdi mdi-alert-circle icon-padding\" data-id=\"feedback\" data-skcomponent=\"skerror\"></p>\n\n                    <div class=\"d-flex flex-column\">\n                        <button id=\"submitBtn\" data-id=\"submitBtn\" class=\"btn btn-primary mb-3\" data-skcomponent=\"skbutton\"\n                            data-skbuttontype=\"next-event\" data-skbuttonvalue=\"NEXT\" >\n                            Continue  \n                        </button>\n                    </div>\n                    \n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
                   },
                   "formFieldsList": {
                     "value": [
@@ -3814,7 +3813,7 @@
                 "type": "trigger",
                 "properties": {
                   "customHTML": {
-                    "value": "<div class=\"end-user-nano\">\n  <div\n      class=\"bg-light d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 bottom-0 end-0 overflow-auto\">\n      <div style=\"max-width: 400px; min-width: 400px; width: 100%\">\n          <div class=\"card shadow mb-5\">\n              <main aria-labelledby=\"title\">\n                  <div class=\"card-body p-5 d-flex flex-column\">\n                      <img class=\"companyLogo align-self-center mb-5\" src=\"{{global.variables.companyLogo}}\" alt=\"{{global.variables.companyName}}\" />\n\n                      {{#if title}}\n                      <h1 id=\"title\" class=\"text-center mb-4\">{{title}}</h1>\n                      {{/if}}\n\n                      {{#if textOne}}\n                      <p class=\"text-muted text-center\">{{textOne}}</p>\n                      {{/if}}\n                      \n                      <!-- Generic Error Message -->\n                      <p class=\"text-danger mdi mdi-alert-circle text-center icon-padding\" data-id=\"feedback\"\n                          data-skcomponent=\"skerror\" aria-live=\"assertive\"></p>\n\n                      <form id=\"resetPasswordForm\" aria-labelledby=\"title\" data-id=\"resetPasswordForm\">\n                          <div id=\"currentPasswordContainer\" class=\"mb-4 form-floating\">\n                              <input id=\"currentPassword\" data-id=\"currentPassword\" class=\"form-control\"\n                                  type=\"password\" name=\"currentPassword\" placeholder=\"Current Password\"\n                                  autocomplete=\"current-password\" aria-describedby=\"passwordLabel\" />\n                              <label id=\"passwordLabel\" class=\"form-label\" for=\"currentPassword\">Current\n                                  Password</label>\n                          </div>\n                          <div id=\"newPasswordContainer\" class=\"mb-4 form-floating mt-lg-4\">\n                              <input id=\"newPassword\" data-id=\"newPassword\" class=\"form-control\" type=\"password\"\n                                  name=\"newPassword\" placeholder=\"New Password\" autocomplete=\"new-password\"\n                                  aria-describedby=\"newPasswordLabel\" />\n                              <label id=\"newPasswordLabel\" class=\"form-label\" for=\"newPassword\">New Password</label>\n                          </div>\n                          <div id=\"verifyPasswordContainer\" class=\"mb-4 form-floating\">\n                              <input id=\"verifyNewPassword\" data-id=\"verifyNewPassword\" class=\"form-control\"\n                                  type=\"password\" name=\"verifyNewPassword\" placeholder=\"Verify New Password\"\n                                  autocomplete=\"new-password\" aria-describedby=\"verifyNewPasswordLabel\" />\n                              <label id=\"verifyNewPasswordLabel\" class=\"form-label\" for=\"verifyNewPassword\">Verify New\n                                  Password</label>\n                          </div>\n                          <div class=\"d-flex flex-column\">                 \n                              <button id=\"submitBtn\" data-id=\"submitBtn\" class=\"btn btn-primary mb-3\"\n                                  type=\"submit\" data-skcomponent=\"skbutton\" data-skbuttontype=\"form-submit\"\n                                  data-skform=\"resetPasswordForm\" data-skbuttonvalue=\"UPDATE\">\n                                  Continue\n                              </button>\n                              <button id=\"cancelBtn\" data-id=\"cancelBtn\" class=\"btn btn-link\"\n                                  data-skcomponent=\"skbutton\" data-skbuttontype=\"next-event\"\n                                  data-skform=\"resetPasswordForm\" data-skbuttonvalue=\"CANCEL\">\n                                  Cancel\n                              </button>\n                          </div>\n                      </form>\n                  </div>\n              </main>\n          </div>\n      </div>\n  </div>\n</div>"
+                    "value": "<div class=\"end-user-nano\">\n  <div\n      class=\"bg-light d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 bottom-0 end-0 overflow-auto\">\n          <div class=\"mainDiv\">\n          <div class=\"card shadow mb-5\">\n              <main aria-labelledby=\"title\">\n                  <div class=\"card-body p-5 d-flex flex-column\">\n                      <img class=\"companyLogo align-self-center mb-5\" src=\"{{global.variables.companyLogo}}\" alt=\"{{global.variables.companyName}}\" />\n\n                      {{#if title}}\n                      <h1 id=\"title\" class=\"text-center mb-4\">{{title}}</h1>\n                      {{/if}}\n\n                      {{#if textOne}}\n                      <p class=\"text-muted text-center\">{{textOne}}</p>\n                      {{/if}}\n                      \n                      <!-- Generic Error Message -->\n                      <p class=\"text-danger mdi mdi-alert-circle text-center icon-padding\" data-id=\"feedback\"\n                          data-skcomponent=\"skerror\" aria-live=\"assertive\"></p>\n\n                      <form id=\"resetPasswordForm\" aria-labelledby=\"title\" data-id=\"resetPasswordForm\">\n                          <div id=\"currentPasswordContainer\" class=\"mb-4 form-floating\">\n                              <input id=\"currentPassword\" data-id=\"currentPassword\" class=\"form-control\"\n                                  type=\"password\" name=\"currentPassword\" placeholder=\"Current Password\"\n                                  autocomplete=\"current-password\" aria-describedby=\"passwordLabel\" />\n                              <label id=\"passwordLabel\" class=\"form-label\" for=\"currentPassword\">Current\n                                  Password</label>\n                          </div>\n                          <div id=\"newPasswordContainer\" class=\"mb-4 form-floating mt-lg-4\">\n                              <input id=\"newPassword\" data-id=\"newPassword\" class=\"form-control\" type=\"password\"\n                                  name=\"newPassword\" placeholder=\"New Password\" autocomplete=\"new-password\"\n                                  aria-describedby=\"newPasswordLabel\" />\n                              <label id=\"newPasswordLabel\" class=\"form-label\" for=\"newPassword\">New Password</label>\n                          </div>\n                          <div id=\"verifyPasswordContainer\" class=\"mb-4 form-floating\">\n                              <input id=\"verifyNewPassword\" data-id=\"verifyNewPassword\" class=\"form-control\"\n                                  type=\"password\" name=\"verifyNewPassword\" placeholder=\"Verify New Password\"\n                                  autocomplete=\"new-password\" aria-describedby=\"verifyNewPasswordLabel\" />\n                              <label id=\"verifyNewPasswordLabel\" class=\"form-label\" for=\"verifyNewPassword\">Verify New\n                                  Password</label>\n                          </div>\n                          <div class=\"d-flex flex-column\">                 \n                              <button id=\"submitBtn\" data-id=\"submitBtn\" class=\"btn btn-primary mb-3\"\n                                  type=\"submit\" data-skcomponent=\"skbutton\" data-skbuttontype=\"form-submit\"\n                                  data-skform=\"resetPasswordForm\" data-skbuttonvalue=\"UPDATE\">\n                                  Continue\n                              </button>\n                              <button id=\"cancelBtn\" data-id=\"cancelBtn\" class=\"btn btn-link\"\n                                  data-skcomponent=\"skbutton\" data-skbuttontype=\"next-event\"\n                                  data-skform=\"resetPasswordForm\" data-skbuttonvalue=\"CANCEL\">\n                                  Cancel\n                              </button>\n                          </div>\n                      </form>\n                  </div>\n              </main>\n          </div>\n      </div>\n  </div>\n</div>"
                   },
                   "formFieldsList": {
                     "value": [
@@ -4514,7 +4513,7 @@
                     "value": "Password Recovery Form"
                   },
                   "customHTML": {
-                    "value": "<div class=\"end-user-nano\">\n  <div\n    class=\"bg-light d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 bottom-0 end-0 overflow-auto\">\n    <div style=\"max-width: 400px; min-width: 400px; width: 100%\">\n      <div class=\"card shadow mb-5\">\n        <main aria-labelledby=\"title\">\n          <div class=\"card-body p-5 d-flex flex-column\">\n            <img class=\"companyLogo align-self-center mb-5\" src=\"{{global.variables.companyLogo}}\" alt=\"{{global.variables.companyName}}\" />\n\n            {{#if title}}\n            <h1 id=\"title\" class=\"text-center mb-4\">{{title}}</h1>\n            {{/if}}\n\n            {{#if textOne}}\n            <p class=\"text-muted text-center\">{{textOne}}</p>\n            {{/if}}\n\n            <!-- Generic Error Message -->\n            <p class=\"text-danger mdi mdi-alert-circle text-center icon-padding\" data-id=\"feedback\" data-skcomponent=\"skerror\"\n              aria-live=\"assertive\"></p>\n\n            <p id=\"resendMessage\" class=\"text-success mdi mdi-check-circle text-center\"  \n              style=\"display: {{#if resendMessage}} block; {{else}} none; {{/if}}\" aria-live=\"assertive\">\n              <span class=\"ms-2\">{{resendMessage}}</span></p>\n\n            <form id=\"recoveryCodeForm\" data-id=\"recoveryCodeForm\">\n              <div class=\"mb-4 form-floating\">\n                <input id=\"recoveryCode\" data-id=\"recoveryCode\" class=\"form-control\" type=\"text\" name=\"recoveryCode\"\n                    placeholder=\"Recovery Code\" autocomplete=\"one-time-code\" aria-describedby=\"recoveryCodeLabel\" />\n                <label id=\"recoveryCodeLabel\" data-id=\"recoveryCodeLabel\" class=\"form-label\" for=\"recoveryCode\">\n                    Recovery Code\n                  </label>\n              </div>\n              <div id=\"newPasswordContainer\" class=\"mb-4 form-floating\">\n                <input id=\"newPassword\" data-id=\"newPassword\" class=\"form-control\" type=\"password\" name=\"newPassword\"\n                    placeholder=\"New Password\" autocomplete=\"new-password\" aria-describedby=\"newPasswordLabel\" />\n                <label id=\"newPasswordLabel\" data-id=\"newPasswordLabel\" class=\"form-label\" for=\"newPassword\">\n                    New Password\n                  </label>\n              </div>\n              <div id=\"verifyPasswordContainer\" class=\"mb-4 form-floating\">\n                <input id=\"verifyNewPassword\" data-id=\"verifyNewPassword\" class=\"form-control\" type=\"password\"\n                    name=\"verifyNewPassword\" placeholder=\"Verify New Password\" autocomplete=\"new-password\"\n                    aria-describedby=\"verifyNewPasswordLabel\" />\n                <label id=\"verifyNewPasswordLabel\" class=\"form-label\" for=\"verifyNewPassword\">Verify New\n                    Password</label>\n              </div>\n              <div class=\"d-flex flex-column\">\n                <button id=\"submitBtn\" type=\"submit\" data-id=\"submitBtn\" class=\"btn btn-primary mb-3\" data-skcomponent=\"skbutton\"\n                    data-skbuttontype=\"form-submit\" data-skform=\"recoveryCodeForm\" data-skbuttonvalue=\"UPDATE\">\n                    Continue\n                </button>\n                <button id=\"resendBtn\" class=\"btn btn-link\" data-skcomponent=\"skbutton\"\n                    data-skbuttontype=\"next-event\" data-skbuttonvalue=\"RESEND\" type=\"button\">\n                    Resend recovery code\n                </button>\n                <button id=\"backBtn\" data-id=\"backBtn\" class=\"btn btn-link\" data-skcomponent=\"skbutton\"\n                    data-skbuttontype=\"next-event\" data-skform=\"recoveryCodeForm\" data-skbuttonvalue=\"CANCEL\" type=\"button\">\n                    Cancel\n                </button>\n              </div>\n            </form>\n          </div>\n        </main>\n      </div>\n    </div>\n  </div>\n</div>"
+                    "value": "<div class=\"end-user-nano\">\n  <div\n    class=\"bg-light d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 bottom-0 end-0 overflow-auto\">\n    <div class=\"mainDiv\">\n      <div class=\"card shadow mb-5\">\n        <main aria-labelledby=\"title\">\n          <div class=\"card-body p-5 d-flex flex-column\">\n            <img class=\"companyLogo align-self-center mb-5\" src=\"{{global.variables.companyLogo}}\" alt=\"{{global.variables.companyName}}\" />\n\n            {{#if title}}\n            <h1 id=\"title\" class=\"text-center mb-4\">{{title}}</h1>\n            {{/if}}\n\n            {{#if textOne}}\n            <p class=\"text-muted text-center\">{{textOne}}</p>\n            {{/if}}\n\n            <!-- Generic Error Message -->\n            <p class=\"text-danger mdi mdi-alert-circle text-center icon-padding\" data-id=\"feedback\" data-skcomponent=\"skerror\"\n              aria-live=\"assertive\"></p>\n\n            <p id=\"resendMessage\" class=\"text-success mdi mdi-check-circle text-center\"  \n              style=\"display: {{#if resendMessage}} block; {{else}} none; {{/if}}\" aria-live=\"assertive\">\n              <span class=\"ms-2\">{{resendMessage}}</span></p>\n\n            <form id=\"recoveryCodeForm\" data-id=\"recoveryCodeForm\">\n              <div class=\"mb-4 form-floating\">\n                <input id=\"recoveryCode\" data-id=\"recoveryCode\" class=\"form-control\" type=\"text\" name=\"recoveryCode\"\n                    placeholder=\"Recovery Code\" autocomplete=\"one-time-code\" aria-describedby=\"recoveryCodeLabel\" />\n                <label id=\"recoveryCodeLabel\" data-id=\"recoveryCodeLabel\" class=\"form-label\" for=\"recoveryCode\">\n                    Recovery Code\n                  </label>\n              </div>\n              <div id=\"newPasswordContainer\" class=\"mb-4 form-floating\">\n                <input id=\"newPassword\" data-id=\"newPassword\" class=\"form-control\" type=\"password\" name=\"newPassword\"\n                    placeholder=\"New Password\" autocomplete=\"new-password\" aria-describedby=\"newPasswordLabel\" />\n                <label id=\"newPasswordLabel\" data-id=\"newPasswordLabel\" class=\"form-label\" for=\"newPassword\">\n                    New Password\n                  </label>\n              </div>\n              <div id=\"verifyPasswordContainer\" class=\"mb-4 form-floating\">\n                <input id=\"verifyNewPassword\" data-id=\"verifyNewPassword\" class=\"form-control\" type=\"password\"\n                    name=\"verifyNewPassword\" placeholder=\"Verify New Password\" autocomplete=\"new-password\"\n                    aria-describedby=\"verifyNewPasswordLabel\" />\n                <label id=\"verifyNewPasswordLabel\" class=\"form-label\" for=\"verifyNewPassword\">Verify New\n                    Password</label>\n              </div>\n              <div class=\"d-flex flex-column\">\n                <button id=\"submitBtn\" type=\"submit\" data-id=\"submitBtn\" class=\"btn btn-primary mb-3\" data-skcomponent=\"skbutton\"\n                    data-skbuttontype=\"form-submit\" data-skform=\"recoveryCodeForm\" data-skbuttonvalue=\"UPDATE\">\n                    Continue\n                </button>\n                <button id=\"resendBtn\" class=\"btn btn-link\" data-skcomponent=\"skbutton\"\n                    data-skbuttontype=\"next-event\" data-skbuttonvalue=\"RESEND\" type=\"button\">\n                    Resend recovery code\n                </button>\n                <button id=\"backBtn\" data-id=\"backBtn\" class=\"btn btn-link\" data-skcomponent=\"skbutton\"\n                    data-skbuttontype=\"next-event\" data-skform=\"recoveryCodeForm\" data-skbuttonvalue=\"CANCEL\" type=\"button\">\n                    Cancel\n                </button>\n              </div>\n            </form>\n          </div>\n        </main>\n      </div>\n    </div>\n  </div>\n</div>"
                   },
                   "customCSS": {},
                   "customScript": {
@@ -5326,7 +5325,7 @@
                 "type": "trigger",
                 "properties": {
                   "customHTML": {
-                    "value": "<div class=\"end-user-nano\">\n    <div\n        class=\"bg-light d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 bottom-0 end-0 overflow-auto\">\n        <div style=\"max-width: 400px; min-width: 400px; width: 100%\">\n            <div class=\"card shadow mb-5\">\n                <div class=\"card-body p-5 d-flex flex-column\">\n                    <img class=\"companyLogo align-self-center mb-5\" src=\"{{global.variables.companyLogo}}\" alt=\"{{global.variables.companyName}}\" />\n\n                    {{#if title}}\n                    <h1 class=\"text-center mb-4\">{{title}}</h1>\n                    {{/if}}\n\n                    <div class=\"mx-auto mt-3 mb-4\">\n                        <svg class=\"checkmark\" xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 52 52\">\n                            <circle class=\"checkmarkCircle\" cx=\"26\" cy=\"26\" r=\"25\" fill=\"none\" />\n                            <path class=\"checkmarkCheck\" fill=\"none\" d=\"M14.1 27.2l7.1 7.2 16.7-16.8\" />\n                        </svg>\n                    </div>\n\n                    {{#if textOne}}\n                    <p class=\"text-muted text-center\">{{textOne}}</p>\n                    {{/if}}\n\n                    {{#if textTwo}}\n                    <p class=\"text-muted text-center\">{{textTwo}}</p>\n                    {{/if}}\n\n                    <p class=\"text-danger mdi mdi-alert-circle icon-padding\" data-id=\"feedback\" data-skcomponent=\"skerror\"></p>\n\n                    <div class=\"d-flex flex-column\">\n                        <button id=\"submitBtn\" data-id=\"submitBtn\" class=\"btn btn-primary mb-3\" data-skcomponent=\"skbutton\"\n                        data-skbuttontype=\"next-event\" data-skbuttonvalue=\"NEXT\" >\n                        Continue\n                        </button>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+                    "value": "<div class=\"end-user-nano\">\n    <div\n        class=\"bg-light d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 bottom-0 end-0 overflow-auto\">\n        <div class=\"mainDiv\">\n            <div class=\"card shadow mb-5\">\n                <div class=\"card-body p-5 d-flex flex-column\">\n                    <img class=\"companyLogo align-self-center mb-5\" src=\"{{global.variables.companyLogo}}\" alt=\"{{global.variables.companyName}}\" />\n\n                    {{#if title}}\n                    <h1 class=\"text-center mb-4\">{{title}}</h1>\n                    {{/if}}\n\n                    <div class=\"mx-auto mt-3 mb-4\">\n                        <svg class=\"checkmark\" xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 52 52\">\n                            <circle class=\"checkmarkCircle\" cx=\"26\" cy=\"26\" r=\"25\" fill=\"none\" />\n                            <path class=\"checkmarkCheck\" fill=\"none\" d=\"M14.1 27.2l7.1 7.2 16.7-16.8\" />\n                        </svg>\n                    </div>\n\n                    {{#if textOne}}\n                    <p class=\"text-muted text-center\">{{textOne}}</p>\n                    {{/if}}\n\n                    {{#if textTwo}}\n                    <p class=\"text-muted text-center\">{{textTwo}}</p>\n                    {{/if}}\n\n                    <p class=\"text-danger mdi mdi-alert-circle icon-padding\" data-id=\"feedback\" data-skcomponent=\"skerror\"></p>\n\n                    <div class=\"d-flex flex-column\">\n                        <button id=\"submitBtn\" data-id=\"submitBtn\" class=\"btn btn-primary mb-3\" data-skcomponent=\"skbutton\"\n                        data-skbuttontype=\"next-event\" data-skbuttonvalue=\"NEXT\" >\n                        Continue\n                        </button>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
                   },
                   "formFieldsList": {
                     "value": [
@@ -5955,8 +5954,8 @@
                 "idUnique": "d2mbrib33f"
               },
               "position": {
-                "x": 214,
-                "y": 214
+                "x": 210,
+                "y": 210
               },
               "group": "nodes",
               "removed": false,
@@ -6012,8 +6011,8 @@
                 "idUnique": "uhmapgsyb8"
               },
               "position": {
-                "x": 214,
-                "y": 274
+                "x": 210,
+                "y": 270
               },
               "group": "nodes",
               "removed": false,
@@ -6069,8 +6068,8 @@
                 "idUnique": "pvy54ovb3t"
               },
               "position": {
-                "x": 214,
-                "y": 304
+                "x": 210,
+                "y": 300
               },
               "group": "nodes",
               "removed": false,
@@ -6796,7 +6795,7 @@
                   "subFlowId": {
                     "value": {
                       "label": "MFA Device Authentication Subflow",
-                      "value": "eff710a209a7d73e213435dbfc02e880"
+                      "value": "dbb528f64658c05df38e05064516b681"
                     }
                   },
                   "subFlowVersionId": {
@@ -8903,7 +8902,7 @@
                   "subFlowId": {
                     "value": {
                       "label": "MFA Device Registration Subflow",
-                      "value": "1d55e4be5e6e1a278292e3dc6693fead"
+                      "value": "4e58d49de4fc8d3e15bb9e34fd7801a7"
                     }
                   },
                   "subFlowVersionId": {
@@ -9229,6 +9228,63 @@
               "position": {
                 "x": 1534,
                 "y": 1114
+              },
+              "group": "nodes",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": false,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "z7nrk5oecq",
+                "nodeType": "ANNOTATION",
+                "name": "Annotation",
+                "connectionId": "921bfae85c38ed45045e07be703d86b8",
+                "connectorId": "annotationConnector",
+                "capabilityName": "updateAnnotationProperties",
+                "type": "action",
+                "properties": {
+                  "backgroundColor": {
+                    "value": "#ffffffff"
+                  },
+                  "annotationTextColor": {
+                    "value": "#000000"
+                  },
+                  "annotation": {
+                    "value": "Version: 0.1.1"
+                  },
+                  "width": {
+                    "value": 300
+                  },
+                  "fontSize": {
+                    "value": 14
+                  },
+                  "fontFamily": {
+                    "value": "sans-serif"
+                  },
+                  "cornerRadius": {
+                    "value": 8
+                  },
+                  "strokeEnabled": {
+                    "value": false
+                  },
+                  "strokeWidth": {
+                    "value": 1
+                  },
+                  "strokeColor": {
+                    "value": "#181818ff"
+                  }
+                },
+                "status": "configured",
+                "idUnique": "71rim235pc"
+              },
+              "position": {
+                "x": 210,
+                "y": 390
               },
               "group": "nodes",
               "removed": false,
@@ -12816,11 +12872,11 @@
         }
       ],
       "flowColor": "#ff661c",
-      "savedDate": 1730290546613,
+      "savedDate": 1730292318489,
       "variables": [
         {
           "context": "flowInstance",
-          "createdDate": 1728584864733,
+          "createdDate": 1730114684042,
           "fields": {
             "type": "string",
             "displayName": "",
@@ -12828,15 +12884,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "c4aaaa95-e608-465c-b13f-b4b4cefcc8b0",
+          "id": "fbb88112-fe76-478b-aaf3-bb77b9f18b96",
           "type": "property",
           "visibility": "private",
           "name": "companyLogo##SK##flowInstance",
-          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1728584731839,
+          "createdDate": 1730114619027,
           "fields": {
             "type": "string",
             "displayName": "",
@@ -12844,16 +12900,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "534006a8-17d1-47de-9cdd-ac539752dfd2",
+          "id": "9f02d1e7-69e5-4f11-a4d3-b40ecc25f486",
           "type": "property",
           "visibility": "private",
           "name": "companyName##SK##flowInstance",
-          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1729620715207,
-          "customerId": "f3e47d945ae971a4b4142ec75012d155",
+          "createdDate": 1730114684468,
           "fields": {
             "type": "string",
             "displayName": "",
@@ -12861,15 +12916,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "60e558ea-34e3-4a9e-8461-c4d924d8696a",
+          "id": "cbb19832-0764-458e-87bf-277aead25828",
           "type": "property",
           "visibility": "private",
           "name": "flowTheme##SK##flowInstance",
-          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1728584864930,
+          "createdDate": 1730114684467,
           "fields": {
             "type": "boolean",
             "displayName": "",
@@ -12877,15 +12932,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "9b3f8b6d-832c-4927-bd63-6653b691b20c",
+          "id": "b094fa38-e690-4c94-847e-01b1cbef78b3",
           "type": "property",
           "visibility": "private",
           "name": "isRegistrationEnabled##SK##flowInstance",
-          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1728584864734,
+          "createdDate": 1730114684039,
           "fields": {
             "type": "string",
             "displayName": "FIDO2 origin",
@@ -12893,15 +12948,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "22bebffb-429c-4a2e-87fb-e87ae078c2e6",
+          "id": "b51a911a-d60f-4e5b-816f-8cb3f143ab8d",
           "type": "property",
           "visibility": "private",
           "name": "origin##SK##flowInstance",
-          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1728584864930,
+          "createdDate": 1730114684465,
           "fields": {
             "type": "boolean",
             "displayName": "",
@@ -12909,15 +12964,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "d5a59840-d2d1-4bf4-973a-ada1b593ac17",
+          "id": "3f36686a-6a0e-43cd-8f52-9581fe1b6b57",
           "type": "property",
           "visibility": "private",
           "name": "p1MFAEnabled##SK##flowInstance",
-          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1728584864929,
+          "createdDate": 1730114684467,
           "fields": {
             "type": "string",
             "displayName": "",
@@ -12925,15 +12980,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "8b9bc209-ae78-41e6-9218-de4fac10706c",
+          "id": "d72d025e-88e1-4e1a-8554-c0c09be835d1",
           "type": "property",
           "visibility": "private",
           "name": "p1ProtectEvaluationId##SK##flowInstance",
-          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1728584864930,
+          "createdDate": 1730114684466,
           "fields": {
             "type": "boolean",
             "displayName": "",
@@ -12941,16 +12996,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "50bc4030-09e6-4b60-b3ba-e21150ec72ff",
+          "id": "56b6ab8b-1a83-4251-9c2a-66241d0a26f6",
           "type": "property",
           "visibility": "private",
           "name": "p1RiskEnabled##SK##flowInstance",
-          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1730199347834,
-          "customerId": "f3e47d945ae971a4b4142ec75012d155",
+          "createdDate": 1730215502761,
           "fields": {
             "type": "string",
             "displayName": "",
@@ -12958,15 +13012,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "5326ea61-3991-410b-9d78-0f6e6ebe67c5",
+          "id": "53914c6c-6bdb-481d-bdd5-a9bb04b04fba",
           "type": "property",
           "visibility": "private",
           "name": "p1RiskLevel##SK##flowInstance",
-          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1728584864931,
+          "createdDate": 1730114684467,
           "fields": {
             "type": "string",
             "displayName": "",
@@ -12974,15 +13028,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "13599dc2-ef73-4036-aa6b-d051e208fcd0",
+          "id": "1db00c76-3131-47a3-bbe2-5796d5813606",
           "type": "property",
           "visibility": "private",
           "name": "p1RiskPolicyId##SK##flowInstance",
-          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1728584864734,
+          "createdDate": 1730114684037,
           "fields": {
             "type": "string",
             "displayName": "Relying Party ID",
@@ -12990,16 +13044,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "3edffc10-c36e-4bae-9dfb-f78eb081f713",
+          "id": "a62add8f-10dc-41f0-b3a3-20f4cb40beda",
           "type": "property",
           "visibility": "private",
           "name": "rpid##SK##flowInstance",
-          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1728591520584,
-          "customerId": "f3e47d945ae971a4b4142ec75012d155",
+          "createdDate": 1730114684467,
           "fields": {
             "type": "boolean",
             "displayName": "",
@@ -13007,16 +13060,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "b08c9a50-a364-47c8-8a17-1785dbb784c5",
+          "id": "53a8b35e-1bef-44ea-a35f-1e2f3b589eb1",
           "type": "property",
           "visibility": "private",
           "name": "showLogo##SK##flowInstance",
-          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1729611165083,
-          "customerId": "f3e47d945ae971a4b4142ec75012d155",
+          "createdDate": 1730114684465,
           "fields": {
             "type": "boolean",
             "displayName": "",
@@ -13024,16 +13076,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "718a695d-f9d6-4bcd-8628-09b11f3e1fc0",
+          "id": "c5c17f40-fe41-4e40-8587-3ce80e56f36c",
           "type": "property",
           "visibility": "private",
           "name": "socialEnabled##SK##flowInstance",
-          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1729612354617,
-          "customerId": "f3e47d945ae971a4b4142ec75012d155",
+          "createdDate": 1730114684465,
           "fields": {
             "type": "boolean",
             "displayName": "",
@@ -13041,16 +13092,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "02e2409a-3264-45f4-a100-daee62eb426b",
+          "id": "396121f7-b568-4a84-8ead-532ebfc1ba04",
           "type": "property",
           "visibility": "private",
           "name": "socialFacebookEnabled##SK##flowInstance",
-          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1729614930608,
-          "customerId": "f3e47d945ae971a4b4142ec75012d155",
+          "createdDate": 1730114684468,
           "fields": {
             "type": "boolean",
             "displayName": "",
@@ -13058,16 +13108,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "2c167715-ae87-4063-9586-498f6dabecdc",
+          "id": "4e8defdb-3526-4bfa-a501-cabb5d69275f",
           "type": "property",
           "visibility": "private",
           "name": "socialGithubEnabled##SK##flowInstance",
-          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1729614991539,
-          "customerId": "f3e47d945ae971a4b4142ec75012d155",
+          "createdDate": 1730114684468,
           "fields": {
             "type": "boolean",
             "displayName": "",
@@ -13075,16 +13124,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "af004d68-7e8c-48c9-8083-213361b65a42",
+          "id": "d2273ef8-af4c-4c96-ad69-34480da7e84f",
           "type": "property",
           "visibility": "private",
           "name": "socialGoogleEnabled##SK##flowInstance",
-          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1729615019746,
-          "customerId": "f3e47d945ae971a4b4142ec75012d155",
+          "createdDate": 1730114684466,
           "fields": {
             "type": "boolean",
             "displayName": "",
@@ -13092,15 +13140,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "6537567f-8a5f-4848-b6df-0f17e2383fc5",
+          "id": "056b5f42-0184-4247-98f4-641adaf1e237",
           "type": "property",
           "visibility": "private",
           "name": "socialMicrosoftEnabled##SK##flowInstance",
-          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
         }
       ],
       "connections": [],
-      "parentFlowId": "96056f0abcd41eae58bc4bee19a9f8d1"
+      "parentFlowId": "fbd91ff842522836860ad04fe627ccd3"
     },
     {
       "companyId": "",
@@ -13114,10 +13162,10 @@
         "functionsConnector",
         "errorConnector"
       ],
-      "createdDate": 1730231184874,
+      "createdDate": 1730291128818,
       "currentVersion": 1,
       "customerId": "",
-      "description": "Imported on Tue Oct 29 2024 19:46:23 GMT+0000 (Coordinated Universal Time)",
+      "description": "Imported on Wed Oct 30 2024 12:25:27 GMT+0000 (Coordinated Universal Time)",
       "flowStatus": "enabled",
       "inputSchemaCompiled": {
         "parameters": {
@@ -13181,8 +13229,8 @@
         "useCustomCSS": false,
         "cssLinks": []
       },
-      "updatedDate": 1730231185001,
-      "flowId": "eff710a209a7d73e213435dbfc02e880",
+      "updatedDate": 1730291128899,
+      "flowId": "dbb528f64658c05df38e05064516b681",
       "versionId": 1,
       "graphData": {
         "elements": {
@@ -19992,11 +20040,11 @@
         }
       ],
       "flowColor": "#ff661c",
-      "savedDate": 1730231184444,
+      "savedDate": 1730291128561,
       "variables": [
         {
           "context": "flowInstance",
-          "createdDate": 1728584864734,
+          "createdDate": 1730114684043,
           "fields": {
             "type": "string",
             "displayName": "",
@@ -20004,15 +20052,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "b930fb68-2549-472b-8281-b9bb4d5b7b7a",
+          "id": "bf9b57f2-921a-491b-b7c2-01c91d0550de",
           "type": "property",
           "visibility": "private",
           "name": "webAuthnSupport##SK##flowInstance",
-          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1728584864734,
+          "createdDate": 1730114684037,
           "fields": {
             "type": "string",
             "displayName": "Relying Party ID",
@@ -20020,30 +20068,30 @@
             "min": 0,
             "max": 2000
           },
-          "id": "3edffc10-c36e-4bae-9dfb-f78eb081f713",
+          "id": "a62add8f-10dc-41f0-b3a3-20f4cb40beda",
           "type": "property",
           "visibility": "private",
           "name": "rpid##SK##flowInstance",
-          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1728584864733,
+          "createdDate": 1730114684042,
           "fields": {
             "type": "string",
             "displayName": "",
             "min": 0,
             "max": 2000
           },
-          "id": "0816b480-b262-4fa9-a5f9-d8898df3cc5c",
+          "id": "78df9dc5-ad48-4ada-9089-464f1c0279b6",
           "type": "property",
           "visibility": "private",
           "name": "p1DeviceAuthenticationId##SK##flowInstance",
-          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1728584864732,
+          "createdDate": 1730114684042,
           "fields": {
             "type": "string",
             "displayName": "",
@@ -20051,15 +20099,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "bb244aef-bfa5-4d77-897e-77213a9af999",
+          "id": "da6bd7a6-c1ad-4d8b-bf29-bc16bcab30c6",
           "type": "property",
           "visibility": "private",
           "name": "ORIGIN##SK##flowInstance",
-          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1728584864733,
+          "createdDate": 1730114684042,
           "fields": {
             "type": "string",
             "displayName": "",
@@ -20067,15 +20115,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "c4aaaa95-e608-465c-b13f-b4b4cefcc8b0",
+          "id": "fbb88112-fe76-478b-aaf3-bb77b9f18b96",
           "type": "property",
           "visibility": "private",
           "name": "companyLogo##SK##flowInstance",
-          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1728584731839,
+          "createdDate": 1730114619027,
           "fields": {
             "type": "string",
             "displayName": "",
@@ -20083,15 +20131,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "534006a8-17d1-47de-9cdd-ac539752dfd2",
+          "id": "9f02d1e7-69e5-4f11-a4d3-b40ecc25f486",
           "type": "property",
           "visibility": "private",
           "name": "companyName##SK##flowInstance",
-          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1728584864733,
+          "createdDate": 1730114684044,
           "fields": {
             "type": "string",
             "displayName": "",
@@ -20099,15 +20147,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "b0df1ce0-26b7-470f-beb2-91714020fbe2",
+          "id": "a8d7cdf0-3c5a-4851-94eb-d7fb9453e366",
           "type": "property",
           "visibility": "private",
           "name": "maskedUsableDevices##SK##flowInstance",
-          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1728584864734,
+          "createdDate": 1730114684042,
           "fields": {
             "type": "boolean",
             "displayName": "",
@@ -20115,15 +20163,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "62c2284f-c864-45b3-918e-9bd9cb2de366",
+          "id": "f97f65ec-6e64-415e-8cdf-ff99206cea75",
           "type": "property",
           "visibility": "private",
           "name": "canChangeDevice##SK##flowInstance",
-          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1728584864734,
+          "createdDate": 1730114684039,
           "fields": {
             "type": "string",
             "displayName": "FIDO2 origin",
@@ -20131,15 +20179,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "22bebffb-429c-4a2e-87fb-e87ae078c2e6",
+          "id": "b51a911a-d60f-4e5b-816f-8cb3f143ab8d",
           "type": "property",
           "visibility": "private",
           "name": "origin##SK##flowInstance",
-          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1728584864733,
+          "createdDate": 1730114684043,
           "fields": {
             "type": "string",
             "displayName": "",
@@ -20147,11 +20195,11 @@
             "min": 0,
             "max": 2000
           },
-          "id": "8025681a-40f5-46b0-a3e5-5de473c8296f",
+          "id": "dc231f5d-d294-4870-a2fe-c5dd7381d76c",
           "type": "property",
           "visibility": "private",
           "name": "publicKeyCredentialRequestOptions##SK##flowInstance",
-          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
         }
       ]
     },
@@ -20168,10 +20216,10 @@
         "stringsConnector",
         "annotationConnector"
       ],
-      "createdDate": 1730289215446,
-      "currentVersion": 14,
+      "createdDate": 1730291128328,
+      "currentVersion": 1,
       "customerId": "",
-      "description": "Imported on Tue Oct 29 2024 19:46:22 GMT+0000 (Coordinated Universal Time)",
+      "description": "Imported on Wed Oct 30 2024 12:25:26 GMT+0000 (Coordinated Universal Time)",
       "flowStatus": "enabled",
       "inputSchemaCompiled": {
         "parameters": {
@@ -20232,7 +20280,7 @@
       "isInputSchemaSaved": true,
       "isOutputSchemaSaved": false,
       "name": "MFA Device Registration Subflow",
-      "publishedVersion": 14,
+      "publishedVersion": 1,
       "settings": {
         "csp": "worker-src 'self' blob:; script-src 'self' https://cdn.jsdelivr.net https://code.jquery.com https://devsdk.singularkey.com http://cdnjs.cloudflare.com 'unsafe-inline' 'unsafe-eval';",
         "intermediateLoadingScreenCSS": "",
@@ -20245,10 +20293,9 @@
         "useBetaAlgorithm": true,
         "logLevel": 2
       },
-      "timeouts": "null",
-      "updatedDate": 1730289221565,
-      "flowId": "1d55e4be5e6e1a278292e3dc6693fead",
-      "versionId": 14,
+      "updatedDate": 1730291128458,
+      "flowId": "4e58d49de4fc8d3e15bb9e34fd7801a7",
+      "versionId": 1,
       "graphData": {
         "elements": {
           "nodes": [
@@ -22853,7 +22900,7 @@
               "data": {
                 "id": "hili7n1bzj",
                 "nodeType": "CONNECTION",
-                "connectionId": "a10e673629e888b765c8661ac2358aa3",
+                "connectionId": "253496287c13bd283ce62736f9cbab38",
                 "connectorId": "stringsConnector",
                 "name": "String",
                 "label": "String Manipulation",
@@ -29491,11 +29538,11 @@
         }
       ],
       "flowColor": "#E3F0FF",
-      "savedDate": 1730289215022,
+      "savedDate": 1730291127862,
       "variables": [
         {
           "context": "flowInstance",
-          "createdDate": 1728584864734,
+          "createdDate": 1730114684043,
           "fields": {
             "type": "string",
             "displayName": "",
@@ -29503,15 +29550,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "b930fb68-2549-472b-8281-b9bb4d5b7b7a",
+          "id": "bf9b57f2-921a-491b-b7c2-01c91d0550de",
           "type": "property",
           "visibility": "private",
           "name": "webAuthnSupport##SK##flowInstance",
-          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1728584864733,
+          "createdDate": 1730114684042,
           "fields": {
             "type": "string",
             "displayName": "",
@@ -29519,15 +29566,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "c4aaaa95-e608-465c-b13f-b4b4cefcc8b0",
+          "id": "fbb88112-fe76-478b-aaf3-bb77b9f18b96",
           "type": "property",
           "visibility": "private",
           "name": "companyLogo##SK##flowInstance",
-          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1728584731839,
+          "createdDate": 1730114619027,
           "fields": {
             "type": "string",
             "displayName": "",
@@ -29535,15 +29582,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "534006a8-17d1-47de-9cdd-ac539752dfd2",
+          "id": "9f02d1e7-69e5-4f11-a4d3-b40ecc25f486",
           "type": "property",
           "visibility": "private",
           "name": "companyName##SK##flowInstance",
-          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1730196767686,
+          "createdDate": 1730215502351,
           "fields": {
             "type": "object",
             "displayName": "",
@@ -29551,15 +29598,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "6ec2516c-b5e8-4c6d-adfe-bfc6d69e184e",
+          "id": "e09e658f-1ae1-497c-94ed-825d8a6efb84",
           "type": "property",
           "visibility": "private",
           "name": "availableDeviceTypes##SK##flowInstance",
-          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1728584864734,
+          "createdDate": 1730114684037,
           "fields": {
             "type": "string",
             "displayName": "Relying Party ID",
@@ -29567,15 +29614,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "3edffc10-c36e-4bae-9dfb-f78eb081f713",
+          "id": "a62add8f-10dc-41f0-b3a3-20f4cb40beda",
           "type": "property",
           "visibility": "private",
           "name": "rpid##SK##flowInstance",
-          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1728584864734,
+          "createdDate": 1730114684039,
           "fields": {
             "type": "string",
             "displayName": "FIDO2 origin",
@@ -29583,11 +29630,11 @@
             "min": 0,
             "max": 2000
           },
-          "id": "22bebffb-429c-4a2e-87fb-e87ae078c2e6",
+          "id": "b51a911a-d60f-4e5b-816f-8cb3f143ab8d",
           "type": "property",
           "visibility": "private",
           "name": "origin##SK##flowInstance",
-          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
         }
       ]
     }
