@@ -14,8 +14,8 @@
         "pingOneRiskConnector",
         "flowConnector"
       ],
-      "createdDate": 1730225795100,
-      "currentVersion": 2,
+      "createdDate": 1730290547255,
+      "currentVersion": 5,
       "customerId": "",
       "description": "Last Updated: Oct 29th, 2024",
       "flowStatus": "enabled",
@@ -40,7 +40,7 @@
       "isInputSchemaSaved": true,
       "isOutputSchemaSaved": false,
       "name": "PingOne Adaptive Authentication & Registration Subflow",
-      "publishedVersion": 2,
+      "publishedVersion": 5,
       "settings": {
         "csp": "worker-src 'self' blob:; script-src 'self' https://cdn.jsdelivr.net https://code.jquery.com https://devsdk.singularkey.com http://cdnjs.cloudflare.com 'unsafe-inline' 'unsafe-eval';",
         "intermediateLoadingScreenCSS": "",
@@ -56,9 +56,9 @@
         ]
       },
       "timeouts": "null",
-      "updatedDate": 1730225797067,
-      "flowId": "d6a3107a662d31ccda78e376d14cf2ca",
-      "versionId": 2,
+      "updatedDate": 1730290548976,
+      "flowId": "96056f0abcd41eae58bc4bee19a9f8d1",
+      "versionId": 5,
       "graphData": {
         "elements": {
           "nodes": [
@@ -2337,7 +2337,7 @@
                   "subFlowId": {
                     "value": {
                       "label": "MFA Device Authentication Subflow",
-                      "value": "763a81dd9acbb83c7d5d6be8a073cb32"
+                      "value": "eff710a209a7d73e213435dbfc02e880"
                     }
                   },
                   "subFlowVersionId": {
@@ -2633,7 +2633,7 @@
                   "subFlowId": {
                     "value": {
                       "label": "MFA Device Authentication Subflow",
-                      "value": "763a81dd9acbb83c7d5d6be8a073cb32"
+                      "value": "eff710a209a7d73e213435dbfc02e880"
                     }
                   },
                   "subFlowVersionId": {
@@ -5038,7 +5038,7 @@
                     "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"Enter your username to receive a recovery code that will let you change your password.\"\n      }\n    ]\n  }\n]"
                   },
                   "customHTML": {
-                    "value": "<div class=\"end-user-nano\">\n  <div\n    class=\"bg-light d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 bottom-0 end-0 overflow-auto\">\n    <div style=\"max-width: 400px; min-width: 400px; width: 100%\">\n      <div class=\"card shadow mb-5\">\n        <main aria-labelledby=\"title\">\n          <div class=\"card-body p-5 d-flex flex-column\">\n            <img class=\"companyLogo align-self-center mb-5\" src=\"{{global.variables.companyLogo}}\" alt=\"{{global.variables.companyName}}\">\n\n            {{#if title}}\n            <h1 id=\"title\" class=\"text-center mb-4\">{{title}}</h1>\n            {{/if}}\n\n            {{#if textOne}}\n            <p class=\"text-muted text-center\">{{textOne}}</p>\n            {{/if}}\n\n            {{#if textTwo}}\n            <p class=\"text-muted text-center\">{{textTwo}}</p>\n            {{/if}}\n\n            <!-- Generic Error Message -->\n            <p class=\"text-danger mdi mdi-alert-circle text-center\" id=\"feedbackError\" data-id=\"feedback\"\n              data-skcomponent=\"skerror\" aria-live=\"assertive\"></p>\n\n            <!-- Username Error Message -->\n            <p class=\"text-danger mdi mdi-alert-circle text-center icon-padding\" data-skerrorid=\"username\" data-skcomponent=\"skerrormessage\" aria-live=\"assertive\"></p>\n\n            {{#if userMessage}}\n            <p class=\"text-info text-center fade\" aria-live=\"assertive\">{{userMessage}}</p>\n            {{/if}}\n\n            <form id=\"usernameForm\" aria-labelledby=\"title\" data-id=\"usernameForm\">\n              <div class=\"mb-4 form-floating\">\n                <input class=\"form-control\" id=\"username\" name=\"username\" placeholder=\"Username\"\n                  data-id=\"username-input\" aria-required=\"true\"\n                  aria-describedby=\"usernameLabel\" />\n                <label id=\"usernameLabel\" for=\"username\">Username</label>\n              </div>\n              <div class=\"d-flex flex-column\">          \n                <button data-id=\"button\" type=\"submit\" class=\"btn btn-primary mb-3\" data-skcomponent=\"skbutton\"\n                  data-skbuttontype=\"form-submit\" id=\"btnContinue\" data-skform=\"usernameForm\"\n                  data-skbuttonvalue=\"CONTINUE\">\n                  Continue\n                </button>\n                <button class=\"btn btn-link\" data-skcomponent=\"skbutton\" data-skbuttontype=\"next-event\"\n                  data-skbuttonvalue=\"CANCEL\" id=\"btnCancel\">\n                  Back\n                </button>\n              </div>\n            </form>\n          </div>\n        </main>\n      </div>\n    </div>\n  </div>\n</div>\n"
+                    "value": "<div class=\"end-user-nano\">\n  <div\n    class=\"bg-light d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 bottom-0 end-0 overflow-auto\">\n    <div class=\"mainDiv\">\n      <div class=\"card shadow mb-5\">\n        <main aria-labelledby=\"title\">\n          <div class=\"card-body p-5 d-flex flex-column\">\n            <img class=\"companyLogo align-self-center mb-5\" src=\"{{global.variables.companyLogo}}\" alt=\"{{global.variables.companyName}}\">\n\n            {{#if title}}\n            <h1 id=\"title\" class=\"text-center mb-4\">{{title}}</h1>\n            {{/if}}\n\n            {{#if textOne}}\n            <p class=\"text-muted text-center\">{{textOne}}</p>\n            {{/if}}\n\n            {{#if textTwo}}\n            <p class=\"text-muted text-center\">{{textTwo}}</p>\n            {{/if}}\n\n            <!-- Generic Error Message -->\n            <p class=\"text-danger mdi mdi-alert-circle text-center\" id=\"feedbackError\" data-id=\"feedback\"\n              data-skcomponent=\"skerror\" aria-live=\"assertive\"></p>\n\n            <!-- Username Error Message -->\n            <p class=\"text-danger mdi mdi-alert-circle text-center icon-padding\" data-skerrorid=\"username\" data-skcomponent=\"skerrormessage\" aria-live=\"assertive\"></p>\n\n            {{#if userMessage}}\n            <p class=\"text-info text-center fade\" aria-live=\"assertive\">{{userMessage}}</p>\n            {{/if}}\n\n            <form id=\"usernameForm\" aria-labelledby=\"title\" data-id=\"usernameForm\">\n              <div class=\"mb-4 form-floating\">\n                <input class=\"form-control\" id=\"username\" name=\"username\" placeholder=\"Username\"\n                  data-id=\"username-input\" aria-required=\"true\"\n                  aria-describedby=\"usernameLabel\" />\n                <label id=\"usernameLabel\" for=\"username\">Username</label>\n              </div>\n              <div class=\"d-flex flex-column\">          \n                <button data-id=\"button\" type=\"submit\" class=\"btn btn-primary mb-3\" data-skcomponent=\"skbutton\"\n                  data-skbuttontype=\"form-submit\" id=\"btnContinue\" data-skform=\"usernameForm\"\n                  data-skbuttonvalue=\"CONTINUE\">\n                  Continue\n                </button>\n                <button class=\"btn btn-link\" data-skcomponent=\"skbutton\" data-skbuttontype=\"next-event\"\n                  data-skbuttonvalue=\"CANCEL\" id=\"btnCancel\">\n                  Back\n                </button>\n              </div>\n            </form>\n          </div>\n        </main>\n      </div>\n    </div>\n  </div>\n</div>\n"
                   },
                   "formFieldsList": {
                     "value": [
@@ -6217,7 +6217,7 @@
                     ]
                   },
                   "code": {
-                    "value": "/**\n * Processes the given parameters to extract specific values from a nested JSON object.\n * It verifies that the JSON object is valid and non-empty before extracting values for various fields.\n * \n * @param {Object} params - The parameters object.\n * @param {Object} params.configJson - The JSON object from which values are to be extracted.\n * @returns {Object|boolean} - An object containing extracted values or `false` if `configJson` is invalid.\n */\nmodule.exports = flowSettings = async ({ params }) => {\n\tconst { configJson } = params;\n\t/**\n\t * Extract a value from a nested JSON object based on a specified path.\n\t * @param {Object} obj - The JSON object to traverse.\n\t * @param {String} path - The path to the value in dot notation (e.g., \"flowSettings.protect.id\").\n\t * @returns {*} - The value at the specified path or null if the path does not exist.\n\t */\n\tfunction extractValueByPath(obj, path) {\n\t\t// Split the path into individual keys\n\t\tconst keys = path.split('.');\n\t\tlet current = obj;\n\n\t\t// Traverse the object based on the path\n\t\tfor (let key of keys) {\n\t\t\tif (current && current.hasOwnProperty(key)) {\n\t\t\t\tcurrent = current[key];\n\t\t\t} else {\n\t\t\t\t// Return null if the path does not exist\n\t\t\t\treturn null;\n\t\t\t}\n\t\t}\n\n\t\treturn current;\n\t}\n\n\t\n\tlet companyName, companyLogoUrl, showLogo;\n\tlet riskId, riskEnabled;\n\tlet mfaEnabled;\n\tlet registrationEnabled;\n\tlet accountRecoveryEnabled;\n\tlet rpid, origin;\n\tlet socialEnabled\n\tlet socialFacebookEnabled, socialGithubEnabled, socialGoogleEnabled, socialMicrosoftEnabled\n\tlet style;\n\n\tif (configJson !== null && typeof configJson === 'object' && !Array.isArray(configJson) && Object.keys(configJson).length > 0) {\n\t\tcompanyName = extractValueByPath(configJson, 'branding.companyName');\n\t\tcompanyLogoUrl = extractValueByPath(configJson, 'branding.companyLogoUrl');\n\t\tshowLogo = extractValueByPath(configJson, 'branding.showLogo');\n\t\triskId = extractValueByPath(configJson, 'risk.id');\n\t\triskEnabled = extractValueByPath(configJson, 'risk.enabled');\n\t\tmfaEnabled = extractValueByPath(configJson, 'mfa.enabled');\n\t\tregistrationEnabled = extractValueByPath(configJson, 'selfservice.enableRegistration');\n\t\taccountRecoveryEnabled = extractValueByPath(configJson, 'selfservice.enableAccountRecovery');\n\t\trpid = extractValueByPath(configJson, 'oidc.rpid');\n\t\torigin = extractValueByPath(configJson, 'oidc.origin');\n\t\tsocialEnabled = extractValueByPath(configJson, 'social.enabled');\n\t\tsocialFacebookEnabled = extractValueByPath(configJson, 'social.providers.facebook');\n\t\tsocialGithubEnabled = extractValueByPath(configJson, 'social.providers.github');\n\t\tsocialGoogleEnabled = extractValueByPath(configJson, 'social.providers.google');\n\t\tsocialMicrosoftEnabled = extractValueByPath(configJson, 'social.providers.microsoft');\n\t\tstyle = extractValueByPath(configJson, 'branding.style');\n\t\t\n\t} else {\n\t\treturn false;\n\t}\n\n\treturn {\n\t\tcompanyName,\n\t\tcompanyLogoUrl,\n\t\tshowLogo,\n\t\triskId,\n\t\triskEnabled,\n\t\tmfaEnabled,\n\t\tregistrationEnabled,\n\t\taccountRecoveryEnabled,\n\t\trpid,\n\t\torigin,\n\t\tsocialEnabled,\n\t\tsocialFacebookEnabled,\n\t\tsocialGithubEnabled,\n\t\tsocialGoogleEnabled,\n\t\tsocialMicrosoftEnabled,\n\t\tstyle\n\t}\n}"
+                    "value": "/**\n * Processes the given parameters to extract specific values from a nested JSON object.\n * It verifies that the JSON object is valid and non-empty before extracting values for various fields.\n * \n * @param {Object} params - The parameters object.\n * @param {Object} params.configJson - The JSON object from which values are to be extracted.\n * @returns {Object|boolean} - An object containing extracted values or `false` if `configJson` is invalid.\n */\nmodule.exports = flowSettings = async ({ params }) => {\n\tconst { configJson } = params;\n\t/**\n\t * Extract a value from a nested JSON object based on a specified path.\n\t * @param {Object} obj - The JSON object to traverse.\n\t * @param {String} path - The path to the value in dot notation (e.g., \"flowSettings.protect.id\").\n\t * @returns {*} - The value at the specified path or null if the path does not exist.\n\t */\n\tfunction extractValueByPath(obj, path) {\n\t\t// Split the path into individual keys\n\t\tconst keys = path.split('.');\n\t\tlet current = obj;\n\n\t\t// Traverse the object based on the path\n\t\tfor (let key of keys) {\n\t\t\tif (current && current.hasOwnProperty(key)) {\n\t\t\t\tcurrent = current[key];\n\t\t\t} else {\n\t\t\t\t// Return null if the path does not exist\n\t\t\t\treturn null;\n\t\t\t}\n\t\t}\n\n\t\treturn current;\n\t}\n\n\t\n\tlet companyName, companyLogoUrl, showLogo;\n\tlet riskId, riskEnabled;\n\tlet mfaEnabled;\n\tlet registrationEnabled;\n\tlet accountRecoveryEnabled;\n\tlet rpid, origin;\n\tlet socialEnabled\n\tlet socialFacebookEnabled, socialGithubEnabled, socialGoogleEnabled, socialMicrosoftEnabled\n\tlet style;\n\n\tif (configJson !== null && typeof configJson === 'object' && !Array.isArray(configJson) && Object.keys(configJson).length > 0) {\n\t\tcompanyName = extractValueByPath(configJson, 'branding.companyName');\n\t\tcompanyLogoUrl = extractValueByPath(configJson, 'branding.companyLogoUrl');\n\t\tshowLogo = extractValueByPath(configJson, 'branding.showLogo');\n\t\triskId = extractValueByPath(configJson, 'risk.id');\n\t\triskEnabled = extractValueByPath(configJson, 'risk.enabled');\n\t\tmfaEnabled = extractValueByPath(configJson, 'mfa.enabled');\n\t\tregistrationEnabled = extractValueByPath(configJson, 'selfservice.enableRegistration');\n\t\taccountRecoveryEnabled = extractValueByPath(configJson, 'selfservice.enableAccountRecovery');\n\t\trpid = extractValueByPath(configJson, 'webauthn.rpid');\n\t\torigin = extractValueByPath(configJson, 'webauthn.origin');\n\t\tsocialEnabled = extractValueByPath(configJson, 'social.enabled');\n\t\tsocialFacebookEnabled = extractValueByPath(configJson, 'social.providers.facebook');\n\t\tsocialGithubEnabled = extractValueByPath(configJson, 'social.providers.github');\n\t\tsocialGoogleEnabled = extractValueByPath(configJson, 'social.providers.google');\n\t\tsocialMicrosoftEnabled = extractValueByPath(configJson, 'social.providers.microsoft');\n\t\tstyle = extractValueByPath(configJson, 'branding.style');\n\t\t\n\t} else {\n\t\treturn false;\n\t}\n\n\treturn {\n\t\tcompanyName,\n\t\tcompanyLogoUrl,\n\t\tshowLogo,\n\t\triskId,\n\t\triskEnabled,\n\t\tmfaEnabled,\n\t\tregistrationEnabled,\n\t\taccountRecoveryEnabled,\n\t\trpid,\n\t\torigin,\n\t\tsocialEnabled,\n\t\tsocialFacebookEnabled,\n\t\tsocialGithubEnabled,\n\t\tsocialGoogleEnabled,\n\t\tsocialMicrosoftEnabled,\n\t\tstyle\n\t}\n}"
                   },
                   "outputSchema": {
                     "value": "{\n\t\"output\": {\n\t\t\"type\": \"object\",\n\t\t\"properties\": {\n\t\t\t\"companyName\": {\n\t\t\t\t\"type\": \"string\"\n\t\t\t},\n\t\t\t\"companyLogoUrl\": {\n\t\t\t\t\"type\": \"string\"\n\t\t\t},\n\t\t\t\"showLogo\": {\n\t\t\t\t\"type\": \"boolean\"\n\t\t\t},\n\t\t\t\"riskId\": {\n\t\t\t\t\"type\": \"string\"\n\t\t\t},\n\t\t\t\"riskEnabled\": {\n\t\t\t\t\"type\": \"boolean\"\n\t\t\t},\n\t\t\t\"mfaEnabled\": {\n\t\t\t\t\"type\": \"boolean\"\n\t\t\t},\n\t\t\t\"registrationEnabled\": {\n\t\t\t\t\"type\": \"boolean\"\n\t\t\t},\n\t\t\t\"accountRecoveryEnabled\": {\n\t\t\t\t\"type\": \"boolean\"\n\t\t\t},\n\t\t\t\"rpid\" : {\n\t\t\t\t\"type\": \"string\"\n\t\t\t},\n\t\t\t\"origin\": {\t\n\t\t\t\t\"type\": \"string\"\n\t\t\t},\n\t\t\t\"socialEnabled\": {\n\t\t\t\t\"type\":\"boolean\"\n\t\t\t},\n\t\t\t\"socialFacebookEnabled\": {\n\t\t\t\t\"type\": \"boolean\"\n\t\t\t},\n\t\t\t\"socialGithubEnabled\": {\t\n\t\t\t\t\"type\": \"boolean\"\n\t\t\t},\n\t\t\t\"socialGoogleEnabled\": {\n\t\t\t\t\"type\": \"boolean\"\n\t\t\t},\n\t\t\t\"socialMicrosoftEnabled\": {\n\t\t\t\t\"type\": \"boolean\"\n\t\t\t},\n\t\t\t\"style\": {\n\t\t\t\t\"type\": \"string\"\n\t\t\t}\n\t\t}\n\t}\n}"
@@ -6796,7 +6796,7 @@
                   "subFlowId": {
                     "value": {
                       "label": "MFA Device Authentication Subflow",
-                      "value": "763a81dd9acbb83c7d5d6be8a073cb32"
+                      "value": "eff710a209a7d73e213435dbfc02e880"
                     }
                   },
                   "subFlowVersionId": {
@@ -8903,7 +8903,7 @@
                   "subFlowId": {
                     "value": {
                       "label": "MFA Device Registration Subflow",
-                      "value": "ee56f461abc6cc6f795fba2ac898a5ad"
+                      "value": "1d55e4be5e6e1a278292e3dc6693fead"
                     }
                   },
                   "subFlowVersionId": {
@@ -8923,6 +8923,12 @@
                   },
                   "nodeTitle": {
                     "value": "MFA Device Registration"
+                  },
+                  "rpid": {
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"variable.svg\",\n        \"url\": \"rpid\",\n        \"data\": \"{{global.variables.rpid}}\",\n        \"tooltip\": \"{{global.variables.rpid}}\",\n        \"children\": [\n          {\n            \"text\": \"rpid\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
+                  },
+                  "origin": {
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"variable.svg\",\n        \"url\": \"origin\",\n        \"data\": \"{{global.variables.origin}}\",\n        \"tooltip\": \"{{global.variables.origin}}\",\n        \"children\": [\n          {\n            \"text\": \"origin\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
                   }
                 }
               },
@@ -12810,11 +12816,11 @@
         }
       ],
       "flowColor": "#ff661c",
-      "savedDate": 1730225794300,
+      "savedDate": 1730290546613,
       "variables": [
         {
           "context": "flowInstance",
-          "createdDate": 1730114684042,
+          "createdDate": 1728584864733,
           "fields": {
             "type": "string",
             "displayName": "",
@@ -12822,15 +12828,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "fbb88112-fe76-478b-aaf3-bb77b9f18b96",
+          "id": "c4aaaa95-e608-465c-b13f-b4b4cefcc8b0",
           "type": "property",
           "visibility": "private",
           "name": "companyLogo##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1730114619027,
+          "createdDate": 1728584731839,
           "fields": {
             "type": "string",
             "displayName": "",
@@ -12838,15 +12844,16 @@
             "min": 0,
             "max": 2000
           },
-          "id": "9f02d1e7-69e5-4f11-a4d3-b40ecc25f486",
+          "id": "534006a8-17d1-47de-9cdd-ac539752dfd2",
           "type": "property",
           "visibility": "private",
           "name": "companyName##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1730114684468,
+          "createdDate": 1729620715207,
+          "customerId": "f3e47d945ae971a4b4142ec75012d155",
           "fields": {
             "type": "string",
             "displayName": "",
@@ -12854,15 +12861,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "cbb19832-0764-458e-87bf-277aead25828",
+          "id": "60e558ea-34e3-4a9e-8461-c4d924d8696a",
           "type": "property",
           "visibility": "private",
           "name": "flowTheme##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1730114684467,
+          "createdDate": 1728584864930,
           "fields": {
             "type": "boolean",
             "displayName": "",
@@ -12870,15 +12877,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "b094fa38-e690-4c94-847e-01b1cbef78b3",
+          "id": "9b3f8b6d-832c-4927-bd63-6653b691b20c",
           "type": "property",
           "visibility": "private",
           "name": "isRegistrationEnabled##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1730114684039,
+          "createdDate": 1728584864734,
           "fields": {
             "type": "string",
             "displayName": "FIDO2 origin",
@@ -12886,15 +12893,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "b51a911a-d60f-4e5b-816f-8cb3f143ab8d",
+          "id": "22bebffb-429c-4a2e-87fb-e87ae078c2e6",
           "type": "property",
           "visibility": "private",
           "name": "origin##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1730114684465,
+          "createdDate": 1728584864930,
           "fields": {
             "type": "boolean",
             "displayName": "",
@@ -12902,15 +12909,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "3f36686a-6a0e-43cd-8f52-9581fe1b6b57",
+          "id": "d5a59840-d2d1-4bf4-973a-ada1b593ac17",
           "type": "property",
           "visibility": "private",
           "name": "p1MFAEnabled##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1730114684467,
+          "createdDate": 1728584864929,
           "fields": {
             "type": "string",
             "displayName": "",
@@ -12918,15 +12925,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "d72d025e-88e1-4e1a-8554-c0c09be835d1",
+          "id": "8b9bc209-ae78-41e6-9218-de4fac10706c",
           "type": "property",
           "visibility": "private",
           "name": "p1ProtectEvaluationId##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1730114684466,
+          "createdDate": 1728584864930,
           "fields": {
             "type": "boolean",
             "displayName": "",
@@ -12934,15 +12941,16 @@
             "min": 0,
             "max": 2000
           },
-          "id": "56b6ab8b-1a83-4251-9c2a-66241d0a26f6",
+          "id": "50bc4030-09e6-4b60-b3ba-e21150ec72ff",
           "type": "property",
           "visibility": "private",
           "name": "p1RiskEnabled##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1730215502761,
+          "createdDate": 1730199347834,
+          "customerId": "f3e47d945ae971a4b4142ec75012d155",
           "fields": {
             "type": "string",
             "displayName": "",
@@ -12950,15 +12958,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "53914c6c-6bdb-481d-bdd5-a9bb04b04fba",
+          "id": "5326ea61-3991-410b-9d78-0f6e6ebe67c5",
           "type": "property",
           "visibility": "private",
           "name": "p1RiskLevel##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1730114684467,
+          "createdDate": 1728584864931,
           "fields": {
             "type": "string",
             "displayName": "",
@@ -12966,15 +12974,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "1db00c76-3131-47a3-bbe2-5796d5813606",
+          "id": "13599dc2-ef73-4036-aa6b-d051e208fcd0",
           "type": "property",
           "visibility": "private",
           "name": "p1RiskPolicyId##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1730114684037,
+          "createdDate": 1728584864734,
           "fields": {
             "type": "string",
             "displayName": "Relying Party ID",
@@ -12982,15 +12990,16 @@
             "min": 0,
             "max": 2000
           },
-          "id": "a62add8f-10dc-41f0-b3a3-20f4cb40beda",
+          "id": "3edffc10-c36e-4bae-9dfb-f78eb081f713",
           "type": "property",
           "visibility": "private",
           "name": "rpid##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1730114684467,
+          "createdDate": 1728591520584,
+          "customerId": "f3e47d945ae971a4b4142ec75012d155",
           "fields": {
             "type": "boolean",
             "displayName": "",
@@ -12998,15 +13007,16 @@
             "min": 0,
             "max": 2000
           },
-          "id": "53a8b35e-1bef-44ea-a35f-1e2f3b589eb1",
+          "id": "b08c9a50-a364-47c8-8a17-1785dbb784c5",
           "type": "property",
           "visibility": "private",
           "name": "showLogo##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1730114684465,
+          "createdDate": 1729611165083,
+          "customerId": "f3e47d945ae971a4b4142ec75012d155",
           "fields": {
             "type": "boolean",
             "displayName": "",
@@ -13014,15 +13024,16 @@
             "min": 0,
             "max": 2000
           },
-          "id": "c5c17f40-fe41-4e40-8587-3ce80e56f36c",
+          "id": "718a695d-f9d6-4bcd-8628-09b11f3e1fc0",
           "type": "property",
           "visibility": "private",
           "name": "socialEnabled##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1730114684465,
+          "createdDate": 1729612354617,
+          "customerId": "f3e47d945ae971a4b4142ec75012d155",
           "fields": {
             "type": "boolean",
             "displayName": "",
@@ -13030,15 +13041,16 @@
             "min": 0,
             "max": 2000
           },
-          "id": "396121f7-b568-4a84-8ead-532ebfc1ba04",
+          "id": "02e2409a-3264-45f4-a100-daee62eb426b",
           "type": "property",
           "visibility": "private",
           "name": "socialFacebookEnabled##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1730114684468,
+          "createdDate": 1729614930608,
+          "customerId": "f3e47d945ae971a4b4142ec75012d155",
           "fields": {
             "type": "boolean",
             "displayName": "",
@@ -13046,15 +13058,16 @@
             "min": 0,
             "max": 2000
           },
-          "id": "4e8defdb-3526-4bfa-a501-cabb5d69275f",
+          "id": "2c167715-ae87-4063-9586-498f6dabecdc",
           "type": "property",
           "visibility": "private",
           "name": "socialGithubEnabled##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1730114684468,
+          "createdDate": 1729614991539,
+          "customerId": "f3e47d945ae971a4b4142ec75012d155",
           "fields": {
             "type": "boolean",
             "displayName": "",
@@ -13062,15 +13075,16 @@
             "min": 0,
             "max": 2000
           },
-          "id": "d2273ef8-af4c-4c96-ad69-34480da7e84f",
+          "id": "af004d68-7e8c-48c9-8083-213361b65a42",
           "type": "property",
           "visibility": "private",
           "name": "socialGoogleEnabled##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1730114684466,
+          "createdDate": 1729615019746,
+          "customerId": "f3e47d945ae971a4b4142ec75012d155",
           "fields": {
             "type": "boolean",
             "displayName": "",
@@ -13078,15 +13092,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "056b5f42-0184-4247-98f4-641adaf1e237",
+          "id": "6537567f-8a5f-4848-b6df-0f17e2383fc5",
           "type": "property",
           "visibility": "private",
           "name": "socialMicrosoftEnabled##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
         }
       ],
       "connections": [],
-      "parentFlowId": "d6a3107a662d31ccda78e376d14cf2ca"
+      "parentFlowId": "96056f0abcd41eae58bc4bee19a9f8d1"
     },
     {
       "companyId": "",
@@ -13100,10 +13114,10 @@
         "functionsConnector",
         "errorConnector"
       ],
-      "createdDate": 1730215503802,
+      "createdDate": 1730231184874,
       "currentVersion": 1,
       "customerId": "",
-      "description": "Imported on Tue Oct 29 2024 15:25:02 GMT+0000 (Coordinated Universal Time)",
+      "description": "Imported on Tue Oct 29 2024 19:46:23 GMT+0000 (Coordinated Universal Time)",
       "flowStatus": "enabled",
       "inputSchemaCompiled": {
         "parameters": {
@@ -13167,8 +13181,8 @@
         "useCustomCSS": false,
         "cssLinks": []
       },
-      "updatedDate": 1730215503914,
-      "flowId": "763a81dd9acbb83c7d5d6be8a073cb32",
+      "updatedDate": 1730231185001,
+      "flowId": "eff710a209a7d73e213435dbfc02e880",
       "versionId": 1,
       "graphData": {
         "elements": {
@@ -19978,11 +19992,11 @@
         }
       ],
       "flowColor": "#ff661c",
-      "savedDate": 1730215503534,
+      "savedDate": 1730231184444,
       "variables": [
         {
           "context": "flowInstance",
-          "createdDate": 1730114684043,
+          "createdDate": 1728584864734,
           "fields": {
             "type": "string",
             "displayName": "",
@@ -19990,15 +20004,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "bf9b57f2-921a-491b-b7c2-01c91d0550de",
+          "id": "b930fb68-2549-472b-8281-b9bb4d5b7b7a",
           "type": "property",
           "visibility": "private",
           "name": "webAuthnSupport##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1730114684037,
+          "createdDate": 1728584864734,
           "fields": {
             "type": "string",
             "displayName": "Relying Party ID",
@@ -20006,30 +20020,30 @@
             "min": 0,
             "max": 2000
           },
-          "id": "a62add8f-10dc-41f0-b3a3-20f4cb40beda",
+          "id": "3edffc10-c36e-4bae-9dfb-f78eb081f713",
           "type": "property",
           "visibility": "private",
           "name": "rpid##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1730114684042,
+          "createdDate": 1728584864733,
           "fields": {
             "type": "string",
             "displayName": "",
             "min": 0,
             "max": 2000
           },
-          "id": "78df9dc5-ad48-4ada-9089-464f1c0279b6",
+          "id": "0816b480-b262-4fa9-a5f9-d8898df3cc5c",
           "type": "property",
           "visibility": "private",
           "name": "p1DeviceAuthenticationId##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1730114684042,
+          "createdDate": 1728584864732,
           "fields": {
             "type": "string",
             "displayName": "",
@@ -20037,15 +20051,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "da6bd7a6-c1ad-4d8b-bf29-bc16bcab30c6",
+          "id": "bb244aef-bfa5-4d77-897e-77213a9af999",
           "type": "property",
           "visibility": "private",
           "name": "ORIGIN##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1730114684042,
+          "createdDate": 1728584864733,
           "fields": {
             "type": "string",
             "displayName": "",
@@ -20053,15 +20067,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "fbb88112-fe76-478b-aaf3-bb77b9f18b96",
+          "id": "c4aaaa95-e608-465c-b13f-b4b4cefcc8b0",
           "type": "property",
           "visibility": "private",
           "name": "companyLogo##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1730114619027,
+          "createdDate": 1728584731839,
           "fields": {
             "type": "string",
             "displayName": "",
@@ -20069,15 +20083,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "9f02d1e7-69e5-4f11-a4d3-b40ecc25f486",
+          "id": "534006a8-17d1-47de-9cdd-ac539752dfd2",
           "type": "property",
           "visibility": "private",
           "name": "companyName##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1730114684044,
+          "createdDate": 1728584864733,
           "fields": {
             "type": "string",
             "displayName": "",
@@ -20085,15 +20099,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "a8d7cdf0-3c5a-4851-94eb-d7fb9453e366",
+          "id": "b0df1ce0-26b7-470f-beb2-91714020fbe2",
           "type": "property",
           "visibility": "private",
           "name": "maskedUsableDevices##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1730114684042,
+          "createdDate": 1728584864734,
           "fields": {
             "type": "boolean",
             "displayName": "",
@@ -20101,15 +20115,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "f97f65ec-6e64-415e-8cdf-ff99206cea75",
+          "id": "62c2284f-c864-45b3-918e-9bd9cb2de366",
           "type": "property",
           "visibility": "private",
           "name": "canChangeDevice##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1730114684039,
+          "createdDate": 1728584864734,
           "fields": {
             "type": "string",
             "displayName": "FIDO2 origin",
@@ -20117,15 +20131,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "b51a911a-d60f-4e5b-816f-8cb3f143ab8d",
+          "id": "22bebffb-429c-4a2e-87fb-e87ae078c2e6",
           "type": "property",
           "visibility": "private",
           "name": "origin##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1730114684043,
+          "createdDate": 1728584864733,
           "fields": {
             "type": "string",
             "displayName": "",
@@ -20133,11 +20147,11 @@
             "min": 0,
             "max": 2000
           },
-          "id": "dc231f5d-d294-4870-a2fe-c5dd7381d76c",
+          "id": "8025681a-40f5-46b0-a3e5-5de473c8296f",
           "type": "property",
           "visibility": "private",
           "name": "publicKeyCredentialRequestOptions##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
         }
       ]
     },
@@ -20154,10 +20168,10 @@
         "stringsConnector",
         "annotationConnector"
       ],
-      "createdDate": 1730215633223,
-      "currentVersion": 2,
+      "createdDate": 1730289215446,
+      "currentVersion": 14,
       "customerId": "",
-      "description": "Imported on Tue Oct 29 2024 15:25:02 GMT+0000 (Coordinated Universal Time)",
+      "description": "Imported on Tue Oct 29 2024 19:46:22 GMT+0000 (Coordinated Universal Time)",
       "flowStatus": "enabled",
       "inputSchemaCompiled": {
         "parameters": {
@@ -20190,6 +20204,20 @@
               "isExpanded": true,
               "type": "string",
               "name": "companyName"
+            },
+            "rpid": {
+              "description": "",
+              "preferredDataType": "string",
+              "isExpanded": true,
+              "type": "string",
+              "name": "rpid"
+            },
+            "origin": {
+              "description": "",
+              "preferredDataType": "string",
+              "isExpanded": true,
+              "type": "string",
+              "name": "origin"
             }
           },
           "additionalProperties": false,
@@ -20204,7 +20232,7 @@
       "isInputSchemaSaved": true,
       "isOutputSchemaSaved": false,
       "name": "MFA Device Registration Subflow",
-      "publishedVersion": 2,
+      "publishedVersion": 14,
       "settings": {
         "csp": "worker-src 'self' blob:; script-src 'self' https://cdn.jsdelivr.net https://code.jquery.com https://devsdk.singularkey.com http://cdnjs.cloudflare.com 'unsafe-inline' 'unsafe-eval';",
         "intermediateLoadingScreenCSS": "",
@@ -20218,9 +20246,9 @@
         "logLevel": 2
       },
       "timeouts": "null",
-      "updatedDate": 1730215634888,
-      "flowId": "ee56f461abc6cc6f795fba2ac898a5ad",
-      "versionId": 2,
+      "updatedDate": 1730289221565,
+      "flowId": "1d55e4be5e6e1a278292e3dc6693fead",
+      "versionId": 14,
       "graphData": {
         "elements": {
           "nodes": [
@@ -20239,18 +20267,20 @@
                   "saveVariables": {
                     "value": [
                       {
-                        "name": "RPID",
-                        "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"experience-builder-dev.glitch.me\"\n      }\n    ]\n  }\n]",
+                        "name": "rpid",
+                        "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"auth.svg\",\n        \"url\": \"rpid\",\n        \"data\": \"{{global.parameters.rpid}}\",\n        \"tooltip\": \"{{global.parameters.rpid}}\",\n        \"children\": [\n          {\n            \"text\": \"rpid\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]",
                         "key": 0.07713997018491381,
-                        "label": "RPID (string - flowInstance)",
-                        "type": "string"
+                        "label": "rpid (string - flowInstance)",
+                        "type": "string",
+                        "nameDefault": "rpid"
                       },
                       {
-                        "name": "ORIGIN",
-                        "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"https://experience-builder-dev.glitch.me\"\n      }\n    ]\n  }\n]",
+                        "name": "origin",
+                        "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"auth.svg\",\n        \"url\": \"origin\",\n        \"data\": \"{{global.parameters.origin}}\",\n        \"tooltip\": \"{{global.parameters.origin}}\",\n        \"children\": [\n          {\n            \"text\": \"origin\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]",
                         "key": 0.1833821548283403,
-                        "label": "ORIGIN (string - flowInstance)",
-                        "type": "string"
+                        "label": "origin (string - flowInstance)",
+                        "type": "string",
+                        "nameDefault": "origin"
                       },
                       {
                         "name": "companyLogo",
@@ -22124,7 +22154,7 @@
                     "value": "Create FIDO2 Device"
                   },
                   "rpId": {
-                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"variable.svg\",\n        \"url\": \"RPID\",\n        \"data\": \"{{global.variables.RPID}}\",\n        \"tooltip\": \"{{global.variables.RPID}}\",\n        \"children\": [\n          {\n            \"text\": \"RPID\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"variable.svg\",\n        \"url\": \"rpid\",\n        \"data\": \"{{global.variables.rpid}}\",\n        \"tooltip\": \"{{global.variables.rpid}}\",\n        \"children\": [\n          {\n            \"text\": \"rpid\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
                   },
                   "rpName": {
                     "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"Ping Web Authentication\"\n      }\n    ]\n  }\n]"
@@ -22185,7 +22215,12 @@
             {
               "data": {
                 "id": "t0my8smuad",
-                "nodeType": "EVAL"
+                "nodeType": "EVAL",
+                "properties": {
+                  "5y2z6x314y": {
+                    "value": "allTriggersTrue"
+                  }
+                }
               },
               "position": {
                 "x": 424,
@@ -22440,7 +22475,7 @@
                     "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"http.svg\",\n        \"url\": \"attestationValue\",\n        \"data\": \"{{local.6jkz2hx974.payload.output.attestationValue}}\",\n        \"tooltip\": \"{{local.6jkz2hx974.payload.output.attestationValue}}\",\n        \"children\": [\n          {\n            \"text\": \"attestationValue\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
                   },
                   "origin": {
-                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"variable.svg\",\n        \"url\": \"ORIGIN\",\n        \"data\": \"{{global.variables.ORIGIN}}\",\n        \"tooltip\": \"{{global.variables.ORIGIN}}\",\n        \"children\": [\n          {\n            \"text\": \"ORIGIN\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"variable.svg\",\n        \"url\": \"origin\",\n        \"data\": \"{{global.variables.origin}}\",\n        \"tooltip\": \"{{global.variables.origin}}\",\n        \"children\": [\n          {\n            \"text\": \"origin\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
                   },
                   "nodeTitle": {
                     "value": "Activate FIDO2 Device"
@@ -22818,7 +22853,7 @@
               "data": {
                 "id": "hili7n1bzj",
                 "nodeType": "CONNECTION",
-                "connectionId": "253496287c13bd283ce62736f9cbab38",
+                "connectionId": "a10e673629e888b765c8661ac2358aa3",
                 "connectorId": "stringsConnector",
                 "name": "String",
                 "label": "String Manipulation",
@@ -23084,7 +23119,12 @@
             {
               "data": {
                 "id": "aduo0dhos1",
-                "nodeType": "EVAL"
+                "nodeType": "EVAL",
+                "properties": {
+                  "te6t0zwohr": {
+                    "value": "allTriggersTrue"
+                  }
+                }
               },
               "position": {
                 "x": 424,
@@ -26413,66 +26453,6 @@
             },
             {
               "data": {
-                "id": "w4u39xmhul",
-                "nodeType": "ANNOTATION",
-                "name": "Annotation",
-                "connectionId": "921bfae85c38ed45045e07be703d86b8",
-                "connectorId": "annotationConnector",
-                "capabilityName": "updateAnnotationProperties",
-                "type": "action",
-                "properties": {
-                  "backgroundColor": {
-                    "value": "#50e3c2ff"
-                  },
-                  "annotationTextColor": {
-                    "value": "#000000"
-                  },
-                  "annotation": {
-                    "value": "TODO: Pass RPID and Origin as params"
-                  },
-                  "width": {
-                    "value": 450
-                  },
-                  "fontSize": {
-                    "value": 14
-                  },
-                  "fontFamily": {
-                    "value": "sans-serif"
-                  },
-                  "fontStyle": {
-                    "value": "normal"
-                  },
-                  "cornerRadius": {
-                    "value": 8
-                  },
-                  "strokeEnabled": {
-                    "value": true
-                  },
-                  "strokeWidth": {
-                    "value": 1
-                  },
-                  "strokeColor": {
-                    "value": "#181818ff"
-                  }
-                },
-                "status": "configured",
-                "idUnique": "lb31g4gkg6"
-              },
-              "position": {
-                "x": 1204,
-                "y": 244
-              },
-              "group": "nodes",
-              "removed": false,
-              "selected": false,
-              "selectable": true,
-              "locked": false,
-              "grabbable": true,
-              "pannable": false,
-              "classes": ""
-            },
-            {
-              "data": {
                 "id": "k2n5ltb120",
                 "nodeType": "ANNOTATION",
                 "name": "Annotation",
@@ -26681,7 +26661,7 @@
                     "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"Cancel\"\n      }\n    ]\n  }\n]"
                   },
                   "defaultCountryCode": {
-                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"US\"\n      }\n    ]\n  }\n]"
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"CA\"\n      }\n    ]\n  }\n]"
                   }
                 },
                 "idUnique": "7epki2w1du"
@@ -26701,6 +26681,65 @@
             }
           ],
           "edges": [
+            {
+              "data": {
+                "id": "vynvpnc8jf",
+                "source": "fek0ai429j",
+                "target": "935xkmdufh"
+              },
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "group": "edges",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": true,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "o1qdker8ic",
+                "source": "yjwlepuflc",
+                "target": "rsqyufell4",
+                "multiValueSourceId": "eodstbv89h"
+              },
+              "position": {
+                "x": 64,
+                "y": 52
+              },
+              "group": "edges",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": true,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "aks2nulqyl",
+                "source": "yjwlepuflc",
+                "target": "gc54n1apom",
+                "multiValueSourceId": "1wlhqblv08"
+              },
+              "position": {
+                "x": 64,
+                "y": 92
+              },
+              "group": "edges",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": true,
+              "classes": ""
+            },
             {
               "data": {
                 "id": "a9t0p001h8",
@@ -29383,65 +29422,6 @@
               "grabbable": true,
               "pannable": true,
               "classes": ""
-            },
-            {
-              "data": {
-                "id": "vynvpnc8jf",
-                "source": "fek0ai429j",
-                "target": "935xkmdufh"
-              },
-              "position": {
-                "x": 0,
-                "y": 0
-              },
-              "group": "edges",
-              "removed": false,
-              "selected": false,
-              "selectable": true,
-              "locked": false,
-              "grabbable": true,
-              "pannable": true,
-              "classes": ""
-            },
-            {
-              "data": {
-                "id": "o1qdker8ic",
-                "source": "yjwlepuflc",
-                "target": "rsqyufell4",
-                "multiValueSourceId": "eodstbv89h"
-              },
-              "position": {
-                "x": 64,
-                "y": 52
-              },
-              "group": "edges",
-              "removed": false,
-              "selected": false,
-              "selectable": true,
-              "locked": false,
-              "grabbable": true,
-              "pannable": true,
-              "classes": ""
-            },
-            {
-              "data": {
-                "id": "aks2nulqyl",
-                "source": "yjwlepuflc",
-                "target": "gc54n1apom",
-                "multiValueSourceId": "1wlhqblv08"
-              },
-              "position": {
-                "x": 64,
-                "y": 92
-              },
-              "group": "edges",
-              "removed": false,
-              "selected": false,
-              "selectable": true,
-              "locked": false,
-              "grabbable": true,
-              "pannable": true,
-              "classes": ""
             }
           ]
         },
@@ -29494,14 +29474,28 @@
           "preferredControlType": "textField",
           "isExpanded": true,
           "required": true
+        },
+        {
+          "propertyName": "rpid",
+          "description": "",
+          "preferredDataType": "string",
+          "preferredControlType": "textField",
+          "isExpanded": true
+        },
+        {
+          "propertyName": "origin",
+          "description": "",
+          "preferredDataType": "string",
+          "preferredControlType": "textField",
+          "isExpanded": true
         }
       ],
       "flowColor": "#E3F0FF",
-      "savedDate": 1730215632711,
+      "savedDate": 1730289215022,
       "variables": [
         {
           "context": "flowInstance",
-          "createdDate": 1730114684043,
+          "createdDate": 1728584864734,
           "fields": {
             "type": "string",
             "displayName": "",
@@ -29509,15 +29503,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "bf9b57f2-921a-491b-b7c2-01c91d0550de",
+          "id": "b930fb68-2549-472b-8281-b9bb4d5b7b7a",
           "type": "property",
           "visibility": "private",
           "name": "webAuthnSupport##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1730114684042,
+          "createdDate": 1728584864733,
           "fields": {
             "type": "string",
             "displayName": "",
@@ -29525,15 +29519,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "fbb88112-fe76-478b-aaf3-bb77b9f18b96",
+          "id": "c4aaaa95-e608-465c-b13f-b4b4cefcc8b0",
           "type": "property",
           "visibility": "private",
           "name": "companyLogo##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1730114619027,
+          "createdDate": 1728584731839,
           "fields": {
             "type": "string",
             "displayName": "",
@@ -29541,15 +29535,15 @@
             "min": 0,
             "max": 2000
           },
-          "id": "9f02d1e7-69e5-4f11-a4d3-b40ecc25f486",
+          "id": "534006a8-17d1-47de-9cdd-ac539752dfd2",
           "type": "property",
           "visibility": "private",
           "name": "companyName##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1730215502351,
+          "createdDate": 1730196767686,
           "fields": {
             "type": "object",
             "displayName": "",
@@ -29557,43 +29551,43 @@
             "min": 0,
             "max": 2000
           },
-          "id": "e09e658f-1ae1-497c-94ed-825d8a6efb84",
+          "id": "6ec2516c-b5e8-4c6d-adfe-bfc6d69e184e",
           "type": "property",
           "visibility": "private",
           "name": "availableDeviceTypes##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1730215502349,
+          "createdDate": 1728584864734,
           "fields": {
             "type": "string",
-            "displayName": "",
+            "displayName": "Relying Party ID",
             "mutable": true,
             "min": 0,
             "max": 2000
           },
-          "id": "3479c230-744b-4009-a9bd-19553ff8ee2d",
+          "id": "3edffc10-c36e-4bae-9dfb-f78eb081f713",
           "type": "property",
           "visibility": "private",
-          "name": "RPID##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+          "name": "rpid##SK##flowInstance",
+          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
         },
         {
           "context": "flowInstance",
-          "createdDate": 1730114684042,
+          "createdDate": 1728584864734,
           "fields": {
             "type": "string",
-            "displayName": "",
+            "displayName": "FIDO2 origin",
             "mutable": true,
             "min": 0,
             "max": 2000
           },
-          "id": "da6bd7a6-c1ad-4d8b-bf29-bc16bcab30c6",
+          "id": "22bebffb-429c-4a2e-87fb-e87ae078c2e6",
           "type": "property",
           "visibility": "private",
-          "name": "ORIGIN##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+          "name": "origin##SK##flowInstance",
+          "companyId": "1bba3635-99e5-4f74-9c71-3f5494c68a6b"
         }
       ]
     }
