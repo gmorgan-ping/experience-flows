@@ -5,6 +5,1041 @@
       "authTokenExpireIds": [],
       "connectorIds": [
         "annotationConnector",
+        "flowConnector",
+        "pingOneAuthenticationConnector",
+        "nodeConnector"
+      ],
+      "createdDate": 1730724177986,
+      "currentVersion": 1,
+      "customerId": "",
+      "description": "Last Updated: November 4th, 2024",
+      "flowStatus": "enabled",
+      "isOutputSchemaSaved": false,
+      "name": "PingOne Sign On Experience",
+      "publishedVersion": 1,
+      "settings": {
+        "csp": "worker-src 'self' blob:; script-src 'self' https://cdn.jsdelivr.net https://code.jquery.com https://devsdk.singularkey.com http://cdnjs.cloudflare.com 'unsafe-inline' 'unsafe-eval';",
+        "intermediateLoadingScreenCSS": "",
+        "intermediateLoadingScreenHTML": "",
+        "debugMode": false,
+        "cssLinks": [
+          "https://assets.pingone.com/ux/end-user-nano/0.1.0-alpha.9/end-user-nano.css",
+          "https://assets.pingone.com/ux/astro-nano/0.1.0-alpha.11/icons.css"
+        ],
+        "useCustomCSS": true,
+        "logLevel": 2,
+        "scrubSensitiveInfo": false,
+        "sensitiveInfoFields": [],
+        "useBetaAlgorithm": true,
+        "pingOneFlow": true,
+        "css": ".companyLogo {\n    height: 65px;\n}",
+        "customTitle": "Sign On",
+        "customFaviconLink": "https://assets.pingone.com/ux/ui-library/5.0.2/images/logo-pingidentity.png"
+      },
+      "timeouts": "null",
+      "trigger": {
+        "type": "AUTHENTICATION"
+      },
+      "updatedDate": 1730724179248,
+      "flowId": "01e2e0f650d58235df6bdd3d502debf4",
+      "versionId": 1,
+      "graphData": {
+        "elements": {
+          "nodes": [
+            {
+              "data": {
+                "id": "tbhg5pamsd",
+                "nodeType": "ANNOTATION",
+                "name": "Annotation",
+                "connectionId": "921bfae85c38ed45045e07be703d86b8",
+                "connectorId": "annotationConnector",
+                "capabilityName": "updateAnnotationProperties",
+                "type": "action",
+                "properties": {
+                  "backgroundColor": {
+                    "value": "#f2f3f4ff"
+                  },
+                  "annotationTextColor": {
+                    "value": "#000000"
+                  },
+                  "annotation": {
+                    "value": "No Active Session, Go to Sign In"
+                  },
+                  "width": {
+                    "value": 250
+                  },
+                  "fontSize": {
+                    "value": 14
+                  },
+                  "fontFamily": {
+                    "value": "sans-serif"
+                  },
+                  "cornerRadius": {
+                    "value": 8
+                  },
+                  "strokeEnabled": {
+                    "value": true
+                  },
+                  "strokeWidth": {
+                    "value": 1
+                  },
+                  "strokeColor": {
+                    "value": "#181818ff"
+                  }
+                },
+                "status": "configured"
+              },
+              "position": {
+                "x": 814,
+                "y": 840
+              },
+              "group": "nodes",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": false,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "df9ia9vsmb",
+                "nodeType": "ANNOTATION",
+                "name": "Annotation",
+                "connectionId": "921bfae85c38ed45045e07be703d86b8",
+                "connectorId": "annotationConnector",
+                "capabilityName": "updateAnnotationProperties",
+                "type": "action",
+                "properties": {
+                  "backgroundColor": {
+                    "value": "#5D00D6ff"
+                  },
+                  "annotationTextColor": {
+                    "value": "#ffffffff"
+                  },
+                  "annotation": {
+                    "value": "Sign On Success"
+                  },
+                  "width": {
+                    "value": 700
+                  },
+                  "fontStyle": {
+                    "value": "bold"
+                  },
+                  "fontSize": {
+                    "value": 14
+                  },
+                  "fontFamily": {
+                    "value": "sans-serif"
+                  },
+                  "cornerRadius": {
+                    "value": 8
+                  }
+                },
+                "status": "configured"
+              },
+              "position": {
+                "x": 214,
+                "y": 1050
+              },
+              "group": "nodes",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": false,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "fzhvaepr0k",
+                "nodeType": "ANNOTATION",
+                "name": "Annotation",
+                "connectionId": "921bfae85c38ed45045e07be703d86b8",
+                "connectorId": "annotationConnector",
+                "capabilityName": "updateAnnotationProperties",
+                "type": "action",
+                "properties": {
+                  "backgroundColor": {
+                    "value": "#f7f7adff"
+                  },
+                  "annotationTextColor": {
+                    "value": "#000000"
+                  },
+                  "annotation": {
+                    "value": "Input Schema: p1UserId, authMethod (optional)"
+                  },
+                  "width": {
+                    "value": 0
+                  },
+                  "fontSize": {
+                    "value": 14
+                  },
+                  "fontFamily": {
+                    "value": "sans-serif"
+                  },
+                  "cornerRadius": {
+                    "value": 8
+                  },
+                  "strokeEnabled": {
+                    "value": false
+                  },
+                  "strokeWidth": {
+                    "value": 1
+                  },
+                  "strokeColor": {
+                    "value": "#181818ff"
+                  }
+                },
+                "status": "configured",
+                "idUnique": "xefq4liuut"
+              },
+              "position": {
+                "x": 214,
+                "y": 1110
+              },
+              "group": "nodes",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": false,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "ubm8paq1y5",
+                "nodeType": "ANNOTATION",
+                "name": "Annotation",
+                "connectionId": "921bfae85c38ed45045e07be703d86b8",
+                "connectorId": "annotationConnector",
+                "capabilityName": "updateAnnotationProperties",
+                "type": "action",
+                "properties": {
+                  "backgroundColor": {
+                    "value": "#f2f3f4ff"
+                  },
+                  "annotationTextColor": {
+                    "value": "#000000"
+                  },
+                  "annotation": {
+                    "value": "Session Exists, Go to Sign On Success"
+                  },
+                  "width": {
+                    "value": 300
+                  },
+                  "fontSize": {
+                    "value": 14
+                  },
+                  "fontFamily": {
+                    "value": "sans-serif"
+                  },
+                  "cornerRadius": {
+                    "value": 8
+                  },
+                  "strokeEnabled": {
+                    "value": true
+                  },
+                  "strokeWidth": {
+                    "value": 1
+                  },
+                  "strokeColor": {
+                    "value": "#181818ff"
+                  }
+                },
+                "status": "configured"
+              },
+              "position": {
+                "x": 788,
+                "y": 364
+              },
+              "group": "nodes",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": false,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "9b7cgoyv9z",
+                "nodeType": "EVAL",
+                "label": "Evaluator",
+                "properties": {
+                  "howu8n9hsc": {
+                    "value": "anyTriggersFalse"
+                  },
+                  "z98ot8mzk7": {
+                    "value": "anyTriggersFalse"
+                  },
+                  "uwimqx43k6": {
+                    "value": "anyTriggersFalse"
+                  }
+                }
+              },
+              "position": {
+                "x": 458,
+                "y": 484
+              },
+              "group": "nodes",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": false,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "z98ot8mzk7",
+                "nodeType": "CONNECTION",
+                "connectionId": "2581eb287bb1d9bd29ae9886d675f89f",
+                "connectorId": "flowConnector",
+                "name": "Flow Connector",
+                "label": "Flow",
+                "status": "configured",
+                "capabilityName": "startUiSubFlow",
+                "type": "trigger",
+                "properties": {
+                  "subFlowId": {
+                    "value": {
+                      "label": "PingOne Adaptive Authentication & Registration Subflow",
+                      "value": "fbd91ff842522836860ad04fe627ccd3"
+                    }
+                  },
+                  "subFlowVersionId": {
+                    "value": -1
+                  },
+                  "nodeTitle": {
+                    "value": "Adaptive Authentication"
+                  },
+                  "configObject": {
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"variable.svg\",\n        \"url\": \"p1ExperienceConfig\",\n        \"data\": \"{{global.company.variables.p1ExperienceConfig}}\",\n        \"tooltip\": \"{{global.company.variables.p1ExperienceConfig}}\",\n        \"children\": [\n          {\n            \"text\": \"p1ExperienceConfig\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
+                  },
+                  "origin": {
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"auth.svg\",\n        \"url\": \"origin\",\n        \"data\": \"{{global.origin}}\",\n        \"tooltip\": \"{{global.origin}}\",\n        \"children\": [\n          {\n            \"text\": \"origin\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
+                  }
+                },
+                "idUnique": "vfcvshnz3c"
+              },
+              "position": {
+                "x": 934,
+                "y": 930
+              },
+              "group": "nodes",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": false,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "fbx7x6gnus",
+                "nodeType": "CONNECTION",
+                "connectionId": "c3e6a164bde107954e93f5c09f0c8bce",
+                "connectorId": "pingOneAuthenticationConnector",
+                "name": "PingOne Authentication",
+                "label": "PingOne Authentication",
+                "status": "configured",
+                "capabilityName": "returnSuccessResponseRedirect",
+                "type": "action",
+                "properties": {
+                  "userId": {
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"teleport.svg\",\n        \"url\": \"p1UserId\",\n        \"data\": \"{{local.ofk8hitz8r.payload.output.p1UserId}}\",\n        \"tooltip\": \"{{local.ofk8hitz8r.payload.output.p1UserId}}\",\n        \"children\": [\n          {\n            \"text\": \"p1UserId\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
+                  },
+                  "authenticationMethods": {
+                    "value": "useCustomAuthenticationMethods"
+                  },
+                  "idleTimeout": {
+                    "value": 43200
+                  },
+                  "backgroundColor": {
+                    "value": "#9dc967ff"
+                  },
+                  "nodeTitle": {
+                    "value": "Return success"
+                  },
+                  "nodeDescription": {
+                    "value": "Returns Successful Flow Completion Back To The PingOne Application Connection"
+                  },
+                  "oeInteractionCacheExpire": {
+                    "value": true
+                  },
+                  "customAuthenticationMethods": {
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"teleport.svg\",\n        \"url\": \"authMethod\",\n        \"data\": \"{{local.ofk8hitz8r.payload.output.authMethod}}\",\n        \"tooltip\": \"{{local.ofk8hitz8r.payload.output.authMethod}}\",\n        \"children\": [\n          {\n            \"text\": \"authMethod\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
+                  }
+                },
+                "isDisabled": false
+              },
+              "position": {
+                "x": 600,
+                "y": 1260
+              },
+              "group": "nodes",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": false,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "dbcjwy026h",
+                "nodeType": "CONNECTION",
+                "connectionId": "c3e6a164bde107954e93f5c09f0c8bce",
+                "connectorId": "pingOneAuthenticationConnector",
+                "name": "PingOne Authentication",
+                "label": "PingOne Authentication 2",
+                "status": "configured",
+                "capabilityName": "checkSession",
+                "type": "action",
+                "properties": {
+                  "authenticatorLastSignOnQuantity": {
+                    "value": "1"
+                  },
+                  "authenticatorLastSignOnUnit": {
+                    "value": "minute"
+                  },
+                  "checkSessionAuthenticator": {
+                    "value": "pwd"
+                  },
+                  "authenticationMethodLastUsedIn": {
+                    "value": 480
+                  },
+                  "nodeTitle": {
+                    "value": "Check for a session"
+                  },
+                  "nodeDescription": {
+                    "value": "Checks If The User Has Logged In With A Password In The Last 8 Hours"
+                  }
+                }
+              },
+              "position": {
+                "x": 338,
+                "y": 484
+              },
+              "group": "nodes",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": false,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "h9zati6tdm",
+                "nodeType": "CONNECTION",
+                "connectionId": "e7eae662d2ca276e4c6f097fc36a3bb1",
+                "connectorId": "nodeConnector",
+                "name": "Node",
+                "label": "Teleport",
+                "status": "configured",
+                "capabilityName": "goToNode",
+                "type": "action",
+                "properties": {
+                  "nodeInstanceId": {
+                    "value": "ofk8hitz8r"
+                  },
+                  "nodeTitle": {
+                    "value": "Go to Sign On Success"
+                  },
+                  "p1UserId": {
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"moustache\",\n        \"data\": \"{{local.dbcjwy026h.payload.output.session.user.id}}\",\n        \"name\": \"id\",\n        \"children\": [\n          {\n            \"text\": \"\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
+                  }
+                }
+              },
+              "position": {
+                "x": 938,
+                "y": 484
+              },
+              "group": "nodes",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": false,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "ofk8hitz8r",
+                "nodeType": "CONNECTION",
+                "connectionId": "e7eae662d2ca276e4c6f097fc36a3bb1",
+                "connectorId": "nodeConnector",
+                "name": "Node",
+                "label": "Node [2023-01-09]",
+                "status": "configured",
+                "capabilityName": "startNode",
+                "type": "trigger",
+                "properties": {
+                  "inputSchema": {
+                    "value": "{\n\t\"type\": \"object\",\n\t\"properties\": {\n\t\t\"p1UserId\": {\n\t\t\t\"type\": \"string\",\n\t\t\t\"displayName\": \"PingOne User Id\",\n\t\t\t\"preferredControlType\": \"textField\",\n\t\t\t\"enableParameters\": true,\n\t\t\t\"propertyName\": \"p1UserId\"\n\t\t},\n\t\t\"authMethod\": {\n\t\t\t\"type\": \"string\",\n\t\t\t\"displayName\": \"Authentication Method\",\n\t\t\t\"preferredControlType\": \"textField\",\n\t\t\t\"enableParameters\": true,\n\t\t\t\"propertyName\": \"authMethod\"\n\t\t}\n\t}\n}"
+                  },
+                  "nodeTitle": {
+                    "value": "Sign On Success"
+                  }
+                }
+              },
+              "position": {
+                "x": 334,
+                "y": 1260
+              },
+              "group": "nodes",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": false,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "zkumd1hvz",
+                "nodeType": "EVAL"
+              },
+              "position": {
+                "x": 454,
+                "y": 1260
+              },
+              "group": "nodes",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": false,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "t0im3zjpdh",
+                "nodeType": "EVAL",
+                "label": "Evaluator",
+                "properties": {
+                  "qklq9dhol4": {
+                    "value": "allTriggersTrue"
+                  }
+                }
+              },
+              "position": {
+                "x": 1054,
+                "y": 930
+              },
+              "group": "nodes",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": false,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "gad1f2fltk",
+                "nodeType": "ANNOTATION",
+                "name": "Annotation",
+                "connectionId": "921bfae85c38ed45045e07be703d86b8",
+                "connectorId": "annotationConnector",
+                "capabilityName": "updateAnnotationProperties",
+                "type": "action",
+                "properties": {
+                  "backgroundColor": {
+                    "value": "#4462edff"
+                  },
+                  "annotationTextColor": {
+                    "value": "#ffffffff"
+                  },
+                  "annotation": {
+                    "value": "PingOne Sign On Experience"
+                  },
+                  "width": {
+                    "value": 1000
+                  },
+                  "fontStyle": {
+                    "value": "bold"
+                  },
+                  "fontSize": {
+                    "value": 16
+                  },
+                  "fontFamily": {
+                    "value": "sans-serif"
+                  },
+                  "cornerRadius": {
+                    "value": 8
+                  }
+                },
+                "status": "configured"
+              },
+              "position": {
+                "x": 218,
+                "y": 274
+              },
+              "group": "nodes",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": false,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "lawat0pk0m",
+                "nodeType": "ANNOTATION",
+                "name": "Annotation",
+                "connectionId": "921bfae85c38ed45045e07be703d86b8",
+                "connectorId": "annotationConnector",
+                "capabilityName": "updateAnnotationProperties",
+                "type": "action",
+                "properties": {
+                  "backgroundColor": {
+                    "value": "#ffffffff"
+                  },
+                  "annotationTextColor": {
+                    "value": "#000000"
+                  },
+                  "annotation": {
+                    "value": "Last Updated: November 4th, 2024"
+                  },
+                  "width": {
+                    "value": 240
+                  },
+                  "fontSize": {
+                    "value": 14
+                  },
+                  "fontFamily": {
+                    "value": "sans-serif"
+                  },
+                  "cornerRadius": {
+                    "value": 8
+                  },
+                  "strokeEnabled": {
+                    "value": false
+                  },
+                  "strokeWidth": {
+                    "value": 1
+                  },
+                  "strokeColor": {
+                    "value": "#181818ff"
+                  }
+                },
+                "status": "configured",
+                "idUnique": "o2v5xhdcbc"
+              },
+              "position": {
+                "x": 218,
+                "y": 214
+              },
+              "group": "nodes",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": false,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "uwimqx43k6",
+                "nodeType": "CONNECTION",
+                "connectionId": "c3e6a164bde107954e93f5c09f0c8bce",
+                "connectorId": "pingOneAuthenticationConnector",
+                "name": "PingOne Authentication",
+                "label": "PingOne Authentication 2",
+                "status": "configured",
+                "capabilityName": "checkSession",
+                "type": "action",
+                "properties": {
+                  "authenticatorLastSignOnQuantity": {
+                    "value": "1"
+                  },
+                  "authenticatorLastSignOnUnit": {
+                    "value": "minute"
+                  },
+                  "checkSessionAuthenticator": {
+                    "value": "pwd"
+                  },
+                  "authenticationMethodLastUsedIn": {
+                    "value": 480
+                  },
+                  "nodeTitle": {
+                    "value": "Check for a session"
+                  },
+                  "nodeDescription": {
+                    "value": "Checks If The User Has Logged In With A Password In The Last 8 Hours"
+                  }
+                },
+                "idUnique": "hw1nqp614n"
+              },
+              "position": {
+                "x": 604,
+                "y": 690
+              },
+              "group": "nodes",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": false,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "fiopsv2wvz",
+                "nodeType": "CONNECTION",
+                "connectionId": "e7eae662d2ca276e4c6f097fc36a3bb1",
+                "connectorId": "nodeConnector",
+                "name": "Node",
+                "label": "Teleport",
+                "status": "configured",
+                "capabilityName": "goToNode",
+                "type": "action",
+                "properties": {
+                  "nodeInstanceId": {
+                    "value": "ofk8hitz8r"
+                  },
+                  "nodeTitle": {
+                    "value": "Go to Sign On Success"
+                  },
+                  "p1UserId": {
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"moustache\",\n        \"data\": \"{{local.dbcjwy026h.payload.output.session.user.id}}\",\n        \"name\": \"id\",\n        \"children\": [\n          {\n            \"text\": \"\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
+                  }
+                },
+                "idUnique": "rrx3yqzyiw"
+              },
+              "position": {
+                "x": 927,
+                "y": 693
+              },
+              "group": "nodes",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": false,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "jgwcknnowi",
+                "nodeType": "EVAL",
+                "properties": {
+                  "z98ot8mzk7": {
+                    "value": "anyTriggersFalse"
+                  }
+                }
+              },
+              "position": {
+                "x": 765.5,
+                "y": 691.5
+              },
+              "group": "nodes",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": false,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "bdyqulb8yn",
+                "nodeType": "CONNECTION",
+                "connectionId": "e7eae662d2ca276e4c6f097fc36a3bb1",
+                "connectorId": "nodeConnector",
+                "name": "Node",
+                "label": "Node",
+                "status": "configured",
+                "capabilityName": "goToNode",
+                "type": "action",
+                "properties": {
+                  "nodeInstanceId": {
+                    "value": "ofk8hitz8r"
+                  },
+                  "p1UserId": {
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"flow-connector.svg\",\n        \"url\": \"p1UserId\",\n        \"data\": \"{{local.z98ot8mzk7.payload.output.p1UserId}}\",\n        \"tooltip\": \"{{local.z98ot8mzk7.payload.output.p1UserId}}\",\n        \"children\": [\n          {\n            \"text\": \"p1UserId\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
+                  },
+                  "authMethod": {
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"flow-connector.svg\",\n        \"url\": \"p1AuthMethod\",\n        \"data\": \"{{local.z98ot8mzk7.payload.output.p1AuthMethod}}\",\n        \"tooltip\": \"{{local.z98ot8mzk7.payload.output.p1AuthMethod}}\",\n        \"children\": [\n          {\n            \"text\": \"p1AuthMethod\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
+                  }
+                }
+              },
+              "position": {
+                "x": 1281,
+                "y": 932.5
+              },
+              "group": "nodes",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": false,
+              "classes": ""
+            }
+          ],
+          "edges": [
+            {
+              "data": {
+                "id": "rqqel5mtng",
+                "source": "9b7cgoyv9z",
+                "target": "uwimqx43k6"
+              },
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "group": "edges",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": true,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "9elw1pkfp4",
+                "source": "9b7cgoyv9z",
+                "target": "h9zati6tdm"
+              },
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "group": "edges",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": true,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "gf0fowbs9f",
+                "source": "uwimqx43k6",
+                "target": "jgwcknnowi"
+              },
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "group": "edges",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": true,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "vinmtbn50p",
+                "source": "jgwcknnowi",
+                "target": "z98ot8mzk7"
+              },
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "group": "edges",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": true,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "ia5xcsmvdk",
+                "source": "jgwcknnowi",
+                "target": "fiopsv2wvz"
+              },
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "group": "edges",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": true,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "emucb01so1",
+                "source": "ofk8hitz8r",
+                "target": "zkumd1hvz"
+              },
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "group": "edges",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": true,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "7xytgqexja",
+                "source": "z98ot8mzk7",
+                "target": "t0im3zjpdh"
+              },
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "group": "edges",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": true,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "2to7volmnk",
+                "source": "dbcjwy026h",
+                "target": "9b7cgoyv9z"
+              },
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "group": "edges",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": true,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "dhculc4wpb",
+                "source": "t0im3zjpdh",
+                "target": "bdyqulb8yn"
+              },
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "group": "edges",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": true,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "yzu6s4q38x",
+                "source": "zkumd1hvz",
+                "target": "fbx7x6gnus"
+              },
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "group": "edges",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": true,
+              "classes": ""
+            }
+          ]
+        },
+        "data": {},
+        "zoomingEnabled": true,
+        "userZoomingEnabled": true,
+        "zoom": 1,
+        "minZoom": 1e-50,
+        "maxZoom": 1e+50,
+        "panningEnabled": true,
+        "userPanningEnabled": true,
+        "pan": {
+          "x": 0,
+          "y": 0
+        },
+        "boxSelectionEnabled": true,
+        "renderer": {
+          "name": "null"
+        }
+      },
+      "flowColor": "#ff661c",
+      "savedDate": 1730724177906,
+      "variables": [
+        {
+          "context": "company",
+          "createdDate": 1730471905271,
+          "customerId": "f3e47d945ae971a4b4142ec75012d155",
+          "fields": {
+            "type": "object",
+            "displayName": "",
+            "value": "{   \"version\": \"1.0.1\",   \"branding\": {     \"companyLogoUrl\": \"https://assets.pingone.com/ux/ui-library/5.0.2/images/logo-pingidentity.png\",     \"companyName\": \"Ping Identity\",     \"showLogo\": true,     \"theme\": {       \"buttonBackgroundColor\": \"#277ba5\",       \"buttonTextColor\": \"#ffffff\",       \"cardBorderRadius\": \"0\",       \"errorColor\": \"#a31300\",       \"fontfamily\": \"'Montserrat', 'sans-serif'\",       \"formBackgroundColor\": \"#ffffff\",       \"formControlBorderRadius\": \"0\",       \"formWidth\": \"460\",       \"headingColor\": \"#3d454d\",       \"linkButtonColor\": \"#277ba5\",       \"primaryTextColor\": \"#3d454d\"     }   },   \"mfa\": {     \"enabled\": false   },   \"risk\": {     \"id\": \"098b2daf-42ea-0e95-3afa-1858ca0b937f\",     \"enabled\": false   },   \"selfservice\": {     \"enableAccountRecovery\": true,     \"enableRegistration\": true   },   \"social\": {     \"enabled\": false,     \"providers\": {       \"facebook\": false,       \"github\": false,       \"google\": false,       \"microsoft\": false     }   },   \"webauthn\": {     \"origin\": \"https://experience-builder-dev.glitch.me\",     \"rpid\": \"experience-builder-dev.glitch.me\"   } }",
+            "mutable": true,
+            "min": 0,
+            "max": 2000
+          },
+          "id": "2c19b8a3-66f7-4fe9-9e24-233878ef17b2",
+          "type": "property",
+          "updatedDate": 1730724023262,
+          "visibility": "private",
+          "name": "p1ExperienceConfig##SK##company",
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+        }
+      ],
+      "connections": [],
+      "parentFlowId": "fbd91ff842522836860ad04fe627ccd3"
+    },
+    {
+      "companyId": "",
+      "authTokenExpireIds": [],
+      "connectorIds": [
+        "annotationConnector",
         "variablesConnector",
         "httpConnector",
         "functionsConnector",
@@ -14,10 +1049,10 @@
         "pingOneRiskConnector",
         "flowConnector"
       ],
-      "createdDate": 1730292319079,
-      "currentVersion": 8,
+      "createdDate": 1730724146220,
+      "currentVersion": 1,
       "customerId": "",
-      "description": "Last Updated: Oct 29th, 2024",
+      "description": "Last Updated: November 4th, 2024",
       "flowStatus": "enabled",
       "inputSchemaCompiled": {
         "parameters": {
@@ -29,6 +1064,13 @@
               "isExpanded": true,
               "type": "object",
               "name": "configObject"
+            },
+            "origin": {
+              "description": "",
+              "preferredDataType": "string",
+              "isExpanded": true,
+              "type": "string",
+              "name": "origin"
             }
           },
           "additionalProperties": false,
@@ -40,7 +1082,7 @@
       "isInputSchemaSaved": true,
       "isOutputSchemaSaved": false,
       "name": "PingOne Adaptive Authentication & Registration Subflow",
-      "publishedVersion": 5,
+      "publishedVersion": 1,
       "settings": {
         "csp": "worker-src 'self' blob:; script-src 'self' https://cdn.jsdelivr.net https://code.jquery.com https://devsdk.singularkey.com http://cdnjs.cloudflare.com 'unsafe-inline' 'unsafe-eval';",
         "intermediateLoadingScreenCSS": "",
@@ -56,8 +1098,9 @@
         ]
       },
       "timeouts": "null",
+      "updatedDate": 1730724148998,
       "flowId": "fbd91ff842522836860ad04fe627ccd3",
-      "versionId": 8,
+      "versionId": 1,
       "graphData": {
         "elements": {
           "nodes": [
@@ -99,7 +1142,7 @@
                 "status": "configured"
               },
               "position": {
-                "x": 210,
+                "x": 214,
                 "y": 420
               },
               "group": "nodes",
@@ -128,7 +1171,7 @@
                     "value": "#000000"
                   },
                   "annotation": {
-                    "value": "Last Updated: October 30th, 2024"
+                    "value": "Last Updated: November 4th, 2024"
                   },
                   "width": {
                     "value": 300
@@ -156,7 +1199,7 @@
                 "idUnique": "o2v5xhdcbc"
               },
               "position": {
-                "x": 210,
+                "x": 214,
                 "y": 360
               },
               "group": "nodes",
@@ -315,7 +1358,7 @@
               },
               "position": {
                 "x": 634,
-                "y": 664
+                "y": 660
               },
               "group": "nodes",
               "removed": false,
@@ -408,7 +1451,7 @@
                     "value": "#afd5ffff"
                   },
                   "customScript": {
-                    "value": "/**\n * Dynamically applies or replaces CSS in the DOM.\n * @param {string} cssString - The CSS rules as a string.\n * @param {string} styleId - The unique id to assign to the style element.\n */\nconst applyCssToDom = (cssString, styleId) => {\n  // Check if a style element with the given id already exists\n  let styleElement = document.getElementById(styleId);\n\n  if (styleElement) {\n    // If it exists, replace the CSS content\n    if (styleElement.styleSheet) {\n      // This is for IE support (older browsers)\n      styleElement.styleSheet.cssText = cssString;\n    } else {\n      styleElement.innerHTML = cssString; // Replace content for modern browsers\n    }\n  } else {\n    // If it doesn't exist, create a new style element\n    styleElement = document.createElement('style');\n    styleElement.type = 'text/css';\n    styleElement.id = styleId; // Set the id attribute\n\n    // Add the CSS string to the style element\n    if (styleElement.styleSheet) {\n      // For IE support\n      styleElement.styleSheet.cssText = cssString;\n    } else {\n      styleElement.appendChild(document.createTextNode(cssString));\n    }\n\n    // Append the style element to the head of the document\n    document.head.appendChild(styleElement);\n  }\n};\n\n\nconst setFieldFocus = (id) => {\n    const element = document.getElementById(id);\n    if (element) {\n        element.focus();\n    }\n}\n\nconst makePasswordToggle = (id) => {\n    let container = document.getElementById(id);\n\n    if (container) {\n        let password = container.getElementsByTagName(\"input\")[0];\n        let toggler = document.createElement(\"button\");\n        toggler.setAttribute(\"type\", \"button\");\n        toggler.setAttribute(\"aria-label\", \"Show/Hide Password\");\n        toggler.className = \"btn mdi mdi-eye-off-outline position-absolute end-0 top-50 translate-middle-y\";\n        container.appendChild(toggler);\n\n        function showHidePassword() {\n            if (password.type == \"password\") {\n                password.setAttribute(\"type\", \"text\");\n                toggler.classList.add(\"mdi-eye-outline\");\n                toggler.classList.remove(\"mdi-eye-off-outline\");\n            } else {\n                toggler.classList.add(\"mdi-eye-off-outline\");\n                toggler.classList.remove(\"mdi-eye-outline\");\n                password.setAttribute(\"type\", \"password\");\n            }\n            password.focus();\n        };\n\n        toggler.addEventListener(\"click\", showHidePassword);\n    }\n}\n\nconst start = () => {\n    const theme = `\n    {{global.variables.flowTheme}}\n    `\n    \n    applyCssToDom(theme, 'experienceBuilder')\n\n    makePasswordToggle(\"passwordDiv\");\n    setFieldFocus(\"username\")\n}\n\nif (document.readyState === \"loading\") {\n    // Loading hasn't finished yet\n    document.addEventListener(\"DOMContentLoaded\", start);\n} else {\n    // `DOMContentLoaded` has already fired\n    start();\n}"
+                    "value": "/**\n * Dynamically applies or replaces CSS in the DOM.\n * @param {string} cssString - The CSS rules as a string or URL.\n * @param {string} styleId - The unique id to assign to the style or link element.\n */\nconst applyCssToDom = (cssString, styleId) => {\n  // Check if the input is a URL\n  const isUrl = cssString.startsWith(\"http://\") || cssString.startsWith(\"https://\");\n\n  // Check if an element with the given id already exists\n  let styleElement = document.getElementById(styleId);\n\n  if (styleElement) {\n    // If a style/link element already exists, update it\n    if (isUrl && styleElement.tagName === 'LINK') {\n      styleElement.href = cssString;\n    } else if (!isUrl && styleElement.tagName === 'STYLE') {\n      if (styleElement.styleSheet) {\n        styleElement.styleSheet.cssText = cssString; // For IE support\n      } else {\n        styleElement.innerHTML = cssString; // For modern browsers\n      }\n    }\n  } else {\n    // Create a new element based on whether it's a URL or raw CSS\n    if (isUrl) {\n      styleElement = document.createElement('link');\n      styleElement.rel = 'stylesheet';\n      styleElement.href = cssString;\n    } else {\n      styleElement = document.createElement('style');\n      styleElement.type = 'text/css';\n\n      if (styleElement.styleSheet) {\n        styleElement.styleSheet.cssText = cssString; // For IE support\n      } else {\n        styleElement.appendChild(document.createTextNode(cssString));\n      }\n    }\n\n    // Set the id and append the new style/link element to the head\n    styleElement.id = styleId;\n    document.head.appendChild(styleElement);\n  }\n};\n\n\n\nconst setFieldFocus = (id) => {\n    const element = document.getElementById(id);\n    if (element) {\n        element.focus();\n    }\n}\n\nconst makePasswordToggle = (id) => {\n    let container = document.getElementById(id);\n\n    if (container) {\n        let password = container.getElementsByTagName(\"input\")[0];\n        let toggler = document.createElement(\"button\");\n        toggler.setAttribute(\"type\", \"button\");\n        toggler.setAttribute(\"aria-label\", \"Show/Hide Password\");\n        toggler.className = \"btn mdi mdi-eye-off-outline position-absolute end-0 top-50 translate-middle-y\";\n        container.appendChild(toggler);\n\n        function showHidePassword() {\n            if (password.type == \"password\") {\n                password.setAttribute(\"type\", \"text\");\n                toggler.classList.add(\"mdi-eye-outline\");\n                toggler.classList.remove(\"mdi-eye-off-outline\");\n            } else {\n                toggler.classList.add(\"mdi-eye-off-outline\");\n                toggler.classList.remove(\"mdi-eye-outline\");\n                password.setAttribute(\"type\", \"password\");\n            }\n            password.focus();\n        };\n\n        toggler.addEventListener(\"click\", showHidePassword);\n    }\n}\n\nconst start = () => {\n    const theme = `\n    {{global.variables.flowTheme}}\n    `\n    \n    applyCssToDom(theme, 'experienceBuilder')\n\n    makePasswordToggle(\"passwordDiv\");\n    setFieldFocus(\"username\")\n}\n\nif (document.readyState === \"loading\") {\n    // Loading hasn't finished yet\n    document.addEventListener(\"DOMContentLoaded\", start);\n} else {\n    // `DOMContentLoaded` has already fired\n    start();\n}"
                   },
                   "inputSchema": {
                     "value": "{\n\t\"type\": \"object\",\n\t\"properties\": {\n\t\t\"title\": {\n\t\t\t\"type\": \"string\",\n\t\t\t\"displayName\": \"Title\",\n\t\t\t\"preferredControlType\": \"textField\",\n\t\t\t\"enableParameters\": true\n\t\t},\n\t\t\"textOne\": {\n\t\t\t\"type\": \"string\",\n\t\t\t\"displayName\": \"Text Three\",\n\t\t\t\"preferredControlType\": \"textField\",\n\t\t\t\"enableParameters\": true\n\t\t},\n\t\t\"textTwo\": {\n\t\t\t\"type\": \"string\",\n\t\t\t\"displayName\": \"Text Two\",\n\t\t\t\"preferredControlType\": \"textField\",\n\t\t\t\"enableParameters\": true\n\t\t},\n\t\t\"displayLogo\": {\n\t\t\t\"type\": \"boolean\",\n\t\t\t\"displayName\": \"Display Logo\",\n\t\t\t\"preferredControlType\": \"textField\",\n\t\t\t\"enableParameters\": true\n\t\t},\n\t\t\"errorMessage\": {\n\t\t\t\"type\": \"string\",\n\t\t\t\"displayName\": \"Error Message\",\n\t\t\t\"preferredControlType\": \"textField\",\n\t\t\t\"enableParameters\": true\n\t\t},\n\t\t\"signonButtonLabel\": {\n\t\t\t\"type\": \"string\",\n\t\t\t\"displayName\": \"Sign On Button Label\",\n\t\t\t\"preferredControlType\": \"textField\",\n\t\t\t\"enableParameters\": true\n\t\t},\n\t\t\"accountRecoveryEnabled\": {\n\t\t\t\"type\": \"boolean\",\n\t\t\t\"displayName\": \"Account Recovery Enabled\",\n\t\t\t\"preferredControlType\": \"textField\",\n\t\t\t\"enableParameters\": true\n\t\t},\n\t\t\"forgotButtonLabel\": {\n\t\t\t\"type\": \"string\",\n\t\t\t\"displayName\": \"Forgot Password Button Label\",\n\t\t\t\"preferredControlType\": \"textField\",\n\t\t\t\"enableParameters\": true\n\t\t},\n\t\t\"registrationEnabled\": {\n\t\t\t\"type\": \"boolean\",\n\t\t\t\"displayName\": \"Registration Enabled\",\n\t\t\t\"preferredControlType\": \"textField\",\n\t\t\t\"enableParameters\": true\n\t\t},\n\t\t\"registerButtonLabel\": {\n\t\t\t\"type\": \"string\",\n\t\t\t\"displayName\": \"Register Button Label\",\n\t\t\t\"preferredControlType\": \"textField\",\n\t\t\t\"enableParameters\": true\n\t\t},\n\t\t\"riskEnabled\": {\n\t\t\t\"type\": \"boolean\",\n\t\t\t\"displayName\": \"Risk Enabled\",\n\t\t\t\"preferredControlType\": \"textField\",\n\t\t\t\"enableParameters\": true\n\t\t},\n\t\t\"socialEnabled\": {\n\t\t\t\"type\": \"boolean\",\n\t\t\t\"displayName\": \"Social Enabled\",\n\t\t\t\"preferredControlType\": \"textField\",\n\t\t\t\"enableParameters\": true\n\t\t},\n\t\t\"socialFacebookEnabled\": {\n\t\t\t\"type\": \"boolean\",\n\t\t\t\"displayName\": \"Social Facebook Enabled\",\n\t\t\t\"preferredControlType\": \"textField\",\n\t\t\t\"enableParameters\": true\n\t\t},\n\t\t\"socialGithubEnabled\": {\n\t\t\t\"type\": \"boolean\",\n\t\t\t\"displayName\": \"Social Github Enabled\",\n\t\t\t\"preferredControlType\": \"textField\",\n\t\t\t\"enableParameters\": true\n\t\t},\n\t\t\"socialGoogleEnabled\": {\n\t\t\t\"type\": \"boolean\",\n\t\t\t\"displayName\": \"Social Google Enabled\",\n\t\t\t\"preferredControlType\": \"textField\",\n\t\t\t\"enableParameters\": true\n\t\t},\n\t\t\"socialMicrosoftEnabled\": {\n\t\t\t\"type\": \"boolean\",\n\t\t\t\"displayName\": \"Social Microsoft Enabled\",\n\t\t\t\"preferredControlType\": \"textField\",\n\t\t\t\"enableParameters\": true\n\t\t}\n\t}\n}"
@@ -475,7 +1518,7 @@
               },
               "position": {
                 "x": 934,
-                "y": 664
+                "y": 660
               },
               "group": "nodes",
               "removed": false,
@@ -504,7 +1547,7 @@
               },
               "position": {
                 "x": 754,
-                "y": 664
+                "y": 660
               },
               "group": "nodes",
               "removed": false,
@@ -561,7 +1604,7 @@
               },
               "position": {
                 "x": 1234,
-                "y": 664
+                "y": 660
               },
               "group": "nodes",
               "removed": false,
@@ -584,7 +1627,7 @@
               },
               "position": {
                 "x": 1054,
-                "y": 664
+                "y": 660
               },
               "group": "nodes",
               "removed": false,
@@ -623,7 +1666,7 @@
               },
               "position": {
                 "x": 1834,
-                "y": 664
+                "y": 660
               },
               "group": "nodes",
               "removed": false,
@@ -660,7 +1703,7 @@
               },
               "position": {
                 "x": 2434,
-                "y": 994
+                "y": 990
               },
               "group": "nodes",
               "removed": false,
@@ -686,7 +1729,7 @@
               },
               "position": {
                 "x": 1954,
-                "y": 664
+                "y": 660
               },
               "group": "nodes",
               "removed": false,
@@ -704,7 +1747,7 @@
               },
               "position": {
                 "x": 1354,
-                "y": 664
+                "y": 660
               },
               "group": "nodes",
               "removed": false,
@@ -754,7 +1797,7 @@
               },
               "position": {
                 "x": 214,
-                "y": 1264
+                "y": 1260
               },
               "group": "nodes",
               "removed": false,
@@ -787,7 +1830,7 @@
               },
               "position": {
                 "x": 334,
-                "y": 1444
+                "y": 1440
               },
               "group": "nodes",
               "removed": false,
@@ -844,7 +1887,7 @@
               },
               "position": {
                 "x": 244,
-                "y": 1324
+                "y": 1320
               },
               "group": "nodes",
               "removed": false,
@@ -863,7 +1906,7 @@
               },
               "position": {
                 "x": 454,
-                "y": 1444
+                "y": 1440
               },
               "group": "nodes",
               "removed": false,
@@ -923,7 +1966,7 @@
               },
               "position": {
                 "x": 934,
-                "y": 1444
+                "y": 1440
               },
               "group": "nodes",
               "removed": false,
@@ -965,7 +2008,7 @@
               },
               "position": {
                 "x": 1534,
-                "y": 664
+                "y": 660
               },
               "group": "nodes",
               "removed": false,
@@ -983,7 +2026,7 @@
               },
               "position": {
                 "x": 1654,
-                "y": 664
+                "y": 660
               },
               "group": "nodes",
               "removed": false,
@@ -1007,7 +2050,7 @@
               },
               "position": {
                 "x": 1054,
-                "y": 1444
+                "y": 1440
               },
               "group": "nodes",
               "removed": false,
@@ -1043,7 +2086,7 @@
               },
               "position": {
                 "x": 1534,
-                "y": 1444
+                "y": 1440
               },
               "group": "nodes",
               "removed": false,
@@ -1094,7 +2137,7 @@
               },
               "position": {
                 "x": 214,
-                "y": 7714
+                "y": 7710
               },
               "group": "nodes",
               "removed": false,
@@ -1127,7 +2170,7 @@
               },
               "position": {
                 "x": 334,
-                "y": 7894
+                "y": 7890
               },
               "group": "nodes",
               "removed": false,
@@ -1184,7 +2227,7 @@
               },
               "position": {
                 "x": 244,
-                "y": 7774
+                "y": 7770
               },
               "group": "nodes",
               "removed": false,
@@ -1234,7 +2277,7 @@
               },
               "position": {
                 "x": 1234,
-                "y": 1444
+                "y": 1440
               },
               "group": "nodes",
               "removed": false,
@@ -1252,7 +2295,7 @@
               },
               "position": {
                 "x": 1354,
-                "y": 1444
+                "y": 1440
               },
               "group": "nodes",
               "removed": false,
@@ -1276,7 +2319,7 @@
               },
               "position": {
                 "x": 1654,
-                "y": 1444
+                "y": 1440
               },
               "group": "nodes",
               "removed": false,
@@ -1312,7 +2355,7 @@
               },
               "position": {
                 "x": 1834,
-                "y": 1654
+                "y": 1650
               },
               "group": "nodes",
               "removed": false,
@@ -1368,7 +2411,7 @@
               },
               "position": {
                 "x": 1714,
-                "y": 1564
+                "y": 1560
               },
               "group": "nodes",
               "removed": false,
@@ -1387,7 +2430,7 @@
               },
               "position": {
                 "x": 454,
-                "y": 7894
+                "y": 7890
               },
               "group": "nodes",
               "removed": false,
@@ -1417,7 +2460,7 @@
               },
               "position": {
                 "x": 634,
-                "y": 7894
+                "y": 7890
               },
               "group": "nodes",
               "removed": false,
@@ -1450,7 +2493,7 @@
               },
               "position": {
                 "x": 634,
-                "y": 8074
+                "y": 8070
               },
               "group": "nodes",
               "removed": false,
@@ -1499,7 +2542,7 @@
               },
               "position": {
                 "x": 634,
-                "y": 2794
+                "y": 2820
               },
               "group": "nodes",
               "removed": false,
@@ -1518,7 +2561,7 @@
               },
               "position": {
                 "x": 754,
-                "y": 3424
+                "y": 3450
               },
               "group": "nodes",
               "removed": false,
@@ -1551,7 +2594,7 @@
               },
               "position": {
                 "x": 1234,
-                "y": 3424
+                "y": 3450
               },
               "group": "nodes",
               "removed": false,
@@ -1570,7 +2613,7 @@
               },
               "position": {
                 "x": 754,
-                "y": 2794
+                "y": 2820
               },
               "group": "nodes",
               "removed": false,
@@ -1606,7 +2649,7 @@
               },
               "position": {
                 "x": 934,
-                "y": 2794
+                "y": 2820
               },
               "group": "nodes",
               "removed": false,
@@ -1657,7 +2700,7 @@
               },
               "position": {
                 "x": 214,
-                "y": 7204
+                "y": 7200
               },
               "group": "nodes",
               "removed": false,
@@ -1691,7 +2734,7 @@
               },
               "position": {
                 "x": 334,
-                "y": 7384
+                "y": 7380
               },
               "group": "nodes",
               "removed": false,
@@ -1748,7 +2791,7 @@
               },
               "position": {
                 "x": 214,
-                "y": 7264
+                "y": 7260
               },
               "group": "nodes",
               "removed": false,
@@ -1767,7 +2810,7 @@
               },
               "position": {
                 "x": 454,
-                "y": 7384
+                "y": 7380
               },
               "group": "nodes",
               "removed": false,
@@ -1800,7 +2843,7 @@
               },
               "position": {
                 "x": 934,
-                "y": 7564
+                "y": 7560
               },
               "group": "nodes",
               "removed": false,
@@ -1819,7 +2862,7 @@
               },
               "position": {
                 "x": 754,
-                "y": 2914
+                "y": 2940
               },
               "group": "nodes",
               "removed": false,
@@ -1837,7 +2880,7 @@
               },
               "position": {
                 "x": 754,
-                "y": 3094
+                "y": 3120
               },
               "group": "nodes",
               "removed": false,
@@ -1890,7 +2933,7 @@
               },
               "position": {
                 "x": 934,
-                "y": 7384
+                "y": 7380
               },
               "group": "nodes",
               "removed": false,
@@ -1924,7 +2967,7 @@
               },
               "position": {
                 "x": 334,
-                "y": 2794
+                "y": 2820
               },
               "group": "nodes",
               "removed": false,
@@ -1942,7 +2985,7 @@
               },
               "position": {
                 "x": 454,
-                "y": 2794
+                "y": 2820
               },
               "group": "nodes",
               "removed": false,
@@ -1975,7 +3018,7 @@
               },
               "position": {
                 "x": 3034,
-                "y": 664
+                "y": 660
               },
               "group": "nodes",
               "removed": false,
@@ -2026,7 +3069,7 @@
               },
               "position": {
                 "x": 214,
-                "y": 2554
+                "y": 2580
               },
               "group": "nodes",
               "removed": false,
@@ -2083,7 +3126,7 @@
               },
               "position": {
                 "x": 214,
-                "y": 2614
+                "y": 2640
               },
               "group": "nodes",
               "removed": false,
@@ -2139,7 +3182,7 @@
               },
               "position": {
                 "x": 814,
-                "y": 2704
+                "y": 2730
               },
               "group": "nodes",
               "removed": false,
@@ -2196,7 +3239,7 @@
               },
               "position": {
                 "x": 1114,
-                "y": 2824
+                "y": 2850
               },
               "group": "nodes",
               "removed": false,
@@ -2253,7 +3296,7 @@
               },
               "position": {
                 "x": 814,
-                "y": 3004
+                "y": 3030
               },
               "group": "nodes",
               "removed": false,
@@ -2310,7 +3353,7 @@
               },
               "position": {
                 "x": 1114,
-                "y": 3334
+                "y": 3360
               },
               "group": "nodes",
               "removed": false,
@@ -2364,7 +3407,7 @@
               },
               "position": {
                 "x": 1234,
-                "y": 2914
+                "y": 2940
               },
               "group": "nodes",
               "removed": false,
@@ -2391,7 +3434,7 @@
               },
               "position": {
                 "x": 1354,
-                "y": 2914
+                "y": 2940
               },
               "group": "nodes",
               "removed": false,
@@ -2424,7 +3467,7 @@
               },
               "position": {
                 "x": 1534,
-                "y": 3064
+                "y": 3090
               },
               "group": "nodes",
               "removed": false,
@@ -2458,7 +3501,7 @@
               },
               "position": {
                 "x": 634,
-                "y": 544
+                "y": 540
               },
               "group": "nodes",
               "removed": false,
@@ -2476,7 +3519,7 @@
               },
               "position": {
                 "x": 754,
-                "y": 544
+                "y": 540
               },
               "group": "nodes",
               "removed": false,
@@ -2512,7 +3555,7 @@
               },
               "position": {
                 "x": 1534,
-                "y": 2914
+                "y": 2940
               },
               "group": "nodes",
               "removed": false,
@@ -2546,7 +3589,7 @@
               },
               "position": {
                 "x": 1234,
-                "y": 3244
+                "y": 3270
               },
               "group": "nodes",
               "removed": false,
@@ -2583,7 +3626,7 @@
               },
               "position": {
                 "x": 1234,
-                "y": 3094
+                "y": 3120
               },
               "group": "nodes",
               "removed": false,
@@ -2606,7 +3649,7 @@
               },
               "position": {
                 "x": 1054,
-                "y": 3094
+                "y": 3120
               },
               "group": "nodes",
               "removed": false,
@@ -2661,7 +3704,7 @@
               },
               "position": {
                 "x": 934,
-                "y": 3094
+                "y": 3120
               },
               "group": "nodes",
               "removed": false,
@@ -2706,7 +3749,7 @@
               },
               "position": {
                 "x": 3334,
-                "y": 1114
+                "y": 1110
               },
               "group": "nodes",
               "removed": false,
@@ -2724,7 +3767,7 @@
               },
               "position": {
                 "x": 2854,
-                "y": 664
+                "y": 660
               },
               "group": "nodes",
               "removed": false,
@@ -2776,7 +3819,7 @@
               },
               "position": {
                 "x": 2734,
-                "y": 664
+                "y": 660
               },
               "group": "nodes",
               "removed": false,
@@ -2813,7 +3856,7 @@
               },
               "position": {
                 "x": 3334,
-                "y": 814
+                "y": 810
               },
               "group": "nodes",
               "removed": false,
@@ -2831,7 +3874,7 @@
               },
               "position": {
                 "x": 2854,
-                "y": 814
+                "y": 810
               },
               "group": "nodes",
               "removed": false,
@@ -2849,7 +3892,7 @@
               },
               "position": {
                 "x": 2854,
-                "y": 964
+                "y": 960
               },
               "group": "nodes",
               "removed": false,
@@ -2867,7 +3910,7 @@
               },
               "position": {
                 "x": 2854,
-                "y": 1114
+                "y": 1110
               },
               "group": "nodes",
               "removed": false,
@@ -2903,7 +3946,7 @@
               },
               "position": {
                 "x": 2134,
-                "y": 814
+                "y": 810
               },
               "group": "nodes",
               "removed": false,
@@ -2930,7 +3973,7 @@
               },
               "position": {
                 "x": 2254,
-                "y": 814
+                "y": 810
               },
               "group": "nodes",
               "removed": false,
@@ -2963,7 +4006,7 @@
               },
               "position": {
                 "x": 2434,
-                "y": 814
+                "y": 810
               },
               "group": "nodes",
               "removed": false,
@@ -3011,7 +4054,7 @@
               },
               "position": {
                 "x": 634,
-                "y": 3754
+                "y": 3780
               },
               "group": "nodes",
               "removed": false,
@@ -3030,7 +4073,7 @@
               },
               "position": {
                 "x": 754,
-                "y": 3754
+                "y": 3780
               },
               "group": "nodes",
               "removed": false,
@@ -3103,7 +4146,7 @@
               },
               "position": {
                 "x": 934,
-                "y": 3754
+                "y": 3780
               },
               "group": "nodes",
               "removed": false,
@@ -3122,7 +4165,7 @@
               },
               "position": {
                 "x": 1054,
-                "y": 3754
+                "y": 3780
               },
               "group": "nodes",
               "removed": false,
@@ -3155,7 +4198,7 @@
               },
               "position": {
                 "x": 1234,
-                "y": 3754
+                "y": 3780
               },
               "group": "nodes",
               "removed": false,
@@ -3188,7 +4231,7 @@
               },
               "position": {
                 "x": 334,
-                "y": 3754
+                "y": 3780
               },
               "group": "nodes",
               "removed": false,
@@ -3206,7 +4249,7 @@
               },
               "position": {
                 "x": 454,
-                "y": 3754
+                "y": 3780
               },
               "group": "nodes",
               "removed": false,
@@ -3257,7 +4300,7 @@
               },
               "position": {
                 "x": 214,
-                "y": 3574
+                "y": 3600
               },
               "group": "nodes",
               "removed": false,
@@ -3314,7 +4357,7 @@
               },
               "position": {
                 "x": 214,
-                "y": 3634
+                "y": 3660
               },
               "group": "nodes",
               "removed": false,
@@ -3347,7 +4390,7 @@
               },
               "position": {
                 "x": 334,
-                "y": 4144
+                "y": 4140
               },
               "group": "nodes",
               "removed": false,
@@ -3365,7 +4408,7 @@
               },
               "position": {
                 "x": 454,
-                "y": 4144
+                "y": 4140
               },
               "group": "nodes",
               "removed": false,
@@ -3402,7 +4445,7 @@
               },
               "position": {
                 "x": 2134,
-                "y": 4144
+                "y": 4140
               },
               "group": "nodes",
               "removed": false,
@@ -3453,7 +4496,7 @@
               },
               "position": {
                 "x": 214,
-                "y": 3964
+                "y": 3960
               },
               "group": "nodes",
               "removed": false,
@@ -3510,7 +4553,7 @@
               },
               "position": {
                 "x": 214,
-                "y": 4024
+                "y": 4020
               },
               "group": "nodes",
               "removed": false,
@@ -3528,7 +4571,7 @@
               },
               "position": {
                 "x": 754,
-                "y": 4144
+                "y": 4140
               },
               "group": "nodes",
               "removed": false,
@@ -3547,7 +4590,7 @@
               },
               "position": {
                 "x": 1054,
-                "y": 4144
+                "y": 4140
               },
               "group": "nodes",
               "removed": false,
@@ -3637,7 +4680,7 @@
               },
               "position": {
                 "x": 1534,
-                "y": 4144
+                "y": 4140
               },
               "group": "nodes",
               "removed": false,
@@ -3661,7 +4704,7 @@
               },
               "position": {
                 "x": 1654,
-                "y": 4144
+                "y": 4140
               },
               "group": "nodes",
               "removed": false,
@@ -3706,7 +4749,7 @@
               },
               "position": {
                 "x": 1834,
-                "y": 4354
+                "y": 4350
               },
               "group": "nodes",
               "removed": false,
@@ -3724,7 +4767,7 @@
               },
               "position": {
                 "x": 1954,
-                "y": 4144
+                "y": 4140
               },
               "group": "nodes",
               "removed": false,
@@ -3789,7 +4832,7 @@
               },
               "position": {
                 "x": 1834,
-                "y": 4144
+                "y": 4140
               },
               "group": "nodes",
               "removed": false,
@@ -3875,7 +4918,7 @@
               },
               "position": {
                 "x": 634,
-                "y": 4144
+                "y": 4140
               },
               "group": "nodes",
               "removed": false,
@@ -3928,7 +4971,7 @@
               },
               "position": {
                 "x": 934,
-                "y": 4144
+                "y": 4140
               },
               "group": "nodes",
               "removed": false,
@@ -3947,7 +4990,7 @@
               },
               "position": {
                 "x": 1054,
-                "y": 4354
+                "y": 4350
               },
               "group": "nodes",
               "removed": false,
@@ -3977,7 +5020,7 @@
               },
               "position": {
                 "x": 1234,
-                "y": 4354
+                "y": 4350
               },
               "group": "nodes",
               "removed": false,
@@ -4031,7 +5074,7 @@
               },
               "position": {
                 "x": 1234,
-                "y": 4144
+                "y": 4140
               },
               "group": "nodes",
               "removed": false,
@@ -4054,7 +5097,7 @@
               },
               "position": {
                 "x": 1354,
-                "y": 4144
+                "y": 4140
               },
               "group": "nodes",
               "removed": false,
@@ -4088,7 +5131,7 @@
               },
               "position": {
                 "x": 1534,
-                "y": 4354
+                "y": 4350
               },
               "group": "nodes",
               "removed": false,
@@ -4122,7 +5165,7 @@
               },
               "position": {
                 "x": 3634,
-                "y": 814
+                "y": 810
               },
               "group": "nodes",
               "removed": false,
@@ -4140,7 +5183,7 @@
               },
               "position": {
                 "x": 3454,
-                "y": 814
+                "y": 810
               },
               "group": "nodes",
               "removed": false,
@@ -4177,7 +5220,7 @@
               },
               "position": {
                 "x": 3034,
-                "y": 964
+                "y": 960
               },
               "group": "nodes",
               "removed": false,
@@ -4211,7 +5254,7 @@
               },
               "position": {
                 "x": 3334,
-                "y": 964
+                "y": 960
               },
               "group": "nodes",
               "removed": false,
@@ -4229,7 +5272,7 @@
               },
               "position": {
                 "x": 3154,
-                "y": 964
+                "y": 960
               },
               "group": "nodes",
               "removed": false,
@@ -4286,7 +5329,7 @@
               },
               "position": {
                 "x": 214,
-                "y": 4624
+                "y": 4620
               },
               "group": "nodes",
               "removed": false,
@@ -4336,7 +5379,7 @@
               },
               "position": {
                 "x": 214,
-                "y": 4564
+                "y": 4560
               },
               "group": "nodes",
               "removed": false,
@@ -4369,7 +5412,7 @@
               },
               "position": {
                 "x": 334,
-                "y": 4804
+                "y": 4800
               },
               "group": "nodes",
               "removed": false,
@@ -4388,7 +5431,7 @@
               },
               "position": {
                 "x": 454,
-                "y": 4804
+                "y": 4800
               },
               "group": "nodes",
               "removed": false,
@@ -4421,7 +5464,7 @@
               },
               "position": {
                 "x": 1534,
-                "y": 4804
+                "y": 4800
               },
               "group": "nodes",
               "removed": false,
@@ -4444,7 +5487,7 @@
               },
               "position": {
                 "x": 1654,
-                "y": 4804
+                "y": 4800
               },
               "group": "nodes",
               "removed": false,
@@ -4543,7 +5586,7 @@
               },
               "position": {
                 "x": 1834,
-                "y": 4804
+                "y": 4800
               },
               "group": "nodes",
               "removed": false,
@@ -4600,7 +5643,7 @@
               },
               "position": {
                 "x": 2134,
-                "y": 4804
+                "y": 4800
               },
               "group": "nodes",
               "removed": false,
@@ -4618,7 +5661,7 @@
               },
               "position": {
                 "x": 1954,
-                "y": 4804
+                "y": 4800
               },
               "group": "nodes",
               "removed": false,
@@ -4637,7 +5680,7 @@
               },
               "position": {
                 "x": 2254,
-                "y": 5134
+                "y": 5130
               },
               "group": "nodes",
               "removed": false,
@@ -4670,7 +5713,7 @@
               },
               "position": {
                 "x": 2434,
-                "y": 5134
+                "y": 5130
               },
               "group": "nodes",
               "removed": false,
@@ -4689,7 +5732,7 @@
               },
               "position": {
                 "x": 2254,
-                "y": 4984
+                "y": 4980
               },
               "group": "nodes",
               "removed": false,
@@ -4725,7 +5768,7 @@
               },
               "position": {
                 "x": 2434,
-                "y": 4984
+                "y": 4980
               },
               "group": "nodes",
               "removed": false,
@@ -4818,7 +5861,7 @@
               },
               "position": {
                 "x": 3304,
-                "y": 4804
+                "y": 4800
               },
               "group": "nodes",
               "removed": false,
@@ -4859,7 +5902,7 @@
               },
               "position": {
                 "x": 3604,
-                "y": 4984
+                "y": 4980
               },
               "group": "nodes",
               "removed": false,
@@ -4882,7 +5925,7 @@
               },
               "position": {
                 "x": 3424,
-                "y": 4804
+                "y": 4800
               },
               "group": "nodes",
               "removed": false,
@@ -4935,7 +5978,7 @@
               },
               "position": {
                 "x": 2704,
-                "y": 4804
+                "y": 4800
               },
               "group": "nodes",
               "removed": false,
@@ -4959,7 +6002,7 @@
               },
               "position": {
                 "x": 2824,
-                "y": 4804
+                "y": 4800
               },
               "group": "nodes",
               "removed": false,
@@ -4992,7 +6035,7 @@
               },
               "position": {
                 "x": 3004,
-                "y": 4984
+                "y": 4980
               },
               "group": "nodes",
               "removed": false,
@@ -5010,7 +6053,7 @@
               },
               "position": {
                 "x": 2254,
-                "y": 4804
+                "y": 4800
               },
               "group": "nodes",
               "removed": false,
@@ -5098,7 +6141,7 @@
               },
               "position": {
                 "x": 634,
-                "y": 4804
+                "y": 4800
               },
               "group": "nodes",
               "removed": false,
@@ -5151,7 +6194,7 @@
               },
               "position": {
                 "x": 934,
-                "y": 4804
+                "y": 4800
               },
               "group": "nodes",
               "removed": false,
@@ -5169,7 +6212,7 @@
               },
               "position": {
                 "x": 754,
-                "y": 4804
+                "y": 4800
               },
               "group": "nodes",
               "removed": false,
@@ -5208,7 +6251,7 @@
               },
               "position": {
                 "x": 1234,
-                "y": 4804
+                "y": 4800
               },
               "group": "nodes",
               "removed": false,
@@ -5226,7 +6269,7 @@
               },
               "position": {
                 "x": 1054,
-                "y": 4804
+                "y": 4800
               },
               "group": "nodes",
               "removed": false,
@@ -5252,7 +6295,7 @@
               },
               "position": {
                 "x": 1354,
-                "y": 4804
+                "y": 4800
               },
               "group": "nodes",
               "removed": false,
@@ -5271,7 +6314,7 @@
               },
               "position": {
                 "x": 1054,
-                "y": 4984
+                "y": 4980
               },
               "group": "nodes",
               "removed": false,
@@ -5301,7 +6344,7 @@
               },
               "position": {
                 "x": 1234,
-                "y": 4984
+                "y": 4980
               },
               "group": "nodes",
               "removed": false,
@@ -5366,7 +6409,7 @@
               },
               "position": {
                 "x": 3604,
-                "y": 4804
+                "y": 4800
               },
               "group": "nodes",
               "removed": false,
@@ -5385,7 +6428,7 @@
               },
               "position": {
                 "x": 3724,
-                "y": 4804
+                "y": 4800
               },
               "group": "nodes",
               "removed": false,
@@ -5418,7 +6461,7 @@
               },
               "position": {
                 "x": 3904,
-                "y": 4804
+                "y": 4800
               },
               "group": "nodes",
               "removed": false,
@@ -5451,7 +6494,7 @@
               },
               "position": {
                 "x": 1234,
-                "y": 4654
+                "y": 4650
               },
               "group": "nodes",
               "removed": false,
@@ -5469,7 +6512,7 @@
               },
               "position": {
                 "x": 1354,
-                "y": 4654
+                "y": 4650
               },
               "group": "nodes",
               "removed": false,
@@ -5518,7 +6561,7 @@
               },
               "position": {
                 "x": 3004,
-                "y": 4804
+                "y": 4800
               },
               "group": "nodes",
               "removed": false,
@@ -5545,7 +6588,7 @@
               },
               "position": {
                 "x": 3124,
-                "y": 4804
+                "y": 4800
               },
               "group": "nodes",
               "removed": false,
@@ -5564,7 +6607,7 @@
               },
               "position": {
                 "x": 1354,
-                "y": 964
+                "y": 960
               },
               "group": "nodes",
               "removed": false,
@@ -5594,7 +6637,7 @@
               },
               "position": {
                 "x": 1534,
-                "y": 964
+                "y": 960
               },
               "group": "nodes",
               "removed": false,
@@ -5613,7 +6656,7 @@
               },
               "position": {
                 "x": 1354,
-                "y": 814
+                "y": 810
               },
               "group": "nodes",
               "removed": false,
@@ -5670,7 +6713,7 @@
               },
               "position": {
                 "x": 214,
-                "y": 1204
+                "y": 1200
               },
               "group": "nodes",
               "removed": false,
@@ -5727,7 +6770,7 @@
               },
               "position": {
                 "x": 214,
-                "y": 2494
+                "y": 2520
               },
               "group": "nodes",
               "removed": false,
@@ -5784,7 +6827,7 @@
               },
               "position": {
                 "x": 214,
-                "y": 3514
+                "y": 3540
               },
               "group": "nodes",
               "removed": false,
@@ -5841,7 +6884,7 @@
               },
               "position": {
                 "x": 214,
-                "y": 3904
+                "y": 3900
               },
               "group": "nodes",
               "removed": false,
@@ -5898,7 +6941,7 @@
               },
               "position": {
                 "x": 214,
-                "y": 4504
+                "y": 4500
               },
               "group": "nodes",
               "removed": false,
@@ -5954,8 +6997,8 @@
                 "idUnique": "d2mbrib33f"
               },
               "position": {
-                "x": 210,
-                "y": 210
+                "x": 218,
+                "y": 214
               },
               "group": "nodes",
               "removed": false,
@@ -6011,8 +7054,8 @@
                 "idUnique": "uhmapgsyb8"
               },
               "position": {
-                "x": 210,
-                "y": 270
+                "x": 218,
+                "y": 274
               },
               "group": "nodes",
               "removed": false,
@@ -6068,8 +7111,8 @@
                 "idUnique": "pvy54ovb3t"
               },
               "position": {
-                "x": 210,
-                "y": 300
+                "x": 218,
+                "y": 304
               },
               "group": "nodes",
               "removed": false,
@@ -6126,7 +7169,7 @@
               },
               "position": {
                 "x": 214,
-                "y": 7144
+                "y": 7140
               },
               "group": "nodes",
               "removed": false,
@@ -6183,7 +7226,7 @@
               },
               "position": {
                 "x": 214,
-                "y": 7654
+                "y": 7650
               },
               "group": "nodes",
               "removed": false,
@@ -6212,11 +7255,16 @@
                         "name": "configJson",
                         "preferredDataType": "object",
                         "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"auth.svg\",\n        \"url\": \"configObject\",\n        \"data\": \"{{global.parameters.configObject}}\",\n        \"tooltip\": \"{{global.parameters.configObject}}\",\n        \"children\": [\n          {\n            \"text\": \"configObject\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
+                      },
+                      {
+                        "name": "appOrigin",
+                        "preferredDataType": "string",
+                        "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"\"\n      },\n      {\n        \"text\": \"\"\n      },\n      {\n        \"type\": \"link\",\n        \"src\": \"auth.svg\",\n        \"url\": \"origin\",\n        \"data\": \"{{global.parameters.origin}}\",\n        \"tooltip\": \"{{global.parameters.origin}}\",\n        \"children\": [\n          {\n            \"text\": \"origin\"\n          }\n        ]\n      },\n      {\n        \"text\": \"\"\n      }\n    ]\n  }\n]"
                       }
                     ]
                   },
                   "code": {
-                    "value": "/**\n * Processes the given parameters to extract specific values from a nested JSON object.\n * It verifies that the JSON object is valid and non-empty before extracting values for various fields.\n * \n * @param {Object} params - The parameters object.\n * @param {Object} params.configJson - The JSON object from which values are to be extracted.\n * @returns {Object|boolean} - An object containing extracted values or `false` if `configJson` is invalid.\n */\nmodule.exports = flowSettings = async ({ params }) => {\n\tconst { configJson } = params;\n\t/**\n\t * Extract a value from a nested JSON object based on a specified path.\n\t * @param {Object} obj - The JSON object to traverse.\n\t * @param {String} path - The path to the value in dot notation (e.g., \"flowSettings.protect.id\").\n\t * @returns {*} - The value at the specified path or null if the path does not exist.\n\t */\n\tfunction extractValueByPath(obj, path) {\n\t\t// Split the path into individual keys\n\t\tconst keys = path.split('.');\n\t\tlet current = obj;\n\n\t\t// Traverse the object based on the path\n\t\tfor (let key of keys) {\n\t\t\tif (current && current.hasOwnProperty(key)) {\n\t\t\t\tcurrent = current[key];\n\t\t\t} else {\n\t\t\t\t// Return null if the path does not exist\n\t\t\t\treturn null;\n\t\t\t}\n\t\t}\n\n\t\treturn current;\n\t}\n\n\t\n\tlet companyName, companyLogoUrl, showLogo;\n\tlet riskId, riskEnabled;\n\tlet mfaEnabled;\n\tlet registrationEnabled;\n\tlet accountRecoveryEnabled;\n\tlet rpid, origin;\n\tlet socialEnabled\n\tlet socialFacebookEnabled, socialGithubEnabled, socialGoogleEnabled, socialMicrosoftEnabled\n\tlet style;\n\n\tif (configJson !== null && typeof configJson === 'object' && !Array.isArray(configJson) && Object.keys(configJson).length > 0) {\n\t\tcompanyName = extractValueByPath(configJson, 'branding.companyName');\n\t\tcompanyLogoUrl = extractValueByPath(configJson, 'branding.companyLogoUrl');\n\t\tshowLogo = extractValueByPath(configJson, 'branding.showLogo');\n\t\triskId = extractValueByPath(configJson, 'risk.id');\n\t\triskEnabled = extractValueByPath(configJson, 'risk.enabled');\n\t\tmfaEnabled = extractValueByPath(configJson, 'mfa.enabled');\n\t\tregistrationEnabled = extractValueByPath(configJson, 'selfservice.enableRegistration');\n\t\taccountRecoveryEnabled = extractValueByPath(configJson, 'selfservice.enableAccountRecovery');\n\t\trpid = extractValueByPath(configJson, 'webauthn.rpid');\n\t\torigin = extractValueByPath(configJson, 'webauthn.origin');\n\t\tsocialEnabled = extractValueByPath(configJson, 'social.enabled');\n\t\tsocialFacebookEnabled = extractValueByPath(configJson, 'social.providers.facebook');\n\t\tsocialGithubEnabled = extractValueByPath(configJson, 'social.providers.github');\n\t\tsocialGoogleEnabled = extractValueByPath(configJson, 'social.providers.google');\n\t\tsocialMicrosoftEnabled = extractValueByPath(configJson, 'social.providers.microsoft');\n\t\tstyle = extractValueByPath(configJson, 'branding.style');\n\t\t\n\t} else {\n\t\treturn false;\n\t}\n\n\treturn {\n\t\tcompanyName,\n\t\tcompanyLogoUrl,\n\t\tshowLogo,\n\t\triskId,\n\t\triskEnabled,\n\t\tmfaEnabled,\n\t\tregistrationEnabled,\n\t\taccountRecoveryEnabled,\n\t\trpid,\n\t\torigin,\n\t\tsocialEnabled,\n\t\tsocialFacebookEnabled,\n\t\tsocialGithubEnabled,\n\t\tsocialGoogleEnabled,\n\t\tsocialMicrosoftEnabled,\n\t\tstyle\n\t}\n}"
+                    "value": "/**\n * Processes the given parameters to extract specific values from a nested JSON object.\n * It verifies that the JSON object is valid and non-empty before extracting values for various fields.\n * \n * @param {Object} params - The parameters object.\n * @param {Object} params.configJson - The JSON object from which values are to be extracted.\n * @returns {Object|boolean} - An object containing extracted values or `false` if `configJson` is invalid.\n */\nmodule.exports = flowSettings = async ({ params }) => {\n  let { configJson, appOrigin } = params;\n\n  // Check configuration version\n  configJson = checkConfigCompatibility(configJson, \"1.0.1\");\n\n  if (!configJson) {\n    return false;\n  }\n\n  let companyName, companyLogoUrl, showLogo;\n  let riskId, riskEnabled;\n  let mfaEnabled;\n  let registrationEnabled;\n  let accountRecoveryEnabled;\n  let rpid, origin;\n  let socialEnabled\n  let socialFacebookEnabled, socialGithubEnabled, socialGoogleEnabled, socialMicrosoftEnabled\n  let style;\n\n  if (configJson !== null && typeof configJson === 'object' && !Array.isArray(configJson) && Object.keys(configJson).length > 0) {\n    companyName = extractValueByPath(configJson, 'branding.companyName');\n    companyLogoUrl = extractValueByPath(configJson, 'branding.companyLogoUrl');\n    showLogo = extractValueByPath(configJson, 'branding.showLogo');\n    riskId = extractValueByPath(configJson, 'risk.id');\n    riskEnabled = extractValueByPath(configJson, 'risk.enabled');\n    mfaEnabled = extractValueByPath(configJson, 'mfa.enabled');\n    registrationEnabled = extractValueByPath(configJson, 'selfservice.enableRegistration');\n    accountRecoveryEnabled = extractValueByPath(configJson, 'selfservice.enableAccountRecovery');\n    rpid = createRpidFromOrigin(appOrigin) || extractValueByPath(configJson, 'webauthn.rpid');\n    origin = appOrigin || extractValueByPath(configJson, 'webauthn.origin');\n    socialEnabled = extractValueByPath(configJson, 'social.enabled');\n    socialFacebookEnabled = extractValueByPath(configJson, 'social.providers.facebook');\n    socialGithubEnabled = extractValueByPath(configJson, 'social.providers.github');\n    socialGoogleEnabled = extractValueByPath(configJson, 'social.providers.google');\n    socialMicrosoftEnabled = extractValueByPath(configJson, 'social.providers.microsoft');\n    style = extractValueByPath(configJson, 'branding.style') || buildCSSFromParameters(configJson);\n  }\n\n  return {\n    // Basic Company Info\n    companyName,\n    companyLogoUrl,\n    showLogo,\n\n    // Risk and Security Settings\n    riskId,\n    riskEnabled,\n    mfaEnabled,\n    registrationEnabled,\n    accountRecoveryEnabled,\n\n    // Web Authentication Details\n    rpid,\n    origin,\n\n    // Social Media Settings\n    socialEnabled,\n    socialFacebookEnabled,\n    socialGithubEnabled,\n    socialGoogleEnabled,\n    socialMicrosoftEnabled,\n\n    // Styling (css or url)\n    style\n  };\n\n}\n\n/**\n * Checks configuration compatibility based on version and required attributes.\n * \n * @param {Object} config - The configuration object.\n * @param {string} minRequiredVersion - The minimum required version (e.g., \"1.0.0\").\n * @param {Object} defaultValues - An object containing default values for any new attributes.\n * @returns {Object|null} - Returns the enriched config if compatible, or null if incompatible.\n */\nfunction checkConfigCompatibility(config, minRequiredVersion, defaultValues = {}) {\n  if (!isVersionCompatible(config.version, minRequiredVersion)) {\n    console.error(`Incompatible config version: ${config.version}`);\n    return null;\n  }\n\n  // Enrich the config with default values for new attributes if they’re missing\n  const enrichedConfig = { ...defaultValues, ...config };\n\n  return enrichedConfig;\n}\n\n// Helper function to check version compatibility as previously defined\nfunction isVersionCompatible(configVersion, minRequiredVersion) {\n  const parseVersion = (version) => version.split('.').map(Number);\n\n  const [configMajor, configMinor, configPatch] = parseVersion(configVersion);\n  const [requiredMajor, requiredMinor, requiredPatch] = parseVersion(minRequiredVersion);\n\n  if (configMajor > requiredMajor) return true;\n  if (configMajor < requiredMajor) return false;\n\n  if (configMinor > requiredMinor) return true;\n  if (configMinor < requiredMinor) return false;\n\n  return configPatch >= requiredPatch;\n}\n\n/**\n * Extracts the relying party ID (rpid) from a given origin URL.\n * The rpid is based on the hostname of the origin URL.\n * \n * @param {string} originUrl - The origin URL (e.g., \"https://auth.pingone.com\").\n * @returns {string|null} - The relying party ID (hostname) or null if the URL is invalid.\n */\nfunction createRpidFromOrigin(originUrl) {\n  if (typeof originUrl !== 'string' || originUrl.trim() === '') {\n    console.error(\"Invalid input: Please provide a valid URL string.\");\n    return null;\n  }\n\n  // Regular expression to match the hostname part of a URL\n  const match = originUrl.trim().match(/^https?:\\/\\/([^\\/?#]+)(?:[\\/?#]|$)/i);\n  return match ? match[1] : null;\n}\n\n/**\n * Extract a value from a nested JSON object based on a specified path.\n * @param {Object} obj - The JSON object to traverse.\n * @param {String} path - The path to the value in dot notation (e.g., \"flowSettings.protect.id\").\n * @returns {*} - The value at the specified path or null if the path does not exist.\n */\nfunction extractValueByPath(obj, path) {\n  // Split the path into individual keys\n  const keys = path.split('.');\n  let current = obj;\n\n  // Traverse the object based on the path\n  for (let key of keys) {\n    if (current && current.hasOwnProperty(key)) {\n      current = current[key];\n    } else {\n      // Return null if the path does not exist\n      return null;\n    }\n  }\n\n  return current;\n}\n\n\n/**\n * Converts a HEX color to RGB format.\n * @param {string} hex - The hex color value (e.g., '#ff0000' or 'ff0000').\n * @returns {string} The RGB color value in the format 'rgb(r, g, b)'.\n */\nconst hexToRgb = (hex) => {\n  // Remove the leading '#' if it's present\n  hex = hex.replace(/^#/, '');\n\n  // Parse the hex values into RGB components\n  let r, g, b;\n\n  if (hex.length === 3) {\n    // Handle shorthand hex values (e.g., '#f00')\n    r = parseInt(hex[0] + hex[0], 16);\n    g = parseInt(hex[1] + hex[1], 16);\n    b = parseInt(hex[2] + hex[2], 16);\n  } else if (hex.length === 6) {\n    // Handle full-length hex values (e.g., '#ff0000')\n    r = parseInt(hex.substring(0, 2), 16);\n    g = parseInt(hex.substring(2, 4), 16);\n    b = parseInt(hex.substring(4, 6), 16);\n  } else {\n    return \"\";\n  }\n\n  return `${r}, ${g}, ${b}`;\n};\n\n/**\n * Generates CSS based on configuration JSON parameters.\n * @param {Object} configJson - Configuration object containing branding details.\n * @returns {string} CSS string built from configuration parameters.\n */\nconst buildCSSFromParameters = (configJson) => {\n  const theme = {\n    formBackgroundColor: hexToRgb(extractValueByPath(configJson, 'branding.theme.formBackgroundColor')) || '255, 255, 255', // Default to white\n    fontFamily: extractValueByPath(configJson, 'branding.theme.fontfamily') || 'Arial, sans-serif',\n    primaryTextColor: hexToRgb(extractValueByPath(configJson, 'branding.theme.primaryTextColor')) || '0, 0, 0', // Default to black\n    headingColor: hexToRgb(extractValueByPath(configJson, 'branding.theme.headingColor')) || '0, 0, 0', // Default to black\n    errorColor: hexToRgb(extractValueByPath(configJson, 'branding.theme.errorColor')) || '255, 0, 0', // Default to red\n    buttonTextColor: hexToRgb(extractValueByPath(configJson, 'branding.theme.buttonTextColor')) || '255, 255, 255', // Default to white\n    buttonBackgroundColor: hexToRgb(extractValueByPath(configJson, 'branding.theme.buttonBackgroundColor')) || '0, 123, 255', // Default to blue\n    linkButtonColor: hexToRgb(extractValueByPath(configJson, 'branding.theme.linkButtonColor')) || '0, 123, 255', // Default to blue\n    formControlBorderRadius: extractValueByPath(configJson, 'branding.theme.formControlBorderRadius') || 4, // Default to 4px\n    cardBorderRadius: extractValueByPath(configJson, 'branding.theme.cardBorderRadius') || 4, // Default to 4px\n    formWidth: extractValueByPath(configJson, 'branding.theme.formWidth') || 460 // Default width\n  };\n\n  // Utility function to generate CSS variable if value is defined\n  const cssVar = (name, value, unit = '') => (value != null ? `--${name}: ${value}${unit};` : '');\n\nreturn `\n\t:root {\n    /* CARD BODY */\n    ${cssVar('card-background-color', `rgb(${theme.formBackgroundColor})`)}\n    --card-shadow-color: rgba(121, 128, 135, .35);\n\n    /* BODY */\n    ${cssVar('body-font-family', theme.fontFamily)}\n    --body-font-size: 0.935rem;\n\n    /* FONT COLORS (RGB) */\n    ${cssVar('text-color-primary', theme.primaryTextColor)}\n    ${cssVar('heading-text-color', theme.headingColor)}\n    --text-color-muted-alpha: 0.75;\n    ${cssVar('text-color-error', `rgb(${theme.errorColor})`)}\n\n    /* BUTTONS */\n    ${cssVar('button-primary-text-color', `rgb(${theme.buttonTextColor})`)}\n    ${cssVar('button-primary-background-color', theme.buttonBackgroundColor)}\n    ${cssVar('link-button-primary-color', theme.linkButtonColor)}\n    ${cssVar('button-primary-border-radius', theme.formControlBorderRadius, 'px')}\n    --button-hover-alpha: 0.70;\n    --button-active-alpha: 0.80;\n    --button-disabled-alpha: 0.65;\n    --button-primary-disabled-background-color: 39, 123, 165;\n    --button-primary-disabled-text-color: 255, 255, 255;\n\n    /* FORM CONTROLS */\n    ${cssVar('form-control-border-radius', theme.formControlBorderRadius, 'px')}\n    ${cssVar('card-body-border-radius', theme.cardBorderRadius, 'px')}\n    ${cssVar('focus-highlight-color', theme.buttonBackgroundColor)}\n\n    /* ACTIVITY INDICATOR & BUTTON SPINNER COLOR */\n    --activity-indicator-color: rgb(68, 98, 237);\n    --polling-indicator-color: rgb(68, 98, 237);\n\n    /* APPLY TEXT COLOR */\n    --bs-body-color: rgb(var(--text-color-main)) !important;\n    --bs-danger-rgb: var(--text-color-error);\n  }\n\n  /* Additional CSS classes and rules using variables */\n  .end-user-nano .mainDiv {\n    width: ${theme.formWidth}px !important;\n  }\n\n  /* BACKGROUND IMAGE */\n  div.bg-light {\n    background-image: var(--background-image-url);\n    background-size: cover;\n    background-repeat: no-repeat;\n  }\n\n  /* HEADING TEXT */\n  h1, h2, h3, h4 {\n    color: rgb(var(--heading-text-color)) !important;\n  }\n\n  /* BODY FONT & COLOR */\n  .card-body {\n    font-family: var(--body-font-family) !important;\n    font-size: var(--body-font-size) !important;\n    color: rgb(var(--text-color-primary)) !important;\n    background-color: var(--card-background-color) !important;\n  }\n\n  /* MUTED PARAGRAPH */\n  .end-user-nano p.text-muted {\n    color: rgba(var(--text-color-primary), var(--text-color-muted-alpha)) !important;\n  }\n\n  /* ERROR MESSAGE PARAGRAPH */\n  .card .text-danger {\n    color: var(--text-color-error) !important;\n  }\n\n  /* FORM CONTROL FONT COLOR */\n  .form-control,\n  .form-control:focus {\n    color: var(--text-color-primary) !important;\n    border-radius: var(--form-control-border-radius) !important;\n  }\n\n  /* FORM CONTROL PLACEHOLDER FONT COLOR */\n  .form-floating input+label {\n    color: rgba(var(--text-color-primary), var(--text-color-muted-alpha)) !important;\n  }\n\n  /* FORM CONTROL HIGHLIGHT */\n  .end-user-nano .form-control:focus {\n    border-color: rgba(var(--focus-highlight-color), .5) !important;\n    box-shadow: 0 0 0 0.25rem rgba(var(--focus-highlight-color), 0.25) !important;\n  }\n\n  /* PRIMARY BUTTON */\n  .end-user-nano .btn-primary {\n    --bs-btn-color: var(--button-primary-text-color) !important;\n    --bs-btn-hover-color: var(--button-primary-text-color) !important;\n    --bs-btn-border-color: var(--button-primary-background-color) !important;\n    --bs-btn-bg: rgb(var(--button-primary-background-color)) !important;\n    --bs-btn-hover-bg: rgba(var(--button-primary-background-color), var(--button-hover-alpha)) !important;\n    --bs-btn-active-bg: rgba(var(--button-primary-background-color), var(--button-active-alpha)) !important;\n    --bs-btn-disabled-bg: rgba(var(--button-primary-background-color), var(--button-disabled-alpha)) !important;\n    background-color: rgb(var(--button-primary-background-color)) !important;\n    border-color: rgb(var(--button-primary-background-color)) !important;\n    color: var(--button-primary-text-color) !important;\n    border-radius: var(--button-primary-border-radius);\n  }\n\n  .btn-primary:hover {\n    background-color: rgba(var(--button-primary-background-color), var(--button-hover-alpha)) !important;\n    border-color: rgba(var(--button-primary-background-color), var(--button-hover-alpha)) !important;\n    color: var(--button-primary-text-color) !important;\n  }\n\n  /* LINK BUTTON */\n  .btn-link {\n    --bs-btn-color: rgb(var(--link-button-primary-color)) !important;\n    --bs-btn-active-color: rgba(var(--link-button-primary-color), var(--button-active-alpha)) !important;\n    --bs-btn-hover-color: rgba(var(--link-button-primary-color), var(--button-hover-alpha)) !important;\n    --bs-btn-disabled-color: rgba(var(--link-button-primary-color), var(--button-disabled-alpha)) !important;\n    color: rgb(var(--link-button-primary-color)) !important;\n  }\n\n  /* DISABLED BUTTON */\n  .btn:disabled, .btn.disabled, fieldset:disabled .btn {\n    color: rgb(var(--button-primary-disabled-text-color)) !important;\n    background-color: rgba(var(--button-primary-background-color), .8) !important;\n    border-color: rgb(var(--button-primary-disabled-background-color)) !important;\n  }\n\n  /* POLLING INDICATORS */\n  .css-11k6vsm,\n  .css-17zi2ag,\n  .css-139roxj {\n    background-color: var(--polling-indicator-color) !important;\n  }\n\n  /* BUTTON ACTIVITY INDICATOR, PROGRESS SPINNER */\n  .css-sw2ho0 {\n    --primary-color: var(--activity-indicator-color) !important;\n  }\n\n  /* PROGRESS SPINNER */\n  .spinner-color {\n    color: var(--polling-indicator-color) !important;\n  }\n\n  .card-body.p-5.d-flex.flex-column {\n    border-radius: var(--card-body-border-radius);\n  }\n\n  .card.shadow.mb-5 {\n    border-radius: var(--card-body-border-radius);\n    box-shadow: 1px 1px 3px 1px var(--card-shadow-color) !important;\n  }\n\t`;\n};"
                   },
                   "outputSchema": {
                     "value": "{\n\t\"output\": {\n\t\t\"type\": \"object\",\n\t\t\"properties\": {\n\t\t\t\"companyName\": {\n\t\t\t\t\"type\": \"string\"\n\t\t\t},\n\t\t\t\"companyLogoUrl\": {\n\t\t\t\t\"type\": \"string\"\n\t\t\t},\n\t\t\t\"showLogo\": {\n\t\t\t\t\"type\": \"boolean\"\n\t\t\t},\n\t\t\t\"riskId\": {\n\t\t\t\t\"type\": \"string\"\n\t\t\t},\n\t\t\t\"riskEnabled\": {\n\t\t\t\t\"type\": \"boolean\"\n\t\t\t},\n\t\t\t\"mfaEnabled\": {\n\t\t\t\t\"type\": \"boolean\"\n\t\t\t},\n\t\t\t\"registrationEnabled\": {\n\t\t\t\t\"type\": \"boolean\"\n\t\t\t},\n\t\t\t\"accountRecoveryEnabled\": {\n\t\t\t\t\"type\": \"boolean\"\n\t\t\t},\n\t\t\t\"rpid\" : {\n\t\t\t\t\"type\": \"string\"\n\t\t\t},\n\t\t\t\"origin\": {\t\n\t\t\t\t\"type\": \"string\"\n\t\t\t},\n\t\t\t\"socialEnabled\": {\n\t\t\t\t\"type\":\"boolean\"\n\t\t\t},\n\t\t\t\"socialFacebookEnabled\": {\n\t\t\t\t\"type\": \"boolean\"\n\t\t\t},\n\t\t\t\"socialGithubEnabled\": {\t\n\t\t\t\t\"type\": \"boolean\"\n\t\t\t},\n\t\t\t\"socialGoogleEnabled\": {\n\t\t\t\t\"type\": \"boolean\"\n\t\t\t},\n\t\t\t\"socialMicrosoftEnabled\": {\n\t\t\t\t\"type\": \"boolean\"\n\t\t\t},\n\t\t\t\"style\": {\n\t\t\t\t\"type\": \"string\"\n\t\t\t}\n\t\t}\n\t}\n}"
@@ -6225,14 +7273,14 @@
                     "value": "Read In Company Settings"
                   },
                   "nodeDescription": {
-                    "value": "Cast JSON String to Object"
+                    "value": "Unpack Experience Configuration "
                   }
                 },
                 "idUnique": "tpnix2r68l"
               },
               "position": {
                 "x": 334,
-                "y": 664
+                "y": 660
               },
               "group": "nodes",
               "removed": false,
@@ -6253,12 +7301,18 @@
                   },
                   "ia9c6b5wvz": {
                     "value": "anyTriggersFalse"
+                  },
+                  "li8wa0s92t": {
+                    "value": "anyTriggersFalse"
+                  },
+                  "rh36jico2i": {
+                    "value": "anyTriggersFalse"
                   }
                 }
               },
               "position": {
                 "x": 454,
-                "y": 664
+                "y": 660
               },
               "group": "nodes",
               "removed": false,
@@ -6300,7 +7354,7 @@
               },
               "position": {
                 "x": 634,
-                "y": 1444
+                "y": 1440
               },
               "group": "nodes",
               "removed": false,
@@ -6323,7 +7377,7 @@
               },
               "position": {
                 "x": 754,
-                "y": 1444
+                "y": 1440
               },
               "group": "nodes",
               "removed": false,
@@ -6353,7 +7407,7 @@
               },
               "position": {
                 "x": 934,
-                "y": 1654
+                "y": 1650
               },
               "group": "nodes",
               "removed": false,
@@ -6410,7 +7464,7 @@
               },
               "position": {
                 "x": 814,
-                "y": 1534
+                "y": 1530
               },
               "group": "nodes",
               "removed": false,
@@ -6461,7 +7515,7 @@
               },
               "position": {
                 "x": 214,
-                "y": 1804
+                "y": 1800
               },
               "group": "nodes",
               "removed": false,
@@ -6494,7 +7548,7 @@
               },
               "position": {
                 "x": 334,
-                "y": 1984
+                "y": 1980
               },
               "group": "nodes",
               "removed": false,
@@ -6551,7 +7605,7 @@
               },
               "position": {
                 "x": 214,
-                "y": 1864
+                "y": 1860
               },
               "group": "nodes",
               "removed": false,
@@ -6570,7 +7624,7 @@
               },
               "position": {
                 "x": 454,
-                "y": 1984
+                "y": 1980
               },
               "group": "nodes",
               "removed": false,
@@ -6623,7 +7677,7 @@
               },
               "position": {
                 "x": 634,
-                "y": 1984
+                "y": 1980
               },
               "group": "nodes",
               "removed": false,
@@ -6642,7 +7696,7 @@
               },
               "position": {
                 "x": 754,
-                "y": 1984
+                "y": 1980
               },
               "group": "nodes",
               "removed": false,
@@ -6695,7 +7749,7 @@
               },
               "position": {
                 "x": 934,
-                "y": 1984
+                "y": 1980
               },
               "group": "nodes",
               "removed": false,
@@ -6714,7 +7768,7 @@
               },
               "position": {
                 "x": 1054,
-                "y": 1984
+                "y": 1980
               },
               "group": "nodes",
               "removed": false,
@@ -6750,7 +7804,7 @@
               },
               "position": {
                 "x": 1234,
-                "y": 1984
+                "y": 1980
               },
               "group": "nodes",
               "removed": false,
@@ -6769,7 +7823,7 @@
               },
               "position": {
                 "x": 1054,
-                "y": 2134
+                "y": 2130
               },
               "group": "nodes",
               "removed": false,
@@ -6823,7 +7877,7 @@
               },
               "position": {
                 "x": 1234,
-                "y": 2134
+                "y": 2130
               },
               "group": "nodes",
               "removed": false,
@@ -6847,7 +7901,7 @@
               },
               "position": {
                 "x": 1054,
-                "y": 2314
+                "y": 2310
               },
               "group": "nodes",
               "removed": false,
@@ -6880,7 +7934,7 @@
               },
               "position": {
                 "x": 1234,
-                "y": 2314
+                "y": 2310
               },
               "group": "nodes",
               "removed": false,
@@ -6899,7 +7953,7 @@
               },
               "position": {
                 "x": 1054,
-                "y": 2464
+                "y": 2460
               },
               "group": "nodes",
               "removed": false,
@@ -6929,7 +7983,7 @@
               },
               "position": {
                 "x": 1234,
-                "y": 2464
+                "y": 2460
               },
               "group": "nodes",
               "removed": false,
@@ -6966,7 +8020,7 @@
               },
               "position": {
                 "x": 1534,
-                "y": 2134
+                "y": 2130
               },
               "group": "nodes",
               "removed": false,
@@ -6984,7 +8038,7 @@
               },
               "position": {
                 "x": 1354,
-                "y": 2134
+                "y": 2130
               },
               "group": "nodes",
               "removed": false,
@@ -7024,7 +8078,7 @@
               },
               "position": {
                 "x": 634,
-                "y": 7564
+                "y": 7560
               },
               "group": "nodes",
               "removed": false,
@@ -7042,7 +8096,7 @@
               },
               "position": {
                 "x": 754,
-                "y": 7564
+                "y": 7560
               },
               "group": "nodes",
               "removed": false,
@@ -7099,7 +8153,7 @@
               },
               "position": {
                 "x": 214,
-                "y": 1744
+                "y": 1740
               },
               "group": "nodes",
               "removed": false,
@@ -7132,7 +8186,7 @@
               },
               "position": {
                 "x": 334,
-                "y": 5464
+                "y": 5460
               },
               "group": "nodes",
               "removed": false,
@@ -7151,7 +8205,7 @@
               },
               "position": {
                 "x": 454,
-                "y": 5464
+                "y": 5460
               },
               "group": "nodes",
               "removed": false,
@@ -7201,7 +8255,7 @@
               },
               "position": {
                 "x": 214,
-                "y": 5284
+                "y": 5280
               },
               "group": "nodes",
               "removed": false,
@@ -7282,7 +8336,7 @@
               },
               "position": {
                 "x": 634,
-                "y": 6004
+                "y": 6000
               },
               "group": "nodes",
               "removed": false,
@@ -7332,7 +8386,7 @@
               },
               "position": {
                 "x": 214,
-                "y": 5824
+                "y": 5820
               },
               "group": "nodes",
               "removed": false,
@@ -7407,7 +8461,7 @@
               },
               "position": {
                 "x": 1234,
-                "y": 6004
+                "y": 6000
               },
               "group": "nodes",
               "removed": false,
@@ -7464,7 +8518,7 @@
               },
               "position": {
                 "x": 214,
-                "y": 5884
+                "y": 5880
               },
               "group": "nodes",
               "removed": false,
@@ -7482,8 +8536,8 @@
                 "label": "Evaluator"
               },
               "position": {
-                "x": 1062,
-                "y": 6334
+                "x": 1084,
+                "y": 6330
               },
               "group": "nodes",
               "removed": false,
@@ -7525,7 +8579,7 @@
               },
               "position": {
                 "x": 1564,
-                "y": 6334
+                "y": 6330
               },
               "group": "nodes",
               "removed": false,
@@ -7542,8 +8596,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 462,
-                "y": 6004
+                "x": 484,
+                "y": 6000
               },
               "group": "nodes",
               "removed": false,
@@ -7575,8 +8629,8 @@
                 }
               },
               "position": {
-                "x": 342,
-                "y": 6004
+                "x": 364,
+                "y": 6000
               },
               "group": "nodes",
               "removed": false,
@@ -7595,7 +8649,7 @@
               },
               "position": {
                 "x": 1384,
-                "y": 6334
+                "y": 6330
               },
               "group": "nodes",
               "removed": false,
@@ -7645,8 +8699,8 @@
                 }
               },
               "position": {
-                "x": 942,
-                "y": 6004
+                "x": 964,
+                "y": 6000
               },
               "group": "nodes",
               "removed": false,
@@ -7663,8 +8717,8 @@
                 "nodeType": "EVAL"
               },
               "position": {
-                "x": 1062,
-                "y": 6004
+                "x": 1084,
+                "y": 6000
               },
               "group": "nodes",
               "removed": false,
@@ -7697,7 +8751,7 @@
               },
               "position": {
                 "x": 1564,
-                "y": 6154
+                "y": 6150
               },
               "group": "nodes",
               "removed": false,
@@ -7715,7 +8769,7 @@
               },
               "position": {
                 "x": 754,
-                "y": 6004
+                "y": 6000
               },
               "group": "nodes",
               "removed": false,
@@ -7741,7 +8795,7 @@
               },
               "position": {
                 "x": 1354,
-                "y": 6004
+                "y": 6000
               },
               "group": "nodes",
               "removed": false,
@@ -7771,7 +8825,7 @@
               },
               "position": {
                 "x": 1564,
-                "y": 6004
+                "y": 6000
               },
               "group": "nodes",
               "removed": false,
@@ -7804,7 +8858,7 @@
               },
               "position": {
                 "x": 1234,
-                "y": 6334
+                "y": 6330
               },
               "group": "nodes",
               "removed": false,
@@ -7822,7 +8876,7 @@
               },
               "position": {
                 "x": 1954,
-                "y": 5464
+                "y": 5460
               },
               "group": "nodes",
               "removed": false,
@@ -7858,7 +8912,7 @@
               },
               "position": {
                 "x": 2134,
-                "y": 5464
+                "y": 5460
               },
               "group": "nodes",
               "removed": false,
@@ -7915,7 +8969,7 @@
               },
               "position": {
                 "x": 214,
-                "y": 5344
+                "y": 5340
               },
               "group": "nodes",
               "removed": false,
@@ -8026,7 +9080,7 @@
               },
               "position": {
                 "x": 634,
-                "y": 5464
+                "y": 5460
               },
               "group": "nodes",
               "removed": false,
@@ -8079,7 +9133,7 @@
               },
               "position": {
                 "x": 934,
-                "y": 5464
+                "y": 5460
               },
               "group": "nodes",
               "removed": false,
@@ -8102,7 +9156,7 @@
               },
               "position": {
                 "x": 754,
-                "y": 5464
+                "y": 5460
               },
               "group": "nodes",
               "removed": false,
@@ -8136,7 +9190,7 @@
               },
               "position": {
                 "x": 1234,
-                "y": 5674
+                "y": 5670
               },
               "group": "nodes",
               "removed": false,
@@ -8154,7 +9208,7 @@
               },
               "position": {
                 "x": 1054,
-                "y": 5674
+                "y": 5670
               },
               "group": "nodes",
               "removed": false,
@@ -8191,7 +9245,7 @@
               },
               "position": {
                 "x": 1834,
-                "y": 5674
+                "y": 5670
               },
               "group": "nodes",
               "removed": false,
@@ -8215,7 +9269,7 @@
               },
               "position": {
                 "x": 1654,
-                "y": 5464
+                "y": 5460
               },
               "group": "nodes",
               "removed": false,
@@ -8311,7 +9365,7 @@
               },
               "position": {
                 "x": 1534,
-                "y": 5464
+                "y": 5460
               },
               "group": "nodes",
               "removed": false,
@@ -8330,7 +9384,7 @@
               },
               "position": {
                 "x": 1054,
-                "y": 5464
+                "y": 5460
               },
               "group": "nodes",
               "removed": false,
@@ -8372,7 +9426,7 @@
               },
               "position": {
                 "x": 1234,
-                "y": 5464
+                "y": 5460
               },
               "group": "nodes",
               "removed": false,
@@ -8390,7 +9444,7 @@
               },
               "position": {
                 "x": 1324,
-                "y": 5464
+                "y": 5460
               },
               "group": "nodes",
               "removed": false,
@@ -8426,7 +9480,7 @@
               },
               "position": {
                 "x": 1834,
-                "y": 5464
+                "y": 5460
               },
               "group": "nodes",
               "removed": false,
@@ -8456,7 +9510,7 @@
               },
               "position": {
                 "x": 1834,
-                "y": 1444
+                "y": 1440
               },
               "group": "nodes",
               "removed": false,
@@ -8486,7 +9540,7 @@
               },
               "position": {
                 "x": 1534,
-                "y": 814
+                "y": 810
               },
               "group": "nodes",
               "removed": false,
@@ -8536,7 +9590,7 @@
               },
               "position": {
                 "x": 214,
-                "y": 6484
+                "y": 6480
               },
               "group": "nodes",
               "removed": false,
@@ -8593,7 +9647,7 @@
               },
               "position": {
                 "x": 214,
-                "y": 6544
+                "y": 6540
               },
               "group": "nodes",
               "removed": false,
@@ -8627,7 +9681,7 @@
               },
               "position": {
                 "x": 334,
-                "y": 6664
+                "y": 6660
               },
               "group": "nodes",
               "removed": false,
@@ -8681,7 +9735,7 @@
               },
               "position": {
                 "x": 634,
-                "y": 6664
+                "y": 6660
               },
               "group": "nodes",
               "removed": false,
@@ -8699,7 +9753,7 @@
               },
               "position": {
                 "x": 454,
-                "y": 6664
+                "y": 6660
               },
               "group": "nodes",
               "removed": false,
@@ -8723,7 +9777,7 @@
               },
               "position": {
                 "x": 754,
-                "y": 6664
+                "y": 6660
               },
               "group": "nodes",
               "removed": false,
@@ -8772,7 +9826,7 @@
               },
               "position": {
                 "x": 934,
-                "y": 6664
+                "y": 6660
               },
               "group": "nodes",
               "removed": false,
@@ -8803,7 +9857,7 @@
               },
               "position": {
                 "x": 1234,
-                "y": 7054
+                "y": 7050
               },
               "group": "nodes",
               "removed": false,
@@ -8821,7 +9875,7 @@
               },
               "position": {
                 "x": 1054,
-                "y": 7054
+                "y": 7050
               },
               "group": "nodes",
               "removed": false,
@@ -8857,7 +9911,7 @@
               },
               "position": {
                 "x": 1564,
-                "y": 6664
+                "y": 6660
               },
               "group": "nodes",
               "removed": false,
@@ -8876,7 +9930,7 @@
               },
               "position": {
                 "x": 1054,
-                "y": 6844
+                "y": 6840
               },
               "group": "nodes",
               "removed": false,
@@ -8933,7 +9987,7 @@
               },
               "position": {
                 "x": 1234,
-                "y": 6844
+                "y": 6840
               },
               "group": "nodes",
               "removed": false,
@@ -8970,7 +10024,7 @@
               },
               "position": {
                 "x": 1864,
-                "y": 6844
+                "y": 6840
               },
               "group": "nodes",
               "removed": false,
@@ -8988,7 +10042,7 @@
               },
               "position": {
                 "x": 1384,
-                "y": 6664
+                "y": 6660
               },
               "group": "nodes",
               "removed": false,
@@ -9056,7 +10110,7 @@
               },
               "position": {
                 "x": 1234,
-                "y": 6664
+                "y": 6660
               },
               "group": "nodes",
               "removed": false,
@@ -9074,7 +10128,7 @@
               },
               "position": {
                 "x": 1054,
-                "y": 6664
+                "y": 6660
               },
               "group": "nodes",
               "removed": false,
@@ -9142,7 +10196,7 @@
               },
               "position": {
                 "x": 1564,
-                "y": 6844
+                "y": 6840
               },
               "group": "nodes",
               "removed": false,
@@ -9160,7 +10214,7 @@
               },
               "position": {
                 "x": 1384,
-                "y": 6844
+                "y": 6840
               },
               "group": "nodes",
               "removed": false,
@@ -9178,7 +10232,7 @@
               },
               "position": {
                 "x": 1684,
-                "y": 6844
+                "y": 6840
               },
               "group": "nodes",
               "removed": false,
@@ -9197,7 +10251,7 @@
               },
               "position": {
                 "x": 1354,
-                "y": 1114
+                "y": 1110
               },
               "group": "nodes",
               "removed": false,
@@ -9227,7 +10281,7 @@
               },
               "position": {
                 "x": 1534,
-                "y": 1114
+                "y": 1110
               },
               "group": "nodes",
               "removed": false,
@@ -9255,7 +10309,7 @@
                     "value": "#000000"
                   },
                   "annotation": {
-                    "value": "Version: 0.1.1"
+                    "value": "Config Version: 1.0.1"
                   },
                   "width": {
                     "value": 300
@@ -9283,8 +10337,78 @@
                 "idUnique": "71rim235pc"
               },
               "position": {
-                "x": 210,
+                "x": 214,
                 "y": 390
+              },
+              "group": "nodes",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": false,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "rh36jico2i",
+                "nodeType": "CONNECTION",
+                "connectionId": "867ed4363b2bc21c860085ad2baa817d",
+                "connectorId": "httpConnector",
+                "name": "Http",
+                "label": "Http",
+                "status": "configured",
+                "capabilityName": "customHTMLTemplate",
+                "type": "trigger",
+                "properties": {
+                  "inputSchema": {
+                    "value": "{\n    \"type\": \"object\",\n    \"properties\": {\n        \"title\": {\n            \"type\": \"string\",\n            \"displayName\": \"Title\",\n            \"preferredControlType\": \"textField\",\n            \"enableParameters\": true,\n            \"propertyName\": \"title\"\n        },\n\t\t\"textOne\": {\n            \"type\": \"string\",\n            \"displayName\": \"Text One\",\n            \"preferredControlType\": \"textField\",\n            \"enableParameters\": true,\n            \"propertyName\": \"textOne\"\n        },\n\t\t\"textTwo\": {\n            \"type\": \"string\",\n            \"displayName\": \"Text Two\",\n            \"preferredControlType\": \"textField\",\n            \"enableParameters\": true,\n            \"propertyName\": \"textTwo\"\n        },\n\t\t\"buttonLabel\": {\n            \"type\": \"string\",\n            \"displayName\": \"Button Label\",\n            \"preferredControlType\": \"textField\",\n            \"enableParameters\": true,\n            \"propertyName\": \"buttonLabel\"\n        }\n    }\n}"
+                  },
+                  "outputSchema": {
+                    "value": null
+                  },
+                  "customHTML": {
+                    "value": "<div class=\"end-user-nano\">\n  <div\n    class=\"bg-light d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 bottom-0 end-0 overflow-auto\">\n    <div style=\"max-width: 400px; min-width: 400px; width: 100%\">\n      <div class=\"card shadow mb-5\">\n        <div class=\"card-body p-5 d-flex flex-column\">\n          {{#if title}}\n          <h1 class=\"text-center my-4\">{{title}}</h1>\n          {{/if}}\n\n          {{#if textOne}}\n          <p class=\"text-muted text-center\">{{textOne}}</p>\n          {{/if}}\n\n          {{#if textTwo}}\n          <p class=\"text-muted text-center\">{{textTwo}}</p>\n          {{/if}}\n\n          {{#if buttonLabel}}\n          <div class=\"d-flex flex-column\">\n            <button data-id=\"next-button\" type=\"submit\" class=\"btn btn-primary mb-3\" data-skcomponent=\"skbutton\"\n             data-skbuttontype=\"next-event\"  data-skbuttonvalue=\"NEXT\" id=\"btnNext\">\n                {{buttonLabel}}\n            </button>\n          </div>\n          {{/if}}\n\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
+                  },
+                  "customCSS": {
+                    "value": ""
+                  },
+                  "customScript": {
+                    "value": ""
+                  },
+                  "validationRules": {
+                    "value": []
+                  },
+                  "title": {
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"Configuration Error\"\n      }\n    ]\n  }\n]"
+                  },
+                  "textOne": {
+                    "value": "[\n  {\n    \"children\": [\n      {\n        \"text\": \"We encountered an issue applying your settings. Please try again or contact support if the problem persists.\"\n      }\n    ]\n  }\n]"
+                  },
+                  "formFieldsList": {
+                    "value": [
+                      {
+                        "preferredControlType": "textField",
+                        "preferredDataType": "string",
+                        "propertyName": "buttonValue"
+                      }
+                    ]
+                  },
+                  "nodeTitle": {
+                    "value": "Configuration Error"
+                  },
+                  "nodeDescription": {
+                    "value": "Unable to parse incoming settings"
+                  },
+                  "backgroundColor": {
+                    "value": "#ffc8c1ff"
+                  }
+                },
+                "idUnique": "8rsda1hj30"
+              },
+              "position": {
+                "x": 634,
+                "y": 930
               },
               "group": "nodes",
               "removed": false,
@@ -9297,6 +10421,141 @@
             }
           ],
           "edges": [
+            {
+              "data": {
+                "id": "9ul1dlk7e1",
+                "source": "rgvtppxbp0",
+                "target": "mxtlsmd06d"
+              },
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "group": "edges",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": true,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "2q051pp86x",
+                "source": "mxtlsmd06d",
+                "target": "qsr0sxg1js"
+              },
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "group": "edges",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": true,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "cgnce9wl0z",
+                "source": "qsr0sxg1js",
+                "target": "bhnrdp4hfl",
+                "multiValueSourceId": "d1lh7xeshn"
+              },
+              "position": {
+                "x": 64,
+                "y": 132
+              },
+              "group": "edges",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": true,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "ux6du53npp",
+                "source": "s6z4iamnwo",
+                "target": "nye89wvk44"
+              },
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "group": "edges",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": true,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "gx27rreuji",
+                "source": "bhnrdp4hfl",
+                "target": "lhyyh5hoov"
+              },
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "group": "edges",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": true,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "yarbytpsko",
+                "source": "hrr9k9vqe3",
+                "target": "88f4mehdz5"
+              },
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "group": "edges",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": true,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "vr694zgyog",
+                "source": "ez6mtai26r",
+                "target": "hrr9k9vqe3",
+                "multiValueSourceId": "-1"
+              },
+              "position": {
+                "x": 64,
+                "y": 172
+              },
+              "group": "edges",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": true,
+              "classes": ""
+            },
             {
               "data": {
                 "id": "btjjcjenr",
@@ -9839,7 +11098,7 @@
             },
             {
               "data": {
-                "id": "3dcdwr3u8c",
+                "id": "tpkk9vmxaz",
                 "source": "fgl53dm9tl",
                 "target": "pfm1xdnfn5"
               },
@@ -12709,125 +13968,9 @@
             },
             {
               "data": {
-                "id": "9ul1dlk7e1",
-                "source": "rgvtppxbp0",
-                "target": "mxtlsmd06d"
-              },
-              "position": {
-                "x": 0,
-                "y": 0
-              },
-              "group": "edges",
-              "removed": false,
-              "selected": false,
-              "selectable": true,
-              "locked": false,
-              "grabbable": true,
-              "pannable": true,
-              "classes": ""
-            },
-            {
-              "data": {
-                "id": "2q051pp86x",
-                "source": "mxtlsmd06d",
-                "target": "qsr0sxg1js"
-              },
-              "position": {
-                "x": 0,
-                "y": 0
-              },
-              "group": "edges",
-              "removed": false,
-              "selected": false,
-              "selectable": true,
-              "locked": false,
-              "grabbable": true,
-              "pannable": true,
-              "classes": ""
-            },
-            {
-              "data": {
-                "id": "cgnce9wl0z",
-                "source": "qsr0sxg1js",
-                "target": "bhnrdp4hfl",
-                "multiValueSourceId": "d1lh7xeshn"
-              },
-              "position": {
-                "x": 64,
-                "y": 132
-              },
-              "group": "edges",
-              "removed": false,
-              "selected": false,
-              "selectable": true,
-              "locked": false,
-              "grabbable": true,
-              "pannable": true,
-              "classes": ""
-            },
-            {
-              "data": {
-                "id": "gx27rreuji",
-                "source": "bhnrdp4hfl",
-                "target": "lhyyh5hoov"
-              },
-              "position": {
-                "x": 0,
-                "y": 0
-              },
-              "group": "edges",
-              "removed": false,
-              "selected": false,
-              "selectable": true,
-              "locked": false,
-              "grabbable": true,
-              "pannable": true,
-              "classes": ""
-            },
-            {
-              "data": {
-                "id": "ux6du53npp",
-                "source": "s6z4iamnwo",
-                "target": "nye89wvk44"
-              },
-              "position": {
-                "x": 0,
-                "y": 0
-              },
-              "group": "edges",
-              "removed": false,
-              "selected": false,
-              "selectable": true,
-              "locked": false,
-              "grabbable": true,
-              "pannable": true,
-              "classes": ""
-            },
-            {
-              "data": {
-                "id": "vr694zgyog",
-                "source": "ez6mtai26r",
-                "target": "hrr9k9vqe3",
-                "multiValueSourceId": "-1"
-              },
-              "position": {
-                "x": 64,
-                "y": 172
-              },
-              "group": "edges",
-              "removed": false,
-              "selected": false,
-              "selectable": true,
-              "locked": false,
-              "grabbable": true,
-              "pannable": true,
-              "classes": ""
-            },
-            {
-              "data": {
-                "id": "yarbytpsko",
-                "source": "hrr9k9vqe3",
-                "target": "88f4mehdz5"
+                "id": "q0gl5yw6p4",
+                "source": "fgl53dm9tl",
+                "target": "rh36jico2i"
               },
               "position": {
                 "x": 0,
@@ -12869,27 +14012,18 @@
           "preferredControlType": "textField",
           "isExpanded": true,
           "required": true
+        },
+        {
+          "propertyName": "origin",
+          "description": "",
+          "preferredDataType": "string",
+          "preferredControlType": "textField",
+          "isExpanded": true
         }
       ],
       "flowColor": "#ff661c",
-      "savedDate": 1730292318489,
+      "savedDate": 1730724145674,
       "variables": [
-        {
-          "context": "flowInstance",
-          "createdDate": 1730114684042,
-          "fields": {
-            "type": "string",
-            "displayName": "",
-            "mutable": true,
-            "min": 0,
-            "max": 2000
-          },
-          "id": "fbb88112-fe76-478b-aaf3-bb77b9f18b96",
-          "type": "property",
-          "visibility": "private",
-          "name": "companyLogo##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
-        },
         {
           "context": "flowInstance",
           "createdDate": 1730114619027,
@@ -12904,6 +14038,22 @@
           "type": "property",
           "visibility": "private",
           "name": "companyName##SK##flowInstance",
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+        },
+        {
+          "context": "flowInstance",
+          "createdDate": 1730114684042,
+          "fields": {
+            "type": "string",
+            "displayName": "",
+            "mutable": true,
+            "min": 0,
+            "max": 2000
+          },
+          "id": "fbb88112-fe76-478b-aaf3-bb77b9f18b96",
+          "type": "property",
+          "visibility": "private",
+          "name": "companyLogo##SK##flowInstance",
           "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
         },
         {
@@ -12940,54 +14090,6 @@
         },
         {
           "context": "flowInstance",
-          "createdDate": 1730114684039,
-          "fields": {
-            "type": "string",
-            "displayName": "FIDO2 origin",
-            "mutable": true,
-            "min": 0,
-            "max": 2000
-          },
-          "id": "b51a911a-d60f-4e5b-816f-8cb3f143ab8d",
-          "type": "property",
-          "visibility": "private",
-          "name": "origin##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
-        },
-        {
-          "context": "flowInstance",
-          "createdDate": 1730114684465,
-          "fields": {
-            "type": "boolean",
-            "displayName": "",
-            "mutable": true,
-            "min": 0,
-            "max": 2000
-          },
-          "id": "3f36686a-6a0e-43cd-8f52-9581fe1b6b57",
-          "type": "property",
-          "visibility": "private",
-          "name": "p1MFAEnabled##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
-        },
-        {
-          "context": "flowInstance",
-          "createdDate": 1730114684467,
-          "fields": {
-            "type": "string",
-            "displayName": "",
-            "mutable": true,
-            "min": 0,
-            "max": 2000
-          },
-          "id": "d72d025e-88e1-4e1a-8554-c0c09be835d1",
-          "type": "property",
-          "visibility": "private",
-          "name": "p1ProtectEvaluationId##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
-        },
-        {
-          "context": "flowInstance",
           "createdDate": 1730114684466,
           "fields": {
             "type": "boolean",
@@ -13000,54 +14102,6 @@
           "type": "property",
           "visibility": "private",
           "name": "p1RiskEnabled##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
-        },
-        {
-          "context": "flowInstance",
-          "createdDate": 1730215502761,
-          "fields": {
-            "type": "string",
-            "displayName": "",
-            "mutable": true,
-            "min": 0,
-            "max": 2000
-          },
-          "id": "53914c6c-6bdb-481d-bdd5-a9bb04b04fba",
-          "type": "property",
-          "visibility": "private",
-          "name": "p1RiskLevel##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
-        },
-        {
-          "context": "flowInstance",
-          "createdDate": 1730114684467,
-          "fields": {
-            "type": "string",
-            "displayName": "",
-            "mutable": true,
-            "min": 0,
-            "max": 2000
-          },
-          "id": "1db00c76-3131-47a3-bbe2-5796d5813606",
-          "type": "property",
-          "visibility": "private",
-          "name": "p1RiskPolicyId##SK##flowInstance",
-          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
-        },
-        {
-          "context": "flowInstance",
-          "createdDate": 1730114684037,
-          "fields": {
-            "type": "string",
-            "displayName": "Relying Party ID",
-            "mutable": true,
-            "min": 0,
-            "max": 2000
-          },
-          "id": "a62add8f-10dc-41f0-b3a3-20f4cb40beda",
-          "type": "property",
-          "visibility": "private",
-          "name": "rpid##SK##flowInstance",
           "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
         },
         {
@@ -13145,10 +14199,104 @@
           "visibility": "private",
           "name": "socialMicrosoftEnabled##SK##flowInstance",
           "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+        },
+        {
+          "context": "flowInstance",
+          "createdDate": 1730114684467,
+          "fields": {
+            "type": "string",
+            "displayName": "",
+            "mutable": true,
+            "min": 0,
+            "max": 2000
+          },
+          "id": "1db00c76-3131-47a3-bbe2-5796d5813606",
+          "type": "property",
+          "visibility": "private",
+          "name": "p1RiskPolicyId##SK##flowInstance",
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+        },
+        {
+          "context": "flowInstance",
+          "createdDate": 1730114684467,
+          "fields": {
+            "type": "string",
+            "displayName": "",
+            "mutable": true,
+            "min": 0,
+            "max": 2000
+          },
+          "id": "d72d025e-88e1-4e1a-8554-c0c09be835d1",
+          "type": "property",
+          "visibility": "private",
+          "name": "p1ProtectEvaluationId##SK##flowInstance",
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+        },
+        {
+          "context": "flowInstance",
+          "createdDate": 1730215502761,
+          "fields": {
+            "type": "string",
+            "displayName": "",
+            "mutable": true,
+            "min": 0,
+            "max": 2000
+          },
+          "id": "53914c6c-6bdb-481d-bdd5-a9bb04b04fba",
+          "type": "property",
+          "visibility": "private",
+          "name": "p1RiskLevel##SK##flowInstance",
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+        },
+        {
+          "context": "flowInstance",
+          "createdDate": 1730114684037,
+          "fields": {
+            "type": "string",
+            "displayName": "Relying Party ID",
+            "mutable": true,
+            "min": 0,
+            "max": 2000
+          },
+          "id": "a62add8f-10dc-41f0-b3a3-20f4cb40beda",
+          "type": "property",
+          "visibility": "private",
+          "name": "rpid##SK##flowInstance",
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+        },
+        {
+          "context": "flowInstance",
+          "createdDate": 1730114684039,
+          "fields": {
+            "type": "string",
+            "displayName": "FIDO2 origin",
+            "mutable": true,
+            "min": 0,
+            "max": 2000
+          },
+          "id": "b51a911a-d60f-4e5b-816f-8cb3f143ab8d",
+          "type": "property",
+          "visibility": "private",
+          "name": "origin##SK##flowInstance",
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
+        },
+        {
+          "context": "flowInstance",
+          "createdDate": 1730114684465,
+          "fields": {
+            "type": "boolean",
+            "displayName": "",
+            "mutable": true,
+            "min": 0,
+            "max": 2000
+          },
+          "id": "3f36686a-6a0e-43cd-8f52-9581fe1b6b57",
+          "type": "property",
+          "visibility": "private",
+          "name": "p1MFAEnabled##SK##flowInstance",
+          "companyId": "0e6cee7b-89f9-4253-8805-aeeaadc79f8a"
         }
-      ],
-      "connections": [],
-      "parentFlowId": "fbd91ff842522836860ad04fe627ccd3"
+      ]
     },
     {
       "companyId": "",
@@ -13165,7 +14313,7 @@
       "createdDate": 1730291128818,
       "currentVersion": 1,
       "customerId": "",
-      "description": "Imported on Wed Oct 30 2024 12:25:27 GMT+0000 (Coordinated Universal Time)",
+      "description": "Last Updated: November 4th, 2024",
       "flowStatus": "enabled",
       "inputSchemaCompiled": {
         "parameters": {
@@ -20219,7 +21367,7 @@
       "createdDate": 1730291128328,
       "currentVersion": 1,
       "customerId": "",
-      "description": "Imported on Wed Oct 30 2024 12:25:26 GMT+0000 (Coordinated Universal Time)",
+      "description": "Last Updated: November 4th, 2024",
       "flowStatus": "enabled",
       "inputSchemaCompiled": {
         "parameters": {
